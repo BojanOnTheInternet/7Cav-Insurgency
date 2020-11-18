@@ -1,0 +1,207 @@
+onLoadName = "7Cav Full Spectrum v5.9.6";
+
+onLoadMission = "Welcome to 7th Cavalry Tactical Realism! Join us on TeamSpeak at ts3.7cav.us Password: 7thCavalry";
+author = "7th Cavalry Regiment!";
+loadScreen = "media\images\MissionLogo.paa";
+overviewPicture = "";
+
+briefing = 0;
+debriefing = 0;
+
+// Rules
+cba_settings_hasSettingsFile = 1;
+disabledAI = true;
+disableChannels[] = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
+forceRotorLibSimulation = 0;
+allowFunctionsLog = 0;
+respawnOnStart = 0;
+Respawn = 3;
+RespawnDelay = 5;
+RespawnDialog = 1;
+
+// Garbage collector
+corpseManagerMode = 3;
+corpseLimit = 20;
+wreckLimit = 10; 
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 7200;
+minPlayerDistance = 250;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 91;
+};
+
+// Debug Console
+enableTargetDebug = 1;
+enableDebugConsole[] = {
+    // Dev Team
+    "76561198064095277",    // Citarelli.D
+    "76561198114637526",    // JB
+    "76561198048006094",    // Bojan
+	"76561198043140265", 	// Centeno
+	"76561198073062030", 	// Ocean
+	"76561198089309425",	// Currier
+	"76561198042501866",	// Spiers
+	"76561198149329790",	// Mazinski
+	"76561197991479113",	// Zlobin
+    // S6
+    "76561198168754324",    // Dakota.N
+    "76561198039932196",    // Jarvis.A
+    "76561198020735648",    // Ratcliff.M
+    "76561197963459537",    // Sweetwater.I
+	"76561198142446869"     // Dunn.W
+};
+
+class Extended_PreInit_EventHandlers {
+	cScripts_preInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_preInit.sqf'";
+	tac2_preInit = "call compile preprocessFileLineNumbers 'tac2\tac2_preInit.sqf'";
+};
+class Extended_PostInit_EventHandlers {
+	cScripts_postInit = "0 spawn compile preprocessFileLineNumbers 'cScripts\CavFnc\cScripts_postInit.sqf'";
+	tac2_postInit = "call compile preprocessFileLineNumbers 'tac2\tac2_postInit.sqf'";
+};
+
+// Common dialog classes
+#include "scripts\common.hpp"
+
+class CfgFunctions {
+	#include "cScripts\CavFnc\CfgFunctions.hpp"
+	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
+	#include "tac2\CfgFunctions.hpp"
+	#include "utils\CfgFunctions.hpp"
+	#include "scripts\vehicle\CfgFunctions.hpp"
+	#include "init\CfgFunctions.hpp"
+};
+
+#include "cScripts\Loadouts\script\CfgPoppy.hpp"
+#include "cScripts\CfgLoadouts.hpp"
+
+//Orbat Groups
+#include "orbat.hpp"
+#include "cScripts\CavFnc\functions\garage\garage_gui.hpp"
+
+    class RscTitles {
+		#include "cScripts\CavFnc\functions\garage\garage_gui.hpp"
+	};
+
+class CfgDebriefing {  
+	class RestrictedRole {
+		title = "Restricted Mission Role";
+		subtitle = "";
+		description = "Certain game roles are reserved for members of 7th Cavalry.  Please return to the lobby and select a different role.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class PoliceEjection {
+		title = "Military Police Action";
+		subtitle = "";
+		description = "Your game session has been ended by a member of the military police.  Please abide by all server rules and heed the warnings that you are given about your conduct while playing on this server.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class BootAll {
+		title = "Military Police Action";
+		subtitle = "";
+		description = "All player sessions have been ended by a member of the military police.  This has been done in an effort to address a server issue.  You should be able to return to the game lobby and reconnect to the server.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+class Params {
+	class EmtpyLine1 {
+	//paramsArray[0]
+		title=":: M I S S I O N   S E T T I N G S ::";
+		values[]={0,0};
+		texts[]={"",""};
+		default=0;
+	};
+    class cachesLimit {
+	//paramsArray[1]
+		title="Number of Caches To Hunt";
+		values[]={2,4,6,8,10,12};
+		texts[]={"2","4","6 (Default)","8","10","12"};
+		default=3;
+	};
+	class intelItems {
+	//paramsArray[2]
+		title="Number of INTEL Items Per Town";
+		values[]={0,1,2,3};
+		texts[]={"None","1 (Default)","2","3"};
+		default=1;
+	};
+	class Civs {
+	//paramsArray[3]
+		title="Wandering Civilians / Traffic (On/Off)";
+		values[]={1,0};
+		texts[]={"On (Default)","Off"};
+		default=1;
+	};
+	class Daytime {
+	//paramsArray[4]
+		title="Time";
+		texts[]={"Dawn","Morning (Default)","Noon","Afternoon","Evening","Night"};
+		values[]={5,8,12,14,18,0};
+		default=5;
+		function="BIS_fnc_paramDaytime";
+ 		isGlobal=0;
+	};
+	class Weather {
+	//paramsArray[5]
+		title="Weather";
+		texts[]={"Clear","Partly Cloudy (Default)","Cloudy","Storm"};
+		values[]={0,40,55,100};
+		default=40;
+		function="BIS_fnc_paramWeather";
+		isGlobal=0;
+	};
+	class vDist {
+	//paramsArray[6]
+		title="View Distance (meters)";
+		texts[]={"750m","1000m (Default)","1200m","1600m","1800m","2000m","2500m","3000m","3500m","4000m"};
+		values[]={750,1000,1200,1600,1800,2000,2500,3000,3500,4000};
+		default=1000;
+	};
+	class noGrass {
+	//paramsArray[7]
+		title="Grass (On/Off)";
+		values[]={48,50};
+		texts[]={"On (Default)","Off"};
+		default=48;
+	};
+	class Shadows {
+	//paramsArray[8]
+		title="Shadows (On/Off)";
+		values[]={80,0};
+		texts[]={"On (Default)","Off"};
+		default=75;
+	};
+	class enableEnv {
+	//paramsArray[9]
+		title="Ambient Audio/Animals/Insects (On/Off)";
+		values[]={1,0};
+		texts[]={"On (Default)","Off"};
+		default=1;
+	};
+	class a2cc {
+	//paramsArray[10]
+		title="Arma2:OA Takistan Color Correction (On/Off)";
+		values[]={1,0};
+		texts[]={"On (Default)","Off"};
+		default=1;
+	};
+	class AFAR {
+	//paramsArray[11]
+		title="Addon-Free ArmA Radio (On/Off)";
+		values[]={1,0};
+		texts[]={"On (Default)","Off"};
+		default=1;
+	};
+};
