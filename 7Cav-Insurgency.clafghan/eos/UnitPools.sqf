@@ -76,7 +76,7 @@ _tempArray=[];
 // ADD CLASSNAMES 
 	if (_faction==5) then {
 	_InfPool=	["LOP_AM_Infantry_SL","LOP_AM_Infantry_Rifleman_9","LOP_AM_Infantry_Marksman","LOP_AM_Infantry_AR","LOP_AM_Infantry_GL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman_5","LOP_AM_Infantry_Rifleman_4"];	
-	_ArmPool=	["LOP_ISTS_T55","LOP_ISTS_T34"];
+	_ArmPool=	["LOP_ISTS_T55","LOP_ISTS_T34","LOP_ISTS_BMP1"];
 	_MotPool=	["LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG"];
 	_ACHPool=	["RHS_Mi24P_vvsc"];
 	_CHPool=	[];

@@ -32,12 +32,12 @@ if (!_cache) then {
 			if (_heightLimit) then 
 			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 1000} count playableunits > 0";
 							}else 
-							{_actCond="{vehicle _x in thisList && isplayer _x} count playableunits > 0";
+							{_actCond="{vehicle _x in thisList && isplayer _x && !(vehicle _x iskindof 'Plane') } count playableunits > 0";
 		};}else{
 			if (_heightLimit) then 
 						{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 1000} count allUnits > 0";
 								}else
-									{_actCond="{vehicle _x in thisList && isplayer _x} count allUnits > 0";};};
+									{_actCond="{vehicle _x in thisList && isplayer _x && !(vehicle _x iskindof 'Plane')} count allUnits > 0";};};
 	
 		_eosActivated = createTrigger ["EmptyDetector",_mPos]; 
 		_eosActivated setTriggerArea [(_distance+_mkrX),(_distance+_mkrY),_mkrAgl,FALSE]; 
