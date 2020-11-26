@@ -1,5 +1,8 @@
 if (!isServer) exitWith {};
 // SINGLE INFANTRY GROUP
+
+sleep 1;
+
 private ["_grp","_unit","_pool","_pos","_faction"];
 
 _pos = (_this select 0);
@@ -15,11 +18,19 @@ _grpSize = _r + _grpMin;
 				
 	if (surfaceiswater _pos) then {_pool = [_faction,1] call eos_fnc_getunitpool;} else {_pool = [_faction,0] call eos_fnc_getunitpool;};
 	
-	_grp=createGroup _side;
+	_grp = createGroup _side;
 			
-for "_x" from 1 to _grpSize do {					
+for "_x" from 1 to _grpSize do {	
+
 		_unitType =_pool select (floor(random(count _pool)));
-		_unit = _grp createUnit [_unitType, _pos, [], 6, "FORM"];  
+
+		if ((count allUnits) < 150) then {
+			_unit = _grp createUnit [_unitType, _pos, [], 6, "FORM"];  
+		};
+
+		sleep 1;
+
+		//systemChat str count allUnits;
 	};
 
 	private _headlessClients = entities "HeadlessClient_F";

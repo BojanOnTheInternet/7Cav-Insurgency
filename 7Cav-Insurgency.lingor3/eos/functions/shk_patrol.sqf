@@ -52,26 +52,26 @@ if (surfaceiswater (getpos(leader _grp)) ) then {
 };
 
 // Create waypoints
-//private ["_cur","_wp"];
-//for "_i" from 1 to (_cnt - 1) do {
-//    _cur = (_wps select _i);
+private ["_cur","_wp"];
+for "_i" from 1 to (_cnt - 1) do {
+    _cur = (_wps select _i);
 
-//    _wp = _grp addWaypoint [_cur, 0];
-//    _wp setWaypointType "MOVE";
-//    _wp setWaypointCompletionRadius (5 + _slack);
-//    [_grp,_i] setWaypointTimeout [0,2,16];
+    _wp = _grp addWaypoint [_cur, 0];
+    _wp setWaypointType "MOVE";
+    _wp setWaypointCompletionRadius (5 + _slack);
+    [_grp,_i] setWaypointTimeout [0,2,16];
     
     // When completing waypoint have 33% chance to choose a random next wp
     //[_grp,_i] setWaypointStatements ["true", "if ((random 3) > 2) then { group this setCurrentWaypoint [(group this), (floor (random (count (waypoints (group this)))))];};"];
     
-//    if (DEBUG) then {
-//      private "_m";
-//      _m = createMarker [format["SHK_patrol_WP%1%2",(floor(_cur select 0)),(floor(_cur select 1))],_cur];
-//      _m setMarkerShape "Ellipse";
-//      _m setMarkerSize [20,20];
-//      _m setmarkerColor "ColorRed";
-//    };
-//};
+    //if (DEBUG) then {
+    //  private "_m";
+    //  _m = createMarker [format["SHK_patrol_WP%1%2",(floor(_cur select 0)),(floor(_cur select 1))],_cur];
+    //  _m setMarkerShape "Ellipse";
+    //  _m setMarkerSize [20,20];
+    //  _m setmarkerColor "ColorRed";
+    //};
+};
 
 // Cycle in case we reach the end
 //private "_wp1";
