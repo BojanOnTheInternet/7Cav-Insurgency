@@ -38,6 +38,14 @@ _date set [4, _startMinute];
 
 setDate _date;
 
+86400 setOvercast 1;
+skipTime 24;
+
+//to remain on the same date:
+skipTime -24;
+86400 setOvercast 1;
+skipTime 24;
+
 // Alive initialization
 [] execVM "alive\CustomFactions.sqf";
 [] execVM "alive\Tasks.sqf";

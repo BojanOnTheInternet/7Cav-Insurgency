@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=834;
+		nextID=835;
 	};
 	class LayerIndexProvider
 	{
-		nextID=251;
+		nextID=293;
 	};
 	class Camera
 	{
-		pos[]={5258.8032,82.490685,4457.5728};
-		dir[]={-0.21118739,-0.4687117,0.85777682};
-		up[]={-0.11205795,0.88333589,0.45514217};
-		aside[]={0.97103262,1.9231811e-007,0.23907299};
+		pos[]={5217.1343,126.48949,4630.7637};
+		dir[]={-0.15890163,-0.47637197,-0.86482155};
+		up[]={-0.086090133,0.87922525,-0.46855241};
+		aside[]={-0.98357409,2.1886081e-008,0.18072011};
 	};
 };
 binarizationWanted=0;
@@ -683,10 +683,10 @@ class Mission
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=1;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=1;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
