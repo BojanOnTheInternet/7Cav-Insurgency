@@ -1,4 +1,8 @@
 diag_log "initServer start";
+#include "cScripts\script_component.hpp"
+
+// Fortify
+[cScripts_Settings_setFortifyBudget] call FUNC(initFortify);
 
 missionNamespace setVariable["endMissionNumber", 0, true]; //Variable init for missionEnd scripts located in scripts/missionEnd
 

@@ -143,8 +143,12 @@ GarageVehicles = [
     // MH-6M
     ["RHS_MELB_MH6M", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
 
+    
     // F/A-181
     ["B_Plane_Fighter_01_F", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
+
+    // F16-D
+    ["FIR_F16D_WP_Fanton", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
 
     // F-22A
     ["rhsusf_f22", 5, -1, "Must be in Eagle to fly", "air", {}, {}],

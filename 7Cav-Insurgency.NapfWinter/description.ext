@@ -68,15 +68,15 @@ class Extended_PostInit_EventHandlers {
 
 class CfgFunctions {
 	#include "cScripts\CavFnc\CfgFunctions.hpp"
-	#include "cScripts\Loadouts\script\CfgFunctions.hpp"
 	#include "tac2\CfgFunctions.hpp"
 	#include "utils\CfgFunctions.hpp"
 	#include "scripts\vehicle\CfgFunctions.hpp"
 	#include "init\CfgFunctions.hpp"
+	#include "CHVD\CfgFunctions.hpp"
 };
 
-#include "cScripts\Loadouts\script\CfgPoppy.hpp"
 #include "cScripts\CfgLoadouts.hpp"
+#include "CHVD\dialog.hpp"
 
 //Orbat Groups
 #include "orbat.hpp"
