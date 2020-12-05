@@ -13,13 +13,13 @@ if (not isServer && hasInterface) exitWith {};
 [] execVM "scripts\server\curator.sqf";
 
 // Database connectors
-#include "..\scripts\server\database\database.sqf"
-#include "..\scripts\server\database\player.sqf"
+//#include "..\scripts\server\database\database.sqf"
+//#include "..\scripts\server\database\player.sqf"
 
 // Database drivers
-[] call compile preprocessFileLineNumbers "lib\extdb3\oo_extdb3.sqf";
-EXTDB3 = "new" call OO_EXTDB3;
-["setIniSectionDatabase", "Database"] call EXTDB3;
-["setDatabaseName", "7cav_arma3_tact2"] call EXTDB3;
-["setQueryType", "SQL"] call EXTDB3;
-"connect" call EXTDB3;
+//[] call compile preprocessFileLineNumbers "lib\extdb3\oo_extdb3.sqf";
+//EXTDB3 = "new" call OO_EXTDB3;
+//["setIniSectionDatabase", "Database"] call EXTDB3;
+//["setDatabaseName", "7cav_arma3_tact2"] call EXTDB3;
+//["setQueryType", "SQL"] call EXTDB3;
+//"connect" call EXTDB3;
