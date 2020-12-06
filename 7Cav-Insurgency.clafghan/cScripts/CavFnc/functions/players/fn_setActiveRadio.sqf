@@ -17,6 +17,7 @@
 
 params [["_radio", 'ACRE_PRC343', ['ACRE_PRC343']]];
 
+if !(EGVAR(patches,usesACRE)) exitWith {};
 if (!isPlayer player) exitWith {};
 
 [{[] call acre_api_fnc_isInitialized}, {
@@ -25,7 +26,7 @@ if (!isPlayer player) exitWith {};
         private _radioId = [_this select 0] call acre_api_fnc_getRadioByType;
         [_radioId] call acre_api_fnc_setCurrentRadio;
         #ifdef DEBUG_MODE
-            [format["%1 radio %2 is current radio", player, call acre_api_fnc_getCurrentRadio], "setActiveRadio"] call FUNC(logInfo);
+            [format["%1 radio %2 is current radio", player, call acre_api_fnc_getCurrentRadio], "Radio"] call FUNC(logInfo);
         #endif
         [] call acre_api_fnc_getCurrentRadio;
     }, [_this select 0], 1] call CBA_fnc_waitAndExecute;

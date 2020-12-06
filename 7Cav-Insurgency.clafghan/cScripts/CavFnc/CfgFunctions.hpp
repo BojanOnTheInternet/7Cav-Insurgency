@@ -2,8 +2,8 @@ class cScripts {
     class init {
         file = "cScripts\cavFnc\functions\init";
         class initACELoadouts {};
-
-        class initSupply {};
+        class initAI {};
+        
         class initVehicle {};
 
         class initStaging {};
@@ -12,7 +12,9 @@ class cScripts {
 
         class initStartupHint {};
 
-        class initModules {};
+        class initModulesAchilles {};
+        class initModulesZen {};
+
         class initTagging {};
 
         class initFortify {};
@@ -23,6 +25,7 @@ class cScripts {
     class documents {
         file = "cScripts\cavFnc\functions\documents";
         class Doc_Info {};
+        class Doc_Radio {};
         class Doc_MissionControl {};
 
         class DocRadio_LACEACE {};
@@ -49,9 +52,6 @@ class cScripts {
     };
     class players {
         file = "cScripts\cavFnc\functions\players";
-        class setPreInitPlayerSettings {};
-        class setPostInitPlayerSettings {};
-
         class getPlayerClan {};
         class isPlayerClan {};
 
@@ -93,10 +93,16 @@ class cScripts {
         class setVehicleInventory {};
         class setVehicleSettings {};
 
-        class addQuickSelection {};
         class addInsigniaSelection {};
+        class addInsigniaSelectionList {};
 
-        class getStagingZone {};
+        class setupLoadoutSelection {};
+        class setupLoadoutCategories {};
+        class addLoadoutSelection {};
+
+        class addStagingZone {};
+        class checkStagingZone {};
+        
         class deleteDroppedObjects {};
 
        // Plane jump
@@ -108,13 +114,11 @@ class cScripts {
         class addReGear {};
         class addHeal {};
         class addArsenal {};
-        class addAceCategory {};
+        class addAceCategory {}; // depricated => createActionCategory
+        class createActionCategory {};
         class addLoadoutAction {};
 
         class doGetOutHeloSide {};
-
-        class addQuickSelectionList {};
-        class addInsigniaSelectionList {};
 
         class addObjectToCurator {};
 
@@ -128,25 +132,41 @@ class cScripts {
         class checkVehicle {};
 
         class getServerMetrics {};
+        class checkFile {};
     };
     class modules {
         file = "cScripts\cavFnc\functions\modules";
-        class moduleCreateStarterCrate {};
-        class moduleCreateFieldHospital {};
-        class moduleCreateMedicalCrate {};
-        class moduleCreateSupplyCrate {};
-        class moduleCreateSpecialWeaponsCrate {};
+        // Achilles
+        class achillesModuleEnableUnitSimulation {};
 
-        class moduleApplyVehicleLable {};
-        class moduleApplyVehicleInventory {};
+        class achillesModuleCreateStarterCrate {};
+        class achillesModuleCreateFieldHospital {};
+        class achillesModuleCreateMedicalCrate {};
+        class achillesModuleCreateSupplyCrate {};
+        class achillesModuleCreateSpecialWeaponsCrate {};
 
-        class moduleMakeDoctor {};
-        class moduleMakeEngineer {};
+        class achillesModuleApplyVehicleLable {};
+        class achillesModuleApplyVehicleInventory {};
 
-        class moduleRegearTrooper {};
+        class achillesModuleMakeDoctor {};
+        class achillesModuleMakeEngineer {};
 
-        class moduleCallEndex {};
-        class moduleAddToAlive {};
+        class achillesModuleRegearTrooper {};
+
+        class achillesModuleCallEndex {};
+        class achillesModuleAddToAlive {};
+
+        // Zen
+        class zenModuleEnableUnitSimulation {};
+
+        class zenModuleCreateFieldHospital {};
+        class zenModuleCreateMedicalCrate {};
+        class zenModuleCreateStarterCrate {};
+        class zenModuleCreateSupplyCrate {};
+
+        class zenModuleRegearTrooper {};
+        
+        class zenModuleCallEndex {};
     };
 
     class helpers {
@@ -156,12 +176,36 @@ class cScripts {
         class exportLoadoutToArsenal {};
     };
 
+    class gear {
+        file = "cScripts\cavFnc\functions\gear";
+        class gear_preInit { preInit = 1; };
+        class gear_postInitProxy { postInit = 1; };
+        class gear_postInit {};
+
+        class gear_applyLoadout {};
+        class gear_applyCosmetics {};
+        class gear_applyAbilities {};
+
+        class gear_selectLoadout {};
+        class gear_synchGroupIDs {};   
+        class gear_getSideConfig {};
+        
+        class gear_setupRadios {};
+
+        // Save and Load
+        class gear_saveLoadout {};
+        class gear_loadLoadout {};
+        class gear_removeLoadout {};
+        class gear_hasSavedLoadout {};
+        
+    };
+
     class debug {
         file = "cScripts\cavFnc\functions\debug";
         class logError {};
         class logInfo {};
         class logWarning {};
-        
+
         class diag_dumpPlayer {};
     };
 

@@ -2,6 +2,7 @@ waitUntil { time > 0 };
 
 //EOS SYSTEM
 []execVM "eos\OpenMe.sqf";
+null = [] execVM "cos\cosInit.sqf";
 
 #include "core\modules\cacheScript\fn\fn.sqf"
 #include "core\modules\cacheScript\fn\cacheFn.sqf"
