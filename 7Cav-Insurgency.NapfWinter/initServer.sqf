@@ -46,9 +46,6 @@ skipTime -24;
 86400 setOvercast 1;
 skipTime 24;
 
-// Alive initialization
-[] execVM "alive\CustomFactions.sqf";
-[] execVM "alive\Tasks.sqf";
 ["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";

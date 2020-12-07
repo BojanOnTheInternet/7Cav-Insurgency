@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=419;
+		nextID=503;
 	};
 	class Camera
 	{
-		pos[]={5207.4702,154.50371,4617.1001};
-		dir[]={-0.36976379,-0.61388665,0.69745326};
-		up[]={-0.28755283,0.78938961,0.54238504};
-		aside[]={0.88352269,-6.4529013e-007,0.46841204};
+		pos[]={5197.3408,150.82195,4597.5879};
+		dir[]={-0.72353303,-0.58319581,-0.36938861};
+		up[]={-0.51944184,0.81231642,-0.26519328};
+		aside[]={-0.45471948,-8.8405795e-007,0.89066988};
 	};
 };
 binarizationWanted=0;
@@ -568,6 +568,7 @@ randomSeed=1724769;
 class ScenarioData
 {
 	author="Liber";
+	showGPS=0;
 	respawnDialog=0;
 	respawn=3;
 	wreckManagerMode=1;
@@ -667,7 +668,6 @@ class Mission
 	class Intel
 	{
 		resistanceWest=0;
-		resistanceEast=1;
 		timeOfChanges=1800.0002;
 		startWeather=1;
 		startWind=0.1;

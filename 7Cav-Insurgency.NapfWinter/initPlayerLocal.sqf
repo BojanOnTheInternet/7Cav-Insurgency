@@ -41,5 +41,7 @@ player addEventHandler ["Fired", {
 	};
 }]; 
 
+_null = [] execVM "camosystem.sqf";
+
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10285;
+		nextID=10379;
 	};
 	class Camera
 	{
-		pos[]={13705.455,502.86954,2757.5886};
-		dir[]={-0.95157832,-0.28039739,0.12606058};
-		up[]={-0.27797145,0.95988345,0.036824197};
-		aside[]={0.13132918,-8.9290552e-008,0.99134612};
+		pos[]={7713.5801,467.01697,12070.614};
+		dir[]={-0.81735533,-0.57356906,-0.054603919};
+		up[]={-0.57230604,0.81914318,-0.038233086};
+		aside[]={-0.066658303,-2.4976907e-007,0.99778819};
 	};
 };
 binarizationWanted=0;
@@ -570,6 +570,7 @@ randomSeed=6836166;
 class ScenarioData
 {
 	author="=7Cav=CPL.Centeno.JP";
+	showGPS=0;
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=5;

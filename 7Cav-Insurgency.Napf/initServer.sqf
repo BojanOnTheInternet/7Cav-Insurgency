@@ -38,9 +38,6 @@ _date set [4, _startMinute];
 
 setDate _date;
 
-// Alive initialization
-[] execVM "alive\CustomFactions.sqf";
-[] execVM "alive\Tasks.sqf";
 ["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";

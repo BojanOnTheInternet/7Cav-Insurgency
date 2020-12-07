@@ -130,7 +130,7 @@ _randomisation=2;
 	
 
 // Get positions until we have enough for the population
- _roadlist = _pos nearRoads _mSize;
+ _roadlist = _pos nearObjects ["House", _mSize];
  _minPositions=(_civilians+_vehicles+_parked+_slack);
  if (count _roadlist < _minPositions) 
 	then {
