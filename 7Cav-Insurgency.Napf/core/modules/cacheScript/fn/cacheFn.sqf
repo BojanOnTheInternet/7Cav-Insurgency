@@ -1,11 +1,4 @@
-/*Script by Mphillips'Hazey' + Sacha Ligthert + Phronk
-File Modified on: 12/1/2016
 
-Special Thanks:
-ArmA Tactical Combat Applications Group - Tactical Realism http://www.ATCAG.com
-Tangodown - Tactical Gaming Community http://www.tangodown.nl/
-Whiskey Company - Tactical Realism http://www.TheWhiskeyCo.com/
-*/
 iMkrs=[];
 killedText={
 hint parseText format["<t align='left' color='#e5b348' size='1.2'><t shadow='1'shadowColor='#000000'>INSURGENCY</t></t>
@@ -40,17 +33,19 @@ _x=_x+1+random 4;
 sleep 1;};};
 
 newIntel={
-private["_intelItems","_intel","_used","_ID","_cases","_case","_cache"];
-_intelItems=["Land_Laptop_unfolded_F","Land_Suitcase_F","EvMap"];
+private["_intelItems", "_intel", "_used", "_ID", "_cases", "_case", "_cache", "_marker"];
+_intelItems=["Land_Laptop_unfolded_F","Land_Suitcase_F"];
 _intel=_this select 0;
 _used=_this select 1;
 _ID=_this select 2;
+_marker = _this select 3;
+deleteMarker _marker;
 _cases=nearestObjects[getPosATL player,_intelItems,3];
 if(count _cases==0)exitWith{};
 _intel removeAction _ID;
 _case=_cases select 0;
 if isNull _case exitWith{};
-deleteVehicle _case;player groupChat "I have obtained Russian intel.";//call addIMkr;call iHint;
+deleteVehicle _case;player groupChat "I have obtained Russian intel.";
 _cache=cache;
 if(isNil "_cache")exitWith{hint "Intel suggests this place is clean.  Better check elsewhere.";};
 [nil,"iHint",true,false]spawn BIS_fnc_MP;
@@ -82,8 +77,9 @@ _imkr setMarkerSize[0.5,0.5];
 iMkrs set[(count iMkrs),_imkr];};
 
 addActionMP={
-private["_object","_screenMsg"];
-_object=_this select 0;
-_screenMsg=_this select 1;
-if(isNull _object)exitWith{};
-_object addAction[_screenMsg,"call newIntel"];};
+private["_object","_screenMsg","_intel_marker"];
+_object = _this select 0;
+_screenMsg = _this select 1;
+_intel_marker = _this select 2;
+//if(isNull _object)exitWith{};
+_object addAction[_screenMsg, "call newIntel", _intel_marker];};

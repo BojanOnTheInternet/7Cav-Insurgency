@@ -32,8 +32,8 @@ showTownLabel = false;// Show town information when entering COS zones
 debugCOS=false;// Show spawned units on the map
 
 COSpedestrians = true; //Spawn pedestrians
-COScars = true;// Spawn Cars
-COSparked = true;// Spawn parked cars
+COScars = false;// Spawn Cars
+COSparked = false;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.
 COScivPool =["LOP_Tak_Civ_Man_06","LOP_Tak_Civ_Man_08","LOP_Tak_Civ_Man_15","LOP_Tak_Civ_Man_16","LOP_Tak_Civ_Man_09","LOP_Tak_Civ_Man_13","LOP_Tak_Civ_Man_07"];	
