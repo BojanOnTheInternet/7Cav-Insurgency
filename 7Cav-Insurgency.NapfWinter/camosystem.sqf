@@ -240,7 +240,7 @@ updCamoCoeff = {
 
 ghillieCheck = {
 		//Drop backpack if wearing ghillie
-	if ((playerCamoMatrix select 4) > 1.4) then {
+	if (((playerCamoMatrix select 4) > 1.4) && (backpack player != "")) then {
 		player action ["putbag", player];
 		systemChat "This Ghillie Suit does not support a backpack.";
 	};
