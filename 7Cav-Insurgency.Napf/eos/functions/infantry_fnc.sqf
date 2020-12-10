@@ -25,7 +25,12 @@ for "_x" from 1 to _grpSize do {
 		_unitType =_pool select (floor(random(count _pool)));
 
 		if ((count allUnits) < 150) then {
-			_unit = _grp createUnit [_unitType, _pos, [], 6, "FORM"];  
+			_unit = _grp createUnit [_unitType, _pos, [], 6, "FORM"];
+
+			//Add radios to leaders
+			if (_unitType == 'rhs_vdv_sergeant') then {
+				_unit addBackpack "B_RadioBag_01_digi_F";
+			};
 		};
 
 		sleep 1;
