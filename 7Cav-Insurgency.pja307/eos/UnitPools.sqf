@@ -75,17 +75,17 @@ _tempArray=[];
 };
 // ADD CLASSNAMES 
 	if (_faction==5) then {
-	_InfPool=	["LOP_AM_Infantry_SL","LOP_AM_Infantry_Rifleman_9","LOP_AM_Infantry_Marksman","LOP_AM_Infantry_AR","LOP_AM_Infantry_GL","LOP_AM_Infantry_AT","LOP_AM_Infantry_Rifleman_5","LOP_AM_Infantry_Rifleman_4"];	
-	_ArmPool=	["LOP_ISTS_T55","LOP_ISTS_T34","LOP_ISTS_BMP1"];
-	_MotPool=	["LOP_AM_UAZ_DshKM","LOP_AM_UAZ_SPG"];
-	_ACHPool=	["RHS_Mi24P_vvsc"];
+	_InfPool=	["LOP_TKA_Infantry_TL","LOP_TKA_Infantry_SL","LOP_TKA_Infantry_Corpsman","LOP_TKA_Infantry_Marksman","LOP_TKA_Infantry_AT","LOP_TKA_Infantry_Rifleman","LOP_TKA_Infantry_GL","LOP_TKA_Infantry_MG"];	
+	_ArmPool=	["LOP_TKA_T55","LOP_TKA_T72BA","LOP_TKA_T72BB","LOP_TKA_BMP1","LOP_TKA_BMP2"];
+	_MotPool=	["LOP_TKA_BTR70","LOP_TKA_UAZ_DshKM","LOP_TKA_UAZ_SPG"];
+	_ACHPool=	["LOP_TKA_Mi24V_UPK23"];
 	_CHPool=	[];
 	_uavPool=	[];
-	_stPool=	["LOP_AM_Static_DSHKM"];
+	_stPool=	["LOP_TKA_Static_DSHKM", "LOP_TKA_Igla_AA_pod", "LOP_TKA_Static_AT4"];
 	_shipPool=	[];
-	_diverPool=	["LOP_AM_Infantry_Rifleman_5"];
-	_crewPool=	["LOP_AM_Infantry_Rifleman_5"];
-	_heliCrew=	["LOP_AM_Infantry_Rifleman_5"];
+	_diverPool=	["LOP_TKA_Infantry_Crewman"];
+	_crewPool=	["LOP_TKA_Infantry_Rifleman"];
+	_heliCrew=	["LOP_TKA_Infantry_Pilot"];
 	};
 	
 // ADD CLASSNAMES 	
