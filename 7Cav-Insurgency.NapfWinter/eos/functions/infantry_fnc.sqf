@@ -26,6 +26,10 @@ for "_x" from 1 to _grpSize do {
 
 		if ((count allUnits) < 150) then {
 			_unit = _grp createUnit [_unitType, _pos, [], 6, "FORM"];  
+						//Add radios to leaders
+			if (_unitType == 'O_RWR_soldier_sl') then {
+				_unit addBackpack "B_RadioBag_01_black_F";
+			};
 		};
 
 		sleep 1;

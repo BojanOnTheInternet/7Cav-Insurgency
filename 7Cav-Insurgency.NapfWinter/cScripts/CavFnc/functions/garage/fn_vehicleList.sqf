@@ -4,31 +4,34 @@
 GarageVehicles = [
 
     // MRZR 4
-    ["rhsusf_mrzr4_d", 5, -1, "", "land", {}, {}],
+    ["rhsusf_mrzr4_d", 2, -1, "", "land", {}, {}],
+
+    // Quadbike
+    ["B_Quadbike_01_F", 2, -1, "", "land", {}, {}],
 
     // POLARIS
-    ["B_LSV_01_unarmed_F", 5, -1, "", "land", {}, {}],
+    ["B_LSV_01_unarmed_F", 2, -1, "", "land", {}, {}],
 
     // HWWMV (M2)
-    ["rhsusf_m1025_d_m2", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1025_d_m2", 2, -1, "", "land", {}, {}],
 
     // HWWMV (MK19)
-    ["rhsusf_m1025_w_mk19", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1025_w_mk19", 2, -1, "", "land", {}, {}],
 
     // HWWMV (SPG)
-    ["rhsusf_m1045_d", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1045_d", 2, -1, "", "land", {}, {}],
 
     // HWWMV (Open)
-    ["rhsusf_m998_d_4dr", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m998_d_4dr", 2, -1, "", "land", {}, {}],
 
     // HWWMV (GPK M2)
-    ["rhsusf_m1151_m2_v2_usarmy_d", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1151_m2_v2_usarmy_d", 2, -1, "", "land", {}, {}],
 
     // HWWMV (GPK M240)
-    ["rhsusf_m1151_m240_v2_usarmy_d", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1151_m240_v2_usarmy_d", 2, -1, "", "land", {}, {}],
 
     // HWWMV (GPK MK19)
-    ["rhsusf_m1151_mk19_v2_usarmy_d", 5, -1, "", "land", {}, {}],
+    ["rhsusf_m1151_mk19_v2_usarmy_d", 2, -1, "", "land", {}, {}],
 
 
     // M1083A1 (M2 Flatbed)
@@ -43,6 +46,9 @@ GarageVehicles = [
     
     // M109
     ["rhsusf_m109d_usarmy", 5, -1, "", "land", {}, {}],
+
+    // HIMARS
+    ["rhsusf_M142_usarmy_D", 5, -1, "", "land", {}, {}],
 
 
     // M1240 (M2 CROWS)
@@ -71,7 +77,13 @@ GarageVehicles = [
     ["I_MBT_03_cannon_F", 5, -1, "You must be in a Saber slot to drive/gun/command.", "land", {}, {}],
 
     // Weisel
-    ["I_LT_01_cannon_F", 5, 2, "", "land", {}, {}],
+    ["I_LT_01_cannon_F", 5, -1, "", "land", {}, {}],
+
+    // Weisel
+    ["I_LT_01_AT_F", 5, -1, "", "land", {}, {}],
+
+    // Weisel
+    ["I_LT_01_scout_F", 5, -1, "", "land", {}, {}],
 
 
     // M113 (M2)
@@ -147,13 +159,37 @@ GarageVehicles = [
     // F/A-181
     ["B_Plane_Fighter_01_F", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
 
-    // F16-D
-    ["FIR_F16D_WP_Fanton", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
+    // F-15E
+    ["FIR_F15E_Blank", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
 
     // F-22A
     ["rhsusf_f22", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
 
     // A-10C
-    ["FIR_A10C_Blank", 5, -1, "Must be in Eagle/Hog to fly", "air", {}, {}]
+    ["FIR_A10C_Blank", 5, -1, "Must be in Eagle/Hog to fly", "air", {}, {}],
+
+    ["TFC_Wheeled_LAV6_ISC", 5, -1, "Wheeled APC w/ 30mm cannon armament", "land", {}, {}],
+
+    ["TFC_vs_luvw_CAMO_F", 2, -1, "Unarmed truck", "land", {}, {}],
+
+    ["TFC_vs_luvw_camo_armed_F", 2, -1, "Military truck with 7.62 MMG turret", "land", {}, {}],
+
+    ["RCOMM_wnato_mrap_hmg", 2, -1, "(WINTER SKIN BY DEFAULT)", "land", {}, {}],
+
+    ["RCOMM_wnato_mbt_tusk", 5, -1, "You must be in a Saber slot to drive/gun/command (WINTER SKIN BY DEFAULT)", "land", {}, {}],
+
+    ["B_APC_Tracked_01_CRV_F", 5, -1, "Must be in Atlas 3/4 slot to drive (WINTER SKIN BY DEFAULT)", "land", {}, {
+        [_this select 0, 16] call ace_cargo_fnc_setSpace;
+        [_this select 0, -1] call ace_cargo_fnc_setSize;
+        [_this select 0, 6000] call ace_refuel_fnc_setFuel;
+        [_this select 0, 1200] call ace_rearm_fnc_setSupplyCount;
+        (_this select 0) setVariable ["ACE_isRepairVehicle", true, true];
+    }],
+
+    ["TFC_CH146444_dynamicLoadout_F", 5, -1, "CAS Griffon", "air", {}, {}],
+
+    ["TFC_CH146402_unarmed_F", 5, -1, "Griffon w/ M134 armament", "air", {}, {}]
+
+
 
 ];
