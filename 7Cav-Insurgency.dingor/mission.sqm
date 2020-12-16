@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10191;
+		nextID=10238;
 	};
 	class Camera
 	{
-		pos[]={3045.866,74.207336,6627.0649};
-		dir[]={-0.37463877,-0.38825354,-0.84201384};
-		up[]={-0.15785736,0.92152739,-0.35479251};
-		aside[]={-0.91368264,4.6985224e-007,0.40652737};
+		pos[]={3042.9189,49.875725,6540.2964};
+		dir[]={-0.3820132,-0.6294241,-0.67677635};
+		up[]={-0.30943066,0.77701771,-0.54818946};
+		aside[]={-0.87089944,1.4823163e-006,0.49159142};
 	};
 };
 binarizationWanted=0;
@@ -586,6 +586,14 @@ class AddonsMetaData
 		};
 	};
 };
+class DynamicSimulation
+{
+	class EnableRadiuses
+	{
+		Vehicle=1000;
+		Group=1000;
+	};
+};
 randomSeed=6836166;
 class ScenarioData
 {
@@ -593,6 +601,7 @@ class ScenarioData
 	disabledAI=1;
 	respawn=3;
 	respawnDelay=5;
+	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
 {
@@ -29388,7 +29397,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2974.125,17.778282,6672.7803};
-				angles[]={-0,1.4790443,0};
+				angles[]={0,1.4790443,0};
 			};
 			side="Empty";
 			flags=4;
