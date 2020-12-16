@@ -108,52 +108,62 @@ if (toLower worldName == 'napfwinter') then {
 
 playerCamoMatrix = [];
 
-//Effectiveness of camo pattern vs different types of terrain, from 0 to 1.
-// ['Camo Name', [Dirt, Green, Urban, Snow]]
+//Effectiveness of camo pattern vs different types of terrain, from 0 to 1. Camo bonus over 1.4 is classified as a ghillie suit.
+// ['Camo Name', [Dirt, Green, Urban, Snow, Camo Bonus]]
 
 camoPatternHash = [[
-	['m81', [0.2, 0.7, 0.1, 0]],
-	['DPM', [0.2, 0.7, 0.1, 0]],
-	['Tiger Stripe', [0.2, 0.7, 0.1, 0]],
-	['Altis Lizard', [0.2, 0.7, 0.1, 0]],
-	['Woodland', [0.2, 0.7, 0.1, 0]],
-	['VSR', [0.2, 0.7, 0.1, 0]],
-	['OEF', [0.7, 0.5, 0.3, 0]],
-	['OCP', [0.7, 0.5, 0.3, 0]],
-	['Multicam', [0.7, 0.5, 0.3, 0]],
-	['MTP', [0.7, 0.5, 0.3, 0]],
-	['Atacs-FG', [0.7, 0.5, 0.3, 0]],
-	['UCP', [0.6, 0.0, 0.3, 0.20]],
-	['ACU', [0.6, 0.0, 0.3, 0.20]],
-	['Atacs-AU', [0.6, 0.0, 0.3, 0.20]],
-	['RACS', [0.8, 0.0, 0.3, 0]],
-	['6CD', [0.8, 0.0, 0.3, 0]],
-	['3CD', [0.8, 0.0, 0.3, 0]],
-	['Marpat Desert', [0.8, 0.0, 0.3, 0]],
-	['Marpat-D', [0.8, 0.0, 0.3, 0]],
-	['Marpat', [0.5, 0.5, 0.3, 0]],
-	['Marpat-WD', [0.5, 0.5, 0.3, 0]],
-	['Winter', [0.0, 0.0, 0.0, 1]],
-	['Lush', [0.4, 0.9, 0.0, 0.0]],
-	['Full Ghillie (Arid)', [0.9, 0.2, 0.0, 0.0]],
-	['Full Ghillie (Semi-Arid)', [0.8, 0.8, 0.0, 0.0]],
-	['Full Ghillie', [0.3,0.3,0.3,0.3]],
-	['Ghillie Suit', [0.3,0.3,0.3,0.3]],
-	['Tropic', [0.0, 0.9, 0.0, 0.0]],
-	['CTRG', [0.0, 0.9, 0.0, 0.0]],
-	['CADPAT Temperate', [0.0, 0.9, 0.0, 0.0]],
-	['CADPAT Arid', [0.8, 0.0, 0.3, 0]],
-	['CADPAT Proototype-J', [0.7, 0.5, 0.3, 0]],
-	['CADPAT Prototype-J', [0.7, 0.5, 0.3, 0]],
-	['Jungle', [0.0, 0.9, 0.0, 0.0]],
-	['Ranger Green',[0.2, 0.8, 0.1, 0]],
-	['Green',[0.2, 0.8, 0.1, 0]],
-	['Olive',[0.2, 0.8, 0.1, 0]],
-	['AOR2',[0.5, 0.8, 0.1, 0]],
-	['Tan', [0.8, 0.0, 0.3, 0]],
-	['Coyote', [0.8, 0.0, 0.3, 0]],
-	['Civilian',[0,0,0,0]],
-	['Urban',[0.5,0.3,0.7,0.3]]
+	['m81', [0.2, 0.7, 0.1, 0, 1]],
+	['DPM', [0.2, 0.7, 0.1, 0, 1]],
+	['Tiger Stripe', [0.2, 0.7, 0.1, 0, 1]],
+	['Altis Lizard', [0.2, 0.7, 0.1, 0, 1]],
+	['Woodland', [0.2, 0.7, 0.1, 0, 1]],
+	['VSR', [0.2, 0.7, 0.1, 0, 1]],
+	['OEF', [0.7, 0.5, 0.3, 0, 1]],
+	['OCP', [0.7, 0.5, 0.3, 0, 1]],
+	['Multicam', [0.7, 0.5, 0.3, 0, 1]],
+	['MTP', [0.7, 0.5, 0.3, 0, 1]],
+	['Atacs-FG', [0.7, 0.5, 0.3, 0, 1]],
+	['UCP', [0.6, 0.0, 0.3, 0.20, 1]],
+	['Airman Battle Uniform', [0.6, 0.0, 0.3, 0.20, 1]],
+	['ACU', [0.6, 0.0, 0.3, 0.20, 1]],
+	['Atacs-AU', [0.6, 0.0, 0.3, 0.20, 1]],
+	['RACS', [0.8, 0.0, 0.3, 0, 1]],
+	['6CD', [0.8, 0.0, 0.3, 0, 1]],
+	['3CD', [0.8, 0.0, 0.3, 0, 1]],
+	['Marpat Desert', [0.8, 0.0, 0.3, 0, 1]],
+	['Marpat-D', [0.8, 0.0, 0.3, 0, 1]],
+	['Marpat', [0.5, 0.5, 0.3, 0, 1]],
+	['Marpat-WD', [0.5, 0.5, 0.3, 0, 1]],
+	['Winter', [0.0, 0.0, 0.0, 1, 1]],
+	['Full Ghillie (Winter)', [0.0, 0.0, 0.0, 1, 1.9]],
+	['Full Ghillie (Lush)', [0.3, 1, 0.0, 0.0, 1.9]],
+	['Full Ghillie (Jungle)', [0.3, 1, 0.0, 0.0, 1.9]],
+	['Full Ghillie (Arid)', [1, 0.2, 0.0, 0.0, 1.9]],
+	['Full Ghillie (Semi-Arid)', [0.8, 0.8, 0.0, 0.0, 1.9]],
+	['Ghillie Suit [NATO]', [0.7,0.5,0.3,0.0, 1.5]],
+	['Ghillie Suit [CSAT]', [0.9,0.3,0.3,0.0, 1.5]],
+	['Ghillie Suit [AAF]', [0.5,0.6,0.3,0.0, 1.5]],
+	['Ghillie Suit (Winter)', [0.0, 0.0, 0.0, 1, 1.5]],
+	['Ghillie Suit (Tropic)', [0.0, 0.9, 0.0, 0.0, 1.5]],
+	['Ghillie Suit (Green Hex)', [0.3, 0.8, 0.0, 0.0, 1.5]],
+	['Tropic', [0.0, 0.9, 0.0, 0.0, 1]],
+	['CTRG Sealth Uniform', [0.0, 0.9, 0.0, 0.0, 1]],
+	['CTRG Sealth Uniform (Arid)', [0.9, 0.0, 0.7, 0.0, 1]],
+	['CTRG Sealth Uniform (Rolled-up, Arid)', [0.9, 0.0, 0.7, 0.0, 1]],
+	['CTRG Combat Uniform', [0.0, 0.7, 0.3, 0.0, 1]],
+	['CADPAT Temperate', [0.0, 0.9, 0.0, 0.0, 1]],
+	['CADPAT Arid', [0.8, 0.0, 0.3, 0, 1]],
+	['CADPAT Proototype-J', [0.7, 0.5, 0.3, 0, 1]],
+	['CADPAT Prototype-J', [0.7, 0.5, 0.3, 0, 1]],
+	['Ranger Green',[0.2, 0.8, 0.1, 0, 1]],
+	['Green',[0.2, 0.8, 0.1, 0, 1]],
+	['Olive',[0.2, 0.8, 0.1, 0, 1]],
+	['AOR2',[0.5, 0.8, 0.1, 0, 1]],
+	['Tan', [0.8, 0.0, 0.3, 0, 1]],
+	['Coyote', [0.8, 0.0, 0.3, 0, 1]],
+	['Civilian',[0,0,0,0, 1]],
+	['Urban',[0.5,0.3,0.7,0.3, 1]],
+	['CTRG Urban Uniform',[0.5,0.3,0.7,0.3, 1]]
 	
  ]] call CBA_fnc_hashCreate;
 
@@ -162,7 +172,7 @@ patternNames = [camoPatternHash] call CBA_fnc_hashKeys;
 updCamoUniform = {
 	private _playerUniform = gettext (configfile >> "CfgWeapons" >> uniform player >> "displayName");
 	private _playerPatternsWorn = [];
-	ghillieMult = 1;
+	lastKnownUniform = uniform player;
 
 	{
 		if ([_x, _playerUniform] call BIS_fnc_inString) then {
@@ -170,13 +180,14 @@ updCamoUniform = {
 		};
 	} forEach patternNames;
 
-	if (isNil {_playerPatternsWorn select 0}) exitWith{playerCamoMatrix = [0.3,0.3,0.3,0.3]};
+	if (isNil {_playerPatternsWorn select 0}) exitWith{playerCamoMatrix = [0.3,0.3,0.3,0.3,0]};
 	
 	private _patternMatrix = [camoPatternHash, _playerPatternsWorn select 0] call CBA_fnc_hashGet;
 	private _dirtEff = _patternMatrix select 0;
 	private _greenEff = _patternMatrix select 1;
 	private _urbanEff = _patternMatrix select 2;
 	private _snowEff = _patternMatrix select 3;
+	private _camoBonus = _patternMatrix select 4;
 
 	{
 		private _patternMatrix = [camoPatternHash, _x] call CBA_fnc_hashGet;
@@ -184,17 +195,10 @@ updCamoUniform = {
 		_greenEff = [_greenEff, _patternMatrix select 1] call BIS_fnc_arithmeticMean;
 		_urbanEff = [_urbanEff, _patternMatrix select 2] call BIS_fnc_arithmeticMean;
 		_snowEff = [_snowEff, _patternMatrix select 3] call BIS_fnc_arithmeticMean;
-
-		if (_x == 'Full Ghillie') then {
-			ghillieMult = 1.8;
-		};
-
-				if (_x == 'Ghillie Suit') then {
-			ghillieMult = 1.7;
-		};
+		_camoBonus = selectMax [_camoBonus, _patternMatrix select 4];
 	} forEach _playerPatternsWorn;
 
-	playerCamoMatrix = [_dirtEff*ghillieMult, _greenEff*ghillieMult, _urbanEff*ghillieMult, _snowEff*ghillieMult];
+	playerCamoMatrix = [_dirtEff, _greenEff, _urbanEff, _snowEff, _camoBonus];
 };
 
 [] call updCamoUniform;
@@ -210,7 +214,7 @@ updCamoCoeff = {
 	};
 
 	if (getPlayerStance == 'PRONE') then {
-		_stanceMult = 0.6 * (1/ghillieMult)
+		_stanceMult = 0.6 * (1/(playerCamoMatrix select 4))
 	};
 
 		if (getPlayerStance == 'CROUCH') then {
@@ -234,10 +238,30 @@ updCamoCoeff = {
 	};
 };
 
-['ace_arsenal_displayClosed', {
-	[] call updCamoUniform;
-}] call CBA_fnc_addEventHandler;
+ghillieCheck = {
+		//Drop backpack if wearing ghillie
+	if (((playerCamoMatrix select 4) > 1.4) && (backpack player != "")) then {
+		player action ["putbag", player];
+		systemChat "This Ghillie Suit does not support a backpack.";
+	};
+};
+
+['loadout', {
+	if (lastKnownUniform != uniform player) then {
+		[] call updCamoUniform;
+	};
+	[] call ghillieCheck;
+}] call CBA_fnc_addPlayerEventHandler;
 
 ['unitStatusChangedCheckCamoflage', {
 	[] call updCamoCoeff;
 }] call CBA_fnc_addEventHandler;
+
+//Add information to player diary.
+
+private _document2 = format [
+	"<font face=PuristaSemiBold' color='#ffc61a' size='20'>Only uniforms with names containing the following terms are supported.</t>
+<br/><br/><font face='PuristaMedium' color='#ffffff' size='13'>%1</t>
+", patternNames];
+
+player createDiaryRecord["diary", ["Supported Camo Patterns", _document2], taskNull, "", false];
