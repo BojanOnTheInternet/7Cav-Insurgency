@@ -1,3 +1,4 @@
+waitUntil { time > 60 };
 
 private["_mkrs","_intelItems","_unit","_pos","_selectedItem","_intel","_cacheHouses","_cities","_multi","_iCount","_tarHouse","_iPos","_i","_m","_j","_mkr_name"];
 intel=[];
