@@ -27,7 +27,7 @@ _cache= if (count _this > 6) then {_this select 6} else {false};
 // INITIATE ZONE
 actTrigger = {
 	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
-		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 500) exitWith {true};
+		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 300 && !(vehicle _x iskindof 'Plane')) exitWith {true};
 	};
 };
 
@@ -196,10 +196,12 @@ if (_debug) then {player sidechat format ["Chopper:%1",_counter];0= [_mkr,_count
 			_clear setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE]; 
 			_clear setTriggerActivation [_enemyFaction,"NOT PRESENT",true]; 
 			_clear setTriggerStatements ["this","",""]; 
+			_clear setTriggerInterval 3;
 				_taken = createTrigger ["EmptyDetector",_mPos]; 
 				_taken setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE];
 				_taken setTriggerActivation ["ANY","PRESENT",true]; 
 				_taken setTriggerStatements ["{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count allUnits > 0","",""]; 
+				_taken setTriggerInterval 3;
 _eosAct=true;	
 while {_eosAct} do
 	{
