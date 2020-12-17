@@ -36,8 +36,8 @@ COScars = false;// Spawn Cars
 COSparked = false;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.
-COScivPool =["LOP_Tak_Civ_Man_06","LOP_Tak_Civ_Man_08","LOP_Tak_Civ_Man_15","LOP_Tak_Civ_Man_16","LOP_Tak_Civ_Man_09","LOP_Tak_Civ_Man_13","LOP_Tak_Civ_Man_07"];	
-COSmotPool =["LOP_Tak_Civ_Hatchback","LOP_Tak_Civ_Landrover","LOP_Tak_Civ_Offroad","LOP_Tak_Civ_UAZ","LOP_Tak_Civ_UAZ_Open"];
+COScivPool =["LOP_CHR_Civ_Worker_02","LOP_CHR_Civ_Woodlander_04","LOP_CHR_Civ_Villager_02","LOP_CHR_Civ_Rocker_02","LOP_CHR_Civ_Profiteer_01","LOP_CHR_Civ_Priest_01","LOP_CHR_Civ_Citizen_02"];	
+COSmotPool =["LOP_CHR_Civ_Hatchback","LOP_CHR_Civ_Landrover","LOP_CHR_Civ_Offroad","LOP_CHR_Civ_UAZ","LOP_CHR_Civ_UAZ_Open"];
 
 COSmaxGrps = 10; //Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
 
@@ -78,41 +78,42 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=2;
+_randomisation=10;
 	if (_houses <= 10) 
 		then {
-	_civilians=2+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=0;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};		
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
-	_civilians=2+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=2+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=2+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
-	_parked=1;// Parked Vehicles Spawned
+	_parked=3;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=2+ round(random _randomisation);// Civilians spawned
+	_civilians=3+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  if (!COSpedestrians) then {_civilians=0;};	// If pedestrians disabled spawn 0
+ if((count allUnits) > 130) then {_civilians=0;};
  if (!COScars) then {_vehicles=0;};// If cars disabled spawn 0
  if (!COSparked) then {_parked=0;};// If parked cars disabled spawn 0
  
@@ -156,7 +157,13 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 	_information=[_civilians,_vehicles,_parked,_roadPosArray];
 	_popVar=format["population%1",_foo];
 	server setvariable [_popVar,_information];
-		
+	
+actTrigger = {
+	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
+		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50) exitWith {true};
+	};
+};
+
 // Create a trigger over town	
 		_trigger = createTrigger ["EmptyDetector",_pos]; 
 		_trigger setTriggerArea [(COS_distance+_sizeX),(COS_distance+_sizeY),0,FALSE]; 
@@ -164,14 +171,15 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 		_trigger setTriggerTimeout [1, 1, 1, true];
 			if _aerielActivation // Set whether units above 50m high will trigger
 					then {
-				_actCond="{vehicle _x in thisList && isplayer _x} count allunits > 0";
+				_actCond="{[] call actTrigger} count allunits > 0";
 						}else{
-					_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50} count allunits > 0";
+					_actCond="{[] call actTrigger} count allunits > 0";
 						};
 		_var=format["trig%1", _markerID];
 		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";server setvariable [%2,true];",str _foo,str _var];
 		_trigDe=format ["server setvariable [%1,false];",str _var];
 		_trigger setTriggerStatements [_actCond,_trigAct,_trigDe];
+		_trigger setTriggerInterval 3;
 	};
 
 }foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCityCapital","NameCity","NameVillage","CityCenter"], 25000]) +whiteListMkrs;

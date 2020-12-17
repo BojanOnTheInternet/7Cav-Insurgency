@@ -113,6 +113,7 @@ _randomisation=10;
 			};
 			
  if (!COSpedestrians) then {_civilians=0;};	// If pedestrians disabled spawn 0
+ if((count allUnits) > 130) then {_civilians=0;};
  if (!COScars) then {_vehicles=0;};// If cars disabled spawn 0
  if (!COSparked) then {_parked=0;};// If parked cars disabled spawn 0
  
@@ -156,7 +157,13 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 	_information=[_civilians,_vehicles,_parked,_roadPosArray];
 	_popVar=format["population%1",_foo];
 	server setvariable [_popVar,_information];
-		
+	
+actTrigger = {
+	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
+		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50) exitWith {true};
+	};
+};
+
 // Create a trigger over town	
 		_trigger = createTrigger ["EmptyDetector",_pos]; 
 		_trigger setTriggerArea [(COS_distance+_sizeX),(COS_distance+_sizeY),0,FALSE]; 
@@ -164,14 +171,15 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 		_trigger setTriggerTimeout [1, 1, 1, true];
 			if _aerielActivation // Set whether units above 50m high will trigger
 					then {
-				_actCond="{vehicle _x in thisList && isplayer _x} count allunits > 0";
+				_actCond="{[] call actTrigger} count allunits > 0";
 						}else{
-					_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50} count allunits > 0";
+					_actCond="{[] call actTrigger} count allunits > 0";
 						};
 		_var=format["trig%1", _markerID];
 		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";server setvariable [%2,true];",str _foo,str _var];
 		_trigDe=format ["server setvariable [%1,false];",str _var];
 		_trigger setTriggerStatements [_actCond,_trigAct,_trigDe];
+		_trigger setTriggerInterval 3;
 	};
 
 }foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCityCapital","NameCity","NameVillage","CityCenter"], 25000]) +whiteListMkrs;

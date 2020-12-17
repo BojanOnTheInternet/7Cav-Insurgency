@@ -25,25 +25,35 @@ _cache= if (count _this > 6) then {_this select 6} else {false};
 	if (_mA==2) then {_mAH = 0.5;_mAN = 0.5;};
 
 // INITIATE ZONE
+actTrigger = {
+	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
+		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 500) exitWith {true};
+	};
+};
+
 _trig=format ["EOSTrigger%1",_mkr];
 
 if (!_cache) then {
 	if ismultiplayer then {
-			if (_heightLimit) then 
-			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 1000} count playableunits > 0";
-							}else 
-							{_actCond="{vehicle _x in thisList && isplayer _x && !(vehicle _x iskindof 'Plane') } count playableunits > 0";
-		};}else{
-			if (_heightLimit) then 
-						{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 1000} count allUnits > 0";
-								}else
-									{_actCond="{vehicle _x in thisList && isplayer _x && !(vehicle _x iskindof 'Plane')} count allUnits > 0";};};
+		if (_heightLimit) then {
+				_actCond="{[] call actTrigger} count playableunits > 0";
+		}else{
+				_actCond="{[] call actTrigger} count playableunits > 0";
+		};
+	}else{
+		if (_heightLimit) then 
+				{_actCond="{[] call actTrigger} count allUnits > 0";
+		}else
+				{_actCond="{[] call actTrigger} count allUnits > 0";
+		};
+	};
 	
 		_eosActivated = createTrigger ["EmptyDetector",_mPos]; 
 		_eosActivated setTriggerArea [(_distance+_mkrX),(_distance+_mkrY),_mkrAgl,FALSE]; 
 		_eosActivated setTriggerActivation ["ANY","PRESENT",true];
 		_eosActivated setTriggerTimeout [1, 1, 1, true];
 		_eosActivated setTriggerStatements [_actCond,"",""];
+		_eosActivated setTriggerInterval 3;
 		
 			server setvariable [_trig,_eosActivated];	
 					}else{
