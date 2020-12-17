@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6215;
+		nextID=6320;
 	};
 	class Camera
 	{
-		pos[]={5865.5371,98.74398,6276.7104};
-		dir[]={-0.71953362,-0.50351012,-0.47838253};
-		up[]={-0.41932738,0.86396646,-0.27879104};
-		aside[]={-0.55367726,-1.7229468e-007,0.83278471};
+		pos[]={5849.5234,98.74398,6230.4438};
+		dir[]={-0.88081098,-0.45089054,-0.14484368};
+		up[]={-0.4449591,0.89255625,-0.073171824};
+		aside[]={-0.16227186,-2.3178291e-007,0.98679698};
 	};
 };
 binarizationWanted=0;
@@ -30368,6 +30368,7 @@ class Mission
 			};
 			id=2167;
 			type="B_Heli_Transport_03_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56738,6 +56739,7 @@ class Mission
 			};
 			id=2886;
 			type="RHS_CH_47F_light";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
