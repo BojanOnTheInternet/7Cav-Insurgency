@@ -31,13 +31,13 @@ showTownLabel = false;// Show town information when entering COS zones
 
 debugCOS=false;// Show spawned units on the map
 
-COSpedestrians = true; //Spawn pedestrians
+COSpedestrians = false; //Spawn pedestrians
 COScars = false;// Spawn Cars
 COSparked = false;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.
-COScivPool =["LOP_CHR_Civ_Worker_02","LOP_CHR_Civ_Woodlander_04","LOP_CHR_Civ_Villager_02","LOP_CHR_Civ_Rocker_02","LOP_CHR_Civ_Profiteer_01","LOP_CHR_Civ_Priest_01","LOP_CHR_Civ_Citizen_02"];	
-COSmotPool =["LOP_CHR_Civ_Hatchback","LOP_CHR_Civ_Landrover","LOP_CHR_Civ_Offroad","LOP_CHR_Civ_UAZ","LOP_CHR_Civ_UAZ_Open"];
+COScivPool =["LOP_Tak_Civ_Man_06","LOP_Tak_Civ_Man_08","LOP_Tak_Civ_Man_15","LOP_Tak_Civ_Man_16","LOP_Tak_Civ_Man_09","LOP_Tak_Civ_Man_13","LOP_Tak_Civ_Man_07"];	
+COSmotPool =["LOP_Tak_Civ_Hatchback","LOP_Tak_Civ_Landrover","LOP_Tak_Civ_Offroad","LOP_Tak_Civ_UAZ","LOP_Tak_Civ_UAZ_Open"];
 
 COSmaxGrps = 10; //Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
 
@@ -132,13 +132,13 @@ _randomisation=10;
 
 // Get positions until we have enough for the population
  _roadlist = _pos nearObjects ["House", _mSize];
- _minPositions=(_civilians+_vehicles+_parked+_slack);
+ _minPositions = (_civilians + _vehicles + _parked + _slack);
  if (count _roadlist < _minPositions) 
 	then {
 		while {count _roadlist < _minPositions} do 
 			{
-			_rad=_rad+_rad;
-			_roadlist = _pos nearRoads (_mSize+_rad);
+			_rad = _rad +_rad;
+			_roadlist = _pos nearRoads (_mSize + _rad);
 			sleep 0.1;
 			};
 		};
@@ -146,7 +146,7 @@ _randomisation=10;
 // Sort a position for each civilian
 _roadPosArray = [];
 _roadPosArray resize _minPositions;
-_roadlist=_roadlist call BIS_fnc_arrayShuffle;
+_roadlist = _roadlist call BIS_fnc_arrayShuffle;
 
  for "_n" from 0 to _minPositions do
 		{
@@ -182,7 +182,7 @@ actTrigger = {
 		_trigger setTriggerInterval 3;
 	};
 
-}foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCityCapital","NameCity","NameVillage","CityCenter"], 25000]) +whiteListMkrs;
+}foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCity","NameCityCapital","NameLocal","NameMarine","NameVillage","StrongpointArea"], 25000]) + whiteListMkrs;
 
 // All towns have been saved into cos Marker Array.
 SERVER setvariable ["COSmarkers",cosMkrArray,true];

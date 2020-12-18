@@ -31,7 +31,7 @@ showTownLabel = false;// Show town information when entering COS zones
 
 debugCOS=false;// Show spawned units on the map
 
-COSpedestrians = true; //Spawn pedestrians
+COSpedestrians = false; //Spawn pedestrians
 COScars = false;// Spawn Cars
 COSparked = false;// Spawn parked cars
 

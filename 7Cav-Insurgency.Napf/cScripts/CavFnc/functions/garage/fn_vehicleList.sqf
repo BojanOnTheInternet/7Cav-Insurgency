@@ -33,7 +33,6 @@ GarageVehicles = [
     // HWWMV (GPK MK19)
     ["rhsusf_m1151_mk19_v2_usarmy_d", 2, -1, "", "land", {}, {}],
 
-
     // M1083A1 (M2 Flatbed)
     ["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy", 5, -1, "", "land", {}, {}],
 
@@ -43,13 +42,11 @@ GarageVehicles = [
     // M977A4 (Repair)
     ["rhsusf_M977A4_REPAIR_usarmy_d", 5, -1, "", "land", {}, {}],
 
-    
     // M109
     ["rhsusf_m109d_usarmy", 5, -1, "", "land", {}, {}],
 
     // HIMARS
     ["rhsusf_M142_usarmy_D", 5, -1, "", "land", {}, {}],
-
 
     // M1240 (M2 CROWS)
     ["rhsusf_m1240a1_m2crows_usarmy_d", 5, -1, "", "land", {}, {}],
@@ -66,7 +63,6 @@ GarageVehicles = [
     // M1230A1 (MEDEVAC)
     ["rhsusf_M1230a1_usarmy_d", 5, -1, "", "land", {}, {}],
 
-    
     // Merkava
     ["B_MBT_01_cannon_F", 5, -1, "You must be in a Saber slot to drive/gun/command", "land", {}, {}],
 
@@ -170,9 +166,9 @@ GarageVehicles = [
 
     ["TFC_Wheeled_LAV6_ISC", 5, -1, "Wheeled APC w/ 30mm cannon armament", "land", {}, {}],
 
-    ["TFC_vs_luvw_CAMO_F", 2, -1, "Unarmed truck", "land", {}, {}],
+    ["TFC_vs_luvw_F", 2, -1, "Unarmed truck", "land", {}, {}],
 
-    ["TFC_vs_luvw_camo_armed_F", 2, -1, "Military truck with 7.62 MMG turret", "land", {}, {}],
+    ["TFC_vs_luvw_armed_F", 2, -1, "Military truck with 7.62 MMG turret", "land", {}, {}],
 
     ["RCOMM_wnato_mrap_hmg", 2, -1, "(WINTER SKIN BY DEFAULT)", "land", {}, {}],
 
@@ -189,7 +185,5 @@ GarageVehicles = [
     ["TFC_CH146444_dynamicLoadout_F", 5, -1, "CAS Griffon", "air", {}, {}],
 
     ["TFC_CH146402_unarmed_F", 5, -1, "Griffon w/ M134 armament", "air", {}, {}]
-
-
 
 ];

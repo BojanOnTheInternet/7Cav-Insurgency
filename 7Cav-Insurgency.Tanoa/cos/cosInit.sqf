@@ -36,8 +36,8 @@ COScars = false;// Spawn Cars
 COSparked = false;// Spawn parked cars
 
 // Types of units that will be spawned as civilians.
-COScivPool =["LOP_CHR_Civ_Worker_02","LOP_CHR_Civ_Woodlander_04","LOP_CHR_Civ_Villager_02","LOP_CHR_Civ_Rocker_02","LOP_CHR_Civ_Profiteer_01","LOP_CHR_Civ_Priest_01","LOP_CHR_Civ_Citizen_02"];	
-COSmotPool =["LOP_CHR_Civ_Hatchback","LOP_CHR_Civ_Landrover","LOP_CHR_Civ_Offroad","LOP_CHR_Civ_UAZ","LOP_CHR_Civ_UAZ_Open"];
+COScivPool =["LOP_AFR_Civ_Man_01","LOP_AFR_Civ_Man_01_S","LOP_AFR_Civ_Man_02","LOP_AFR_Civ_Man_02_S","LOP_AFR_Civ_Man_03","LOP_AFR_Civ_Man_03_S","LOP_AFR_Civ_Man_04"];	
+COSmotPool =["LOP_AFR_Civ_Hatchback","LOP_AFR_Civ_Landrover","LOP_AFR_Civ_Offroad","LOP_AFR_Civ_UAZ","LOP_AFR_Civ_UAZ_Open"];
 
 COSmaxGrps = 10; //Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
 
@@ -78,7 +78,7 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=10;
+_randomisation = 3;
 	if (_houses <= 10) 
 		then {
 	_civilians=3+ round(random _randomisation);// Civilians spawned

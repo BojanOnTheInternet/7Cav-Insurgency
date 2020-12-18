@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6724;
+		nextID=6772;
 	};
 	class Camera
 	{
-		pos[]={7034.0034,57.339958,7251.5977};
-		dir[]={-0.8607353,-0.38033891,0.33843604};
-		up[]={-0.35399655,0.92483425,0.139189};
-		aside[]={0.3659341,3.5972334e-008,0.9306705};
+		pos[]={6999.8071,57.339958,7280.9556};
+		dir[]={-0.20753974,-0.41596454,0.88541991};
+		up[]={-0.094936982,0.90936702,0.40502638};
+		aside[]={0.97364205,-3.2153912e-007,0.22821882};
 	};
 };
 binarizationWanted=0;
@@ -116,6 +116,7 @@ addons[]=
 	"ace_captives",
 	"ace_grenades",
 	"rhsusf_sounds",
+	"jsrs_soundmod_rhs_usf_weapons",
 	"rhs_c_weapons",
 	"ace_nightvision",
 	"ace_flashlights",
@@ -130,6 +131,7 @@ addons[]=
 	"ace_tripod",
 	"ace_atragmx",
 	"ace_kestrel4500",
+	"real_uniform_unlock",
 	"acre_main",
 	"ace_goggles",
 	"ace_gforces",
@@ -145,7 +147,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=92;
+		items=93;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -715,59 +717,65 @@ class AddonsMetaData
 		};
 		class Item83
 		{
+			className="real_uniform_unlock";
+			name="Real Uniform Unlock";
+			author="amartyn";
+		};
+		class Item84
+		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item84
+		class Item85
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item85
+		class Item86
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item86
+		class Item87
 		{
 			className="rhsusf_main";
 			name="rhsusf_main";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item87
+		class Item88
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item88
+		class Item89
 		{
 			className="cav_markers";
 			name="7th Cavalry Addon - Markers";
 			author="7th Cavalry S3 Mod Team";
 			url="http://7cav.us";
 		};
-		class Item89
+		class Item90
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item90
+		class Item91
 		{
 			className="CUP_Editor_Structures_Config";
 			name="CUP_Editor_Structures_Config";
 		};
-		class Item91
+		class Item92
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
@@ -47048,7 +47056,7 @@ class Mission
 			a=50;
 			b=50;
 			id=7205;
-			atlOffset=0.17334008;
+			atlOffset=0.059500456;
 		};
 		class Item33
 		{
@@ -47740,7 +47748,7 @@ class Mission
 			a=50;
 			b=50;
 			id=7263;
-			atlOffset=0.27733397;
+			atlOffset=0.016737938;
 		};
 		class Item91
 		{
