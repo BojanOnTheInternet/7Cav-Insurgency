@@ -157,7 +157,7 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 	_information=[_civilians,_vehicles,_parked,_roadPosArray];
 	_popVar=format["population%1",_foo];
 	server setvariable [_popVar,_information];
-	
+		
 actTrigger = {
 	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
 		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50) exitWith {true};

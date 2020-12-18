@@ -78,36 +78,36 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=10;
+_randomisation=2;
 	if (_houses <= 10) 
 		then {
-	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=0;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};		
  	if (_houses <= 30 and _houses > _randomisation) 
 		then {
-	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 70 and _houses > 30) 
 		then {
-	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
 			
  	if (_houses <= 140 and _houses > 70) 
 		then {
-	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=3;// Parked Vehicles Spawned
 			};
  	if (_houses > 140) 
 		then {
-	_civilians=3+ round(random _randomisation);// Civilians spawned
+	_civilians=2+ round(random _randomisation);// Civilians spawned
 	_vehicles=1;// Moving Vehicles Spawned
 	_parked=1;// Parked Vehicles Spawned
 			};
@@ -157,7 +157,7 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 	_information=[_civilians,_vehicles,_parked,_roadPosArray];
 	_popVar=format["population%1",_foo];
 	server setvariable [_popVar,_information];
-	
+		
 actTrigger = {
 	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
 		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50) exitWith {true};

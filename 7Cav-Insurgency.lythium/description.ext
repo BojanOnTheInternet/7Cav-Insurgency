@@ -128,7 +128,7 @@ class Params {
 		title="Number of Caches To Hunt";
 		values[]={2,4,6,8,10,12};
 		texts[]={"2","4","6 (Default)","8","10","12"};
-		default=3;
+		default=6;
 	};
 	class intelItems {
 	//paramsArray[2]
