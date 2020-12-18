@@ -157,6 +157,12 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 	_popVar=format["population%1",_foo];
 	server setvariable [_popVar,_information];
 		
+actTrigger = {
+	if(triggerActivated thisTrigger || {this && {(count allUnits < unitCap && _x distance thisTrigger >  300)}}) then {
+		if(vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50) exitWith {true};
+	};
+};
+
 // Create a trigger over town	
 		_trigger = createTrigger ["EmptyDetector",_pos]; 
 		_trigger setTriggerArea [(COS_distance+_sizeX),(COS_distance+_sizeY),0,FALSE]; 
@@ -164,9 +170,9 @@ _roadlist=_roadlist call BIS_fnc_arrayShuffle;
 		_trigger setTriggerTimeout [1, 1, 1, true];
 			if _aerielActivation // Set whether units above 50m high will trigger
 					then {
-				_actCond="{vehicle _x in thisList && isplayer _x} count allunits > 0";
+				_actCond="{[] call actTrigger} count allunits > 0";
 						}else{
-					_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 50} count allunits > 0";
+					_actCond="{[] call actTrigger} count allunits > 0";
 						};
 		_var=format["trig%1", _markerID];
 		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";server setvariable [%2,true];",str _foo,str _var];
