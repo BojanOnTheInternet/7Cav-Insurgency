@@ -142,10 +142,10 @@ and will require manual intervation to renable. Each teleport consumes points, a
 player createDiaryRecord ["diary", ["ZEUS and EOS",
 "
 <br/><font face='EtelkaMonospacePro' size='10'>Pause AI Spawns</font>
-<br/>'unitCap = 0;'
+<br/>unitCap = 0;
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>Unpause AI Spawns</font>
-<br/>'unitCap = 150;'
+<br/>unitCap = 150;
 <br/><br/>
 <br/><font face='EtelkaMonospacePro' size='10'>You may set this to whatever you like, but 0 will prevent new AI from spawning and anything over 150 will allow for bad frames.</font>
 <br/><br/>
