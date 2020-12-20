@@ -76,7 +76,7 @@ _tempArray=[];
 // ADD CLASSNAMES 
 	if (_faction==5) then {
 	_InfPool=	["rhs_vdv_sergeant","rhs_vdv_aa","rhs_vdv_at","rhs_vdv_RShG2","rhs_vdv_grenadier","rhs_vdv_grenadier_alt","rhs_vdv_medic","rhs_vdv_machinegunner"];	
-	_ArmPool=	["rhs_btr80a_vdv","rhs_bmd4ma_vdv","rhs_brm1k_vdv","rhs_bmp2k_vdv","rhs_t90sm_tv","rhs_t14_tv","rhs_t90a_tv"];
+	_ArmPool=	["rhs_btr80a_vdv","rhs_bmd4ma_vdv","rhs_brm1k_vdv","rhs_bmp2k_vdv","rhs_t90sm_tv","rhs_t90a_tv"];
 	_MotPool=	["rhsgref_BRDM2_HQ_vdv","rhs_tigr_m_3camo_vdv"];
 	_ACHPool=	["RHS_Ka52_vvsc"];
 	_CHPool=	[];
