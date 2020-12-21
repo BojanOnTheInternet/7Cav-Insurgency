@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10822;
+		nextID=10875;
 	};
 	class Camera
 	{
-		pos[]={11804.029,61.571938,2481.8911};
-		dir[]={0.41445202,-0.46578833,-0.78186411};
-		up[]={0.21816088,0.8848846,-0.41155791};
-		aside[]={-0.8835578,1.0865624e-006,-0.4683592};
+		pos[]={13747.536,118.46932,9238.2002};
+		dir[]={-0.45273024,-0.28016633,-0.8464973};
+		up[]={-0.13213265,0.95994943,-0.24705678};
+		aside[]={-0.88180977,-3.9697625e-008,0.47161737};
 	};
 };
 binarizationWanted=0;
@@ -1698,7 +1698,7 @@ class Mission
 						};
 					};
 					id=5997;
-					atlOffset=-0.24187088;
+					atlOffset=-0.25607872;
 				};
 				class Item1
 				{
@@ -2339,7 +2339,7 @@ class Mission
 				};
 			};
 			id=5996;
-			atlOffset=-130.55331;
+			atlOffset=-129.99602;
 		};
 		class Item2
 		{
@@ -29314,7 +29314,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11836.114,27.03771,2456.3694};
-						angles[]={-0,3.1466665,0.00034526698};
+						angles[]={0,3.1466665,0.00034526698};
 					};
 					side="Empty";
 					flags=4;
@@ -29325,6 +29325,7 @@ class Mission
 					};
 					id=8456;
 					type="rhsusf_M1239_M2_socom_d";
+					atlOffset=-1.7166138e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29519,7 +29520,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11831.601,26.9149,2455.2766};
-						angles[]={-0,3.154582,0.00059801998};
+						angles[]={0,3.154582,0.00059801998};
 					};
 					side="Empty";
 					flags=4;
@@ -29530,7 +29531,7 @@ class Mission
 					};
 					id=8457;
 					type="rhsusf_M1238A1_M2_socom_d";
-					atlOffset=1.9073486e-006;
+					atlOffset=-0.00017929077;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29795,7 +29796,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={11841.096,27.047325,2456.4023};
-										angles[]={-0,3.1286421,0.0071596238};
+										angles[]={0,3.1286421,0.0071596238};
 									};
 									side="Empty";
 									flags=4;
@@ -29807,7 +29808,7 @@ class Mission
 									};
 									id=8455;
 									type="rhsusf_M1239_M2_Deploy_socom_d";
-									atlOffset=1.9073486e-006;
+									atlOffset=-4.5776367e-005;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -29998,15 +29999,15 @@ class Mission
 								};
 							};
 							id=8454;
-							atlOffset=1.9073486e-006;
+							atlOffset=-4.5776367e-005;
 						};
 					};
 					id=8453;
-					atlOffset=1.9073486e-006;
+					atlOffset=-4.5776367e-005;
 				};
 			};
 			id=8458;
-			atlOffset=0.0035495758;
+			atlOffset=0.0035324097;
 		};
 	};
 };
