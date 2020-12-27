@@ -8,7 +8,7 @@ class EditorData
 	toggles=581;
 	class ItemIDProvider
 	{
-		nextID=8459;
+		nextID=8461;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10875;
+		nextID=10981;
 	};
 	class Camera
 	{
-		pos[]={13747.536,118.46932,9238.2002};
-		dir[]={-0.45273024,-0.28016633,-0.8464973};
-		up[]={-0.13213265,0.95994943,-0.24705678};
-		aside[]={-0.88180977,-3.9697625e-008,0.47161737};
+		pos[]={11896.841,38.602131,2274.3279};
+		dir[]={-0.570427,-0.53758192,-0.62099242};
+		up[]={-0.36367208,0.84320825,-0.39590895};
+		aside[]={-0.73645818,-4.9825758e-008,0.67649084};
 	};
 };
 binarizationWanted=0;
@@ -73,6 +73,7 @@ addons[]=
 	"ace_tripod",
 	"ace_atragmx",
 	"ace_kestrel4500",
+	"cav_alpha_characters",
 	"A3_Characters_F",
 	"real_uniform_unlock",
 	"acre_main",
@@ -113,7 +114,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -394,210 +395,217 @@ class AddonsMetaData
 		};
 		class Item40
 		{
+			className="cav_alpha_characters";
+			name="7th Cavalry Addon - Alpha Characters";
+			author="7th Cavalry S3 Mod Team";
+			url="http://7cav.us";
+		};
+		class Item41
+		{
 			className="real_uniform_unlock";
 			name="Real Uniform Unlock";
 			author="amartyn";
 		};
-		class Item41
+		class Item42
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item44
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item45
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item46
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item47
 		{
 			className="cav_markers";
 			name="7th Cavalry Addon - Markers";
 			author="7th Cavalry S3 Mod Team";
 			url="http://7cav.us";
 		};
-		class Item47
+		class Item48
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item51
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item52
 		{
 			className="rhsusf_c_m113";
 			name="M113A3 APC";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
+		class Item53
 		{
 			className="rhsusf_c_HEMTT_A4";
 			name="HEMMTT A4 Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item53
+		class Item54
 		{
 			className="rhsusf_c_MATV";
 			name="MATV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item54
+		class Item55
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item55
+		class Item56
 		{
 			className="rhsusf_c_Caiman";
 			name="Caiman MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item57
 		{
 			className="rhsusf_c_RG33L";
 			name="RG33L MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item57
+		class Item58
 		{
 			className="FIR_A10C_F";
 			name="FIR_A10C_F";
 		};
-		class Item58
+		class Item59
 		{
 			className="rhsusf_c_himars";
 			name="M142 HIMARS";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item62
 		{
 			className="A3_Supplies_F_Enoch";
 			name="Arma 3 Enoch - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item63
 		{
 			className="rhsusf_c_mrzr";
 			name="MRZR";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item63
+		class Item64
 		{
 			className="rhsusf_c_M1239";
 			name="SOCOM AUV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item64
+		class Item65
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item66
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item67
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item67
+		class Item68
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item69
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item69
+		class Item70
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item70
+		class Item71
 		{
 			className="rhsusf_c_RG33";
 			name="SOCOM 4X4 MRAP";
@@ -19207,8 +19215,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11888.251,24.972612,2297.5078};
-										angles[]={0.0058796932,4.6221595,6.2808695};
+										position[]={11888.251,24.972582,2297.5081};
+										angles[]={0.0058817598,4.6221552,6.2808642};
 									};
 									side="West";
 									flags=6;
@@ -19219,12 +19227,50 @@ class Mission
 										description="FAC Team Leader @INFIDEL-1";
 										isPlayable=1;
 									};
-									id=8436;
-									type="Cav_B_B_Atlas_Medic_TeamLeader_F";
-									atlOffset=3.0517578e-005;
+									id=8459;
+									type="Cav_B_A_JFO_F";
+									atlOffset=1.9073486e-006;
 									class CustomAttributes
 									{
 										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=2;
+												};
+											};
+										};
+										class Attribute2
 										{
 											property="speaker";
 											expression="_this setspeaker _value;";
@@ -19243,7 +19289,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute1
+										class Attribute3
 										{
 											property="pitch";
 											expression="_this setpitch _value;";
@@ -19262,7 +19308,26 @@ class Mission
 												};
 											};
 										};
-										nAttributes=2;
+										class Attribute4
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD',_value,true]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=5;
 									};
 								};
 								class Item1
@@ -19270,8 +19335,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11888.082,24.987679,2295.0134};
-										angles[]={0.0058796932,4.6057882,6.2808695};
+										position[]={11888.082,24.987652,2295.0129};
+										angles[]={0.0058817598,4.6057844,6.2808642};
 									};
 									side="West";
 									flags=4;
@@ -19281,12 +19346,50 @@ class Mission
 										description="FAC Observer";
 										isPlayable=1;
 									};
-									id=8437;
-									type="Cav_B_B_Atlas_Medic_TeamLeader_F";
-									atlOffset=3.2424927e-005;
+									id=8460;
+									type="Cav_B_A_JFO_F";
+									atlOffset=1.9073486e-006;
 									class CustomAttributes
 									{
 										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=2;
+												};
+											};
+										};
+										class Attribute2
 										{
 											property="speaker";
 											expression="_this setspeaker _value;";
@@ -19305,7 +19408,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute1
+										class Attribute3
 										{
 											property="pitch";
 											expression="_this setpitch _value;";
@@ -19324,7 +19427,26 @@ class Mission
 												};
 											};
 										};
-										nAttributes=2;
+										class Attribute4
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD',_value,true]";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+										nAttributes=5;
 									};
 								};
 							};
@@ -19332,7 +19454,7 @@ class Mission
 							{
 							};
 							id=7804;
-							atlOffset=3.0517578e-005;
+							atlOffset=1.9073486e-006;
 						};
 						class Item2
 						{
@@ -19676,7 +19798,7 @@ class Mission
 						};
 					};
 					id=6444;
-					atlOffset=0.043319702;
+					atlOffset=0.043312073;
 				};
 				class Item4
 				{
@@ -24308,7 +24430,7 @@ class Mission
 				};
 			};
 			id=6361;
-			atlOffset=-0.040185928;
+			atlOffset=-0.040187836;
 		};
 		class Item3
 		{
@@ -28699,18 +28821,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11883.625,26.446527,2296.3574};
-				angles[]={0.0023417152,0.0071073337,0.00119604};
+				position[]={11883.625,26.44668,2296.3577};
+				angles[]={0.0023387412,0.0071034902,0.0012042772};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
+				name="infidel_rzr";
 			};
 			id=8433;
 			type="rhsusf_mrzr4_d";
-			atlOffset=-0.12015343;
+			atlOffset=-0.12000084;
 			class CustomAttributes
 			{
 				class Attribute0

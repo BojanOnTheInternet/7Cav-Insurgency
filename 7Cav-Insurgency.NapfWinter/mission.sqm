@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=865;
+		nextID=871;
 	};
 	class LayerIndexProvider
 	{
-		nextID=772;
+		nextID=866;
 	};
 	class Camera
 	{
-		pos[]={5119.2007,90.312622,4507.085};
-		dir[]={0.95045674,-0.30534253,0.058901042};
-		up[]={0.30479378,0.9522289,0.018887827};
-		aside[]={0.061853722,-7.8651647e-007,-0.99812114};
+		pos[]={5173.5518,90.054955,4444.2861};
+		dir[]={-0.25993162,-0.63803387,0.72486973};
+		up[]={-0.21537368,0.76998568,0.60060918};
+		aside[]={0.94134969,-5.478505e-007,0.33755887};
 	};
 };
 binarizationWanted=0;
@@ -84,6 +84,7 @@ addons[]=
 	"ace_tripod",
 	"ace_atragmx",
 	"ace_kestrel4500",
+	"cav_alpha_characters",
 	"A3_Characters_F",
 	"real_uniform_unlock",
 	"acre_main",
@@ -109,7 +110,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -491,105 +492,112 @@ class AddonsMetaData
 		};
 		class Item55
 		{
+			className="cav_alpha_characters";
+			name="7th Cavalry Addon - Alpha Characters";
+			author="7th Cavalry S3 Mod Team";
+			url="http://7cav.us";
+		};
+		class Item56
+		{
 			className="real_uniform_unlock";
 			name="Real Uniform Unlock";
 			author="amartyn";
 		};
-		class Item56
+		class Item57
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item57
+		class Item58
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item58
+		class Item59
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item59
+		class Item60
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="cav_markers";
 			name="7th Cavalry Addon - Markers";
 			author="7th Cavalry S3 Mod Team";
 			url="http://7cav.us";
 		};
-		class Item61
+		class Item62
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item63
 		{
 			className="RCOMM_wnato_armor";
 			name="RCOMM_wnato_armor";
 		};
-		class Item63
+		class Item64
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item65
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item65
+		class Item66
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item66
+		class Item67
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item68
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item69
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item69
+		class Item70
 		{
 			className="rhsusf_c_M1239";
 			name="SOCOM AUV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item70
+		class Item71
 		{
 			className="rhsusf_c_RG33";
 			name="SOCOM 4X4 MRAP";
@@ -870,7 +878,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=145;
+		items=147;
 		class Item0
 		{
 			dataType="Layer";
@@ -6979,11 +6987,11 @@ class Mission
 						};
 					};
 					id=281;
-					atlOffset=-0.24098969;
+					atlOffset=-0.24860382;
 				};
 			};
 			id=38;
-			atlOffset=99.425224;
+			atlOffset=98.980148;
 		};
 		class Item2
 		{
@@ -23303,11 +23311,11 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={5157.147,71.590469,4461.8286};
-										angles[]={0,6.1959748,0};
+										position[]={5167.334,71.468567,4437.6597};
+										angles[]={0,6.195971,0};
 									};
 									side="West";
-									flags=7;
+									flags=6;
 									class Attributes
 									{
 										init="call{this setgroupID[""INFADEL-1""];}";
@@ -23315,8 +23323,9 @@ class Mission
 										description="FAC Team Leader @INFIDEL-1";
 										isPlayable=1;
 									};
-									id=443;
-									type="rhsusf_army_ocp_jfo";
+									id=869;
+									type="Cav_B_A_JFO_F";
+									atlOffset=-7.6293945e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -23365,19 +23374,20 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={5155.751,71.590469,4461.8442};
-										angles[]={0,6.1610684,0};
+										position[]={5166.1299,71.459961,4437.4907};
+										angles[]={0,6.1610646,0};
 									};
 									side="West";
-									flags=5;
+									flags=4;
 									class Attributes
 									{
 										rank="SERGEANT";
 										description="FAC Observer";
 										isPlayable=1;
 									};
-									id=444;
-									type="rhsusf_army_ocp_jfo";
+									id=870;
+									type="Cav_B_A_JFO_F";
+									atlOffset=-7.6293945e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -23426,9 +23436,11 @@ class Mission
 							{
 							};
 							id=442;
+							atlOffset=-7.6293945e-006;
 						};
 					};
 					id=438;
+					atlOffset=-0.060951233;
 				};
 				class Item4
 				{
@@ -28039,7 +28051,7 @@ class Mission
 				};
 			};
 			id=350;
-			atlOffset=-0.069480896;
+			atlOffset=-0.077095032;
 		};
 		class Item3
 		{
@@ -30872,7 +30884,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5164.5938,74.815132,4510.1538};
-						angles[]={-0,6.102335,0};
+						angles[]={0,6.102335,0};
 					};
 					side="Empty";
 					flags=4;
@@ -31078,7 +31090,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5173.7163,74.695198,4512.8833};
-						angles[]={-0,6.1282749,0};
+						angles[]={0,6.1282749,0};
 					};
 					side="Empty";
 					flags=4;
@@ -31339,7 +31351,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5169.4917,74.815132,4511.0103};
-						angles[]={-0,6.1203594,0};
+						angles[]={0,6.1203594,0};
 					};
 					side="Empty";
 					flags=4;
@@ -31540,6 +31552,197 @@ class Mission
 				};
 			};
 			id=864;
+		};
+		class Item145
+		{
+			dataType="Layer";
+			name="BASE_3";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="THINGS (DYNAMIC)";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5158.7266,72.395256,4438.2871};
+								angles[]={6.2322311,3.1066008,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								ammo=0.25855634;
+								init="call{null = [this] execVM ""scripts\vehicle\init\Base_Arsenal.sqf"";}";
+								dynamicSimulation=1;
+							};
+							id=867;
+							type="B_supplyCrate_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_arsenal_attribute";
+									expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"ARRAY"
+															};
+														};
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					id=866;
+				};
+			};
+			id=865;
+		};
+		class Item146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5160.0322,72.919365,4435.0962};
+				angles[]={6.2322388,1.4773164,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
+				name="infidel_rzr";
+				textures="olive";
+			};
+			id=868;
+			type="rhsusf_mrzr4_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_mk17_STD"",""rhs_weap_XM2010_sa"",""rhs_weap_m24sws_d"",""rhs_weap_m72a7""],[1,1,1,1]],[[""rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red"",""150Rnd_556x45_Drum_Sand_Mag_Tracer_F"",""rhsusf_5Rnd_300winmag_xm2010"",""rhsusf_5Rnd_762x51_m118_special_Mag"",""rhs_mag_20Rnd_SCAR_762x51_m62_tracer"",""9Rnd_45ACP_Mag"",""SmokeShell"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue"",""rhs_mag_m67"",""ClaymoreDirectionalMine_Remote_Mag""],[18,1,30,30,8,2,6,5,5,5,5,5,10,6]],[[""ACRE_VHF30108SPIKE"",""ACRE_VHF30108MAST"",""ACE_CableTie"",""ACE_bodyBag"",""MineDetector"",""ACE_UAVBattery"",""ACE_M26_Clacker"",""ACE_salineIV_500"",""ACE_salineIV_250"",""optic_AMS"",""H_Cap_tan_specops_US"",""ACE_Tripod"",""rhsusf_acc_premier_anpvs27"",""ACE_SpraypaintGreen"",""ACE_bloodIV_500"",""ACE_ATragMX""],[1,1,4,1,1,1,1,10,5,1,2,1,1,1,2,1]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_define_mainset";
+					expression="_this setVariable ['rhs_define_mainset', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ODA_MRZR_D";
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 };
