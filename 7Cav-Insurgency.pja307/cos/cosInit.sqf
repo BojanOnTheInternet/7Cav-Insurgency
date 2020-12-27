@@ -1,51 +1,45 @@
 /*
- Civilian Occupation System (COS)
- By BangaBob v0.5
- 
- null=[] execVM "cos/cosInit.sqf";
- 
- IMPORTANT: BEFORE PROCEEDING ADD AN OBJECT NAMED SERVER INTO THE EDITOR.
- 
- To edit population of zones browse to line 95
  Open COS/AddScript_Unit.sqf to apply scripts to spawned units.
  Open COS/AddScript_Vehicle.sqf to apply scripts to spawned vehicles.
  To get Array of COS markers use _allMarkers=SERVER getvariable "COSmarkers";
 */
 
-if (isnil "SERVER") then {Hint "You must ADD a object named SERVER";Player Sidechat "You must ADD a object named SERVER";}else{
+if (isnil "SERVER") then {Hint "You must ADD a object named SERVER";
+	Player Sidechat "You must ADD a object named SERVER";
+} else {
 if (isServer) then {
 IF (!isnil ("COScomplete")) then {Hint "Check your call. COS was called twice!";}else{
 
 COS_distance = 1000; //Set spawn distance
 _aerielActivation = false; // Set if flying units can activate civilian Zones
 
-blackListTowns = ["sagonisi"];// Remove towns from COS
+blackListTowns = ["sagonisi"]; // Remove towns from COS
 
-whiteListMkrs=[];// Add Custom Markers for COS to populate 
+whiteListMkrs = []; // Add Custom Markers for COS to populate 
 
-DefaultSide = Civilian;// Set side of units spawned
+DefaultSide = Civilian; // Set side of units spawned
 
-_showMarker = false;// Show COS markers on map
+_showMarker = false; // Show COS markers on map
 
-showTownLabel = false;// Show town information when entering COS zones
+showTownLabel = false; // Show town information when entering COS zones
 
-debugCOS=false;// Show spawned units on the map
+debugCOS = false; // Show spawned units on the map
 
-COSpedestrians = false; //Spawn pedestrians
-COScars = false;// Spawn Cars
-COSparked = false;// Spawn parked cars
+COSpedestrians = true; //Spawn pedestrians
+COScars = false; // Spawn Cars
+COSparked = false; // Spawn parked cars
 
 // Types of units that will be spawned as civilians.
-COScivPool =["LOP_CHR_Civ_Worker_02","LOP_CHR_Civ_Woodlander_04","LOP_CHR_Civ_Villager_02","LOP_CHR_Civ_Rocker_02","LOP_CHR_Civ_Profiteer_01","LOP_CHR_Civ_Priest_01","LOP_CHR_Civ_Citizen_02"];	
-COSmotPool =["LOP_CHR_Civ_Hatchback","LOP_CHR_Civ_Landrover","LOP_CHR_Civ_Offroad","LOP_CHR_Civ_UAZ","LOP_CHR_Civ_UAZ_Open"];
+COScivPool = ["LOP_Tak_Civ_Man_06","LOP_Tak_Civ_Man_08","LOP_Tak_Civ_Man_15","LOP_Tak_Civ_Man_16","LOP_Tak_Civ_Man_09","LOP_Tak_Civ_Man_13","LOP_Tak_Civ_Man_07"];	
+COSmotPool = ["LOP_Tak_Civ_Hatchback","LOP_Tak_Civ_Landrover","LOP_Tak_Civ_Offroad","LOP_Tak_Civ_UAZ","LOP_Tak_Civ_UAZ_Open"];
 
 COSmaxGrps = 10; //Set Maximum group limit for COS at any one time (If limit is hit then civilians will be placed into a single group for each town)
 
 // Browse to line 81 to customise number of civilians that spawn.
 private ["_sizeX","_sizeY","_name","_pos","_mSize","_rad","_civilians","_vehicles","_parked","_actCond"];
 breakPatrol_FNC=compile preprocessFileLineNumbers "cos\patrolFnc.sqf";unitScript_FNC=compile preprocessFileLineNumbers "cos\addScript_Unit.sqf";vehScript_FNC=compile preprocessFileLineNumbers "cos\addScript_Vehicle.sqf";
-COScomplete=false;publicvariable "COScomplete";publicvariable "COS_distance";populating_COS=false;
-cosMkrArray=[];
+COScomplete = false;publicvariable "COScomplete";publicvariable "COS_distance";populating_COS=false;
+cosMkrArray = [];
 server setvariable ["cosGrpCount",0];//Set global group count
 _rad = 50;// Radius increase increment for finding minimum spawn points
 _slack = 2;// Additional spawn points
@@ -78,7 +72,7 @@ if (({_name==_x} count blackListTowns)>0 OR (_name == "")) then {}else{
 
 		
 // Customise population by number of houses
-_randomisation=10;
+_randomisation=3;
 	if (_houses <= 10) 
 		then {
 	_civilians=3+ round(random _randomisation);// Civilians spawned
@@ -131,22 +125,21 @@ _randomisation=10;
 	
 
 // Get positions until we have enough for the population
- _roadlist = _pos nearObjects ["House", _mSize];
- _minPositions=(_civilians+_vehicles+_parked+_slack);
- if (count _roadlist < _minPositions) 
-	then {
-		while {count _roadlist < _minPositions} do 
-			{
-			_rad=_rad+_rad;
-			_roadlist = _pos nearRoads (_mSize+_rad);
-			sleep 0.1;
-			};
-		};
+ //_roadlist = _pos nearRoads (_mSize);
+ _roadlist = [];
+ _houselist = nearestObjects [_pos, ["Building","House"], 1000];
+
+ {
+	 _roadlist pushBack getPos _x;
+	 
+ } forEach _houselist;
+
+ _minPositions = (_civilians + _vehicles + _parked + _slack);
 		
 // Sort a position for each civilian
 _roadPosArray = [];
 _roadPosArray resize _minPositions;
-_roadlist=_roadlist call BIS_fnc_arrayShuffle;
+_roadlist = _roadlist call BIS_fnc_arrayShuffle;
 
  for "_n" from 0 to _minPositions do
 		{
@@ -182,7 +175,7 @@ actTrigger = {
 		_trigger setTriggerInterval 3;
 	};
 
-}foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCityCapital","NameCity","NameVillage","CityCenter"], 25000]) +whiteListMkrs;
+}foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCity","NameCityCapital","NameLocal","NameMarine","NameVillage","StrongpointArea"], 25000]) + whiteListMkrs;
 
 // All towns have been saved into cos Marker Array.
 SERVER setvariable ["COSmarkers",cosMkrArray,true];
