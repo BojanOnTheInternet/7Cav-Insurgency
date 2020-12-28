@@ -8,11 +8,7 @@ class EditorData
 	toggles=1637;
 	class ItemIDProvider
 	{
-<<<<<<< Updated upstream
-		nextID=8461;
-=======
 		nextID=8732;
->>>>>>> Stashed changes
 	};
 	class MarkerIDProvider
 	{
@@ -20,16 +16,6 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< Updated upstream
-		nextID=10981;
-	};
-	class Camera
-	{
-		pos[]={11896.841,38.602131,2274.3279};
-		dir[]={-0.570427,-0.53758192,-0.62099242};
-		up[]={-0.36367208,0.84320825,-0.39590895};
-		aside[]={-0.73645818,-4.9825758e-008,0.67649084};
-=======
 		nextID=11543;
 	};
 	class Camera
@@ -38,7 +24,6 @@ class EditorData
 		dir[]={-0.18521337,-0.58491975,-0.7896868};
 		up[]={-0.13357823,0.81104255,-0.56953001};
 		aside[]={-0.97359991,1.1594966e-007,0.22834909};
->>>>>>> Stashed changes
 	};
 };
 binarizationWanted=0;
@@ -134,11 +119,7 @@ class AddonsMetaData
 {
 	class List
 	{
-<<<<<<< Updated upstream
-		items=72;
-=======
 		items=75;
->>>>>>> Stashed changes
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -19369,13 +19350,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={11888.251,24.972582,2297.5081};
-										angles[]={0.0058817598,4.6221552,6.2808642};
-=======
 										position[]={11956.25,25.533159,2306.05};
 										angles[]={0.035011306,1.5150156,6.273499};
->>>>>>> Stashed changes
 									};
 									side="West";
 									flags=6;
@@ -19386,55 +19362,11 @@ class Mission
 										description="Recon Team Leader @VIKING-1";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=8459;
-									type="Cav_B_A_JFO_F";
-									atlOffset=1.9073486e-006;
-=======
 									id=7808;
 									type="rhsusf_army_ocp_riflemanl";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
-										{
-											property="ace_isMedic";
-											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=2;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=2;
-												};
-											};
-										};
-										class Attribute2
 										{
 											property="speaker";
 											expression="_this setspeaker _value;";
@@ -19453,7 +19385,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute3
+										class Attribute1
 										{
 											property="pitch";
 											expression="_this setpitch _value;";
@@ -19472,26 +19404,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute4
-										{
-											property="ace_isEOD";
-											expression="_this setVariable ['ACE_isEOD',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=5;
+										nAttributes=2;
 									};
 								};
 								class Item1
@@ -19499,13 +19412,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={11888.082,24.987652,2295.0129};
-										angles[]={0.0058817598,4.6057844,6.2808642};
-=======
 										position[]={11954.25,25.578781,2305.175};
 										angles[]={0.027963273,1.5771265,6.2805333};
->>>>>>> Stashed changes
 									};
 									side="West";
 									flags=4;
@@ -19514,55 +19422,11 @@ class Mission
 										description="Recon Rifleman";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=8460;
-									type="Cav_B_A_JFO_F";
-									atlOffset=1.9073486e-006;
-=======
 									id=7809;
 									type="rhsusf_army_ocp_riflemanl";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
-										{
-											property="ace_isMedic";
-											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=2;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="ace_isEngineer";
-											expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=2;
-												};
-											};
-										};
-										class Attribute2
 										{
 											property="speaker";
 											expression="_this setspeaker _value;";
@@ -19581,7 +19445,7 @@ class Mission
 												};
 											};
 										};
-										class Attribute3
+										class Attribute1
 										{
 											property="pitch";
 											expression="_this setpitch _value;";
@@ -19600,47 +19464,10 @@ class Mission
 												};
 											};
 										};
-										class Attribute4
-										{
-											property="ace_isEOD";
-											expression="_this setVariable ['ACE_isEOD',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=5;
+										nAttributes=2;
 									};
 								};
-<<<<<<< Updated upstream
-							};
-							class Attributes
-							{
-							};
-							id=7804;
-							atlOffset=1.9073486e-006;
-						};
-						class Item2
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=5;
-								class Item0
-=======
 								class Item2
->>>>>>> Stashed changes
 								{
 									dataType="Object";
 									class PositionInfo
@@ -19981,11 +19808,7 @@ class Mission
 						};
 					};
 					id=6444;
-<<<<<<< Updated upstream
-					atlOffset=0.043312073;
-=======
 					atlOffset=0.13509941;
->>>>>>> Stashed changes
 				};
 				class Item4
 				{
@@ -24591,11 +24414,7 @@ class Mission
 				};
 			};
 			id=6361;
-<<<<<<< Updated upstream
-			atlOffset=-0.040187836;
-=======
 			atlOffset=1.4509354;
->>>>>>> Stashed changes
 		};
 		class Item3
 		{
@@ -28855,28 +28674,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-<<<<<<< Updated upstream
-				position[]={11883.625,26.44668,2296.3577};
-				angles[]={0.0023387412,0.0071034902,0.0012042772};
-=======
 				position[]={11965.998,26.442856,2339.0037};
 				angles[]={0.022097537,0.0071073337,0.018419534};
->>>>>>> Stashed changes
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
-				name="infidel_rzr";
 			};
 			id=8433;
 			type="rhsusf_mrzr4_d";
-<<<<<<< Updated upstream
-			atlOffset=-0.12000084;
-=======
 			atlOffset=-0.0005607605;
->>>>>>> Stashed changes
 			class CustomAttributes
 			{
 				class Attribute0

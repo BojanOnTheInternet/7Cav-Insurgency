@@ -8,20 +8,6 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-<<<<<<< Updated upstream
-		nextID=871;
-	};
-	class LayerIndexProvider
-	{
-		nextID=866;
-	};
-	class Camera
-	{
-		pos[]={5173.5518,90.054955,4444.2861};
-		dir[]={-0.25993162,-0.63803387,0.72486973};
-		up[]={-0.21537368,0.76998568,0.60060918};
-		aside[]={0.94134969,-5.478505e-007,0.33755887};
-=======
 		nextID=869;
 	};
 	class LayerIndexProvider
@@ -34,7 +20,6 @@ class EditorData
 		dir[]={0.42291728,-0.43185076,0.79676414};
 		up[]={0.20250511,0.90190363,0.38151261};
 		aside[]={0.88336265,-1.2055098e-006,-0.46888217};
->>>>>>> Stashed changes
 	};
 };
 binarizationWanted=0;
@@ -901,7 +886,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=147;
+		items=145;
 		class Item0
 		{
 			dataType="Layer";
@@ -23523,29 +23508,18 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={5167.334,71.468567,4437.6597};
-										angles[]={0,6.195971,0};
-=======
 										position[]={5169.3701,71.590469,4467.043};
->>>>>>> Stashed changes
 									};
 									side="West";
-									flags=6;
+									flags=7;
 									class Attributes
 									{
 										init="call{this setgroupID[""INFADEL-1""];}";
 										description="FAC Team Leader @INFIDEL-1";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=869;
-									type="Cav_B_A_JFO_F";
-									atlOffset=-7.6293945e-006;
-=======
 									id=865;
 									type="Cav_B_A_JFO_F";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
@@ -23594,28 +23568,17 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={5166.1299,71.459961,4437.4907};
-										angles[]={0,6.1610646,0};
-=======
 										position[]={5166.8081,71.590469,4467.0757};
->>>>>>> Stashed changes
 									};
 									side="West";
-									flags=4;
+									flags=5;
 									class Attributes
 									{
 										description="FAC Observer";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=870;
-									type="Cav_B_A_JFO_F";
-									atlOffset=-7.6293945e-006;
-=======
 									id=867;
 									type="Cav_B_A_JFO_F";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
@@ -23664,11 +23627,9 @@ class Mission
 							{
 							};
 							id=442;
-							atlOffset=-7.6293945e-006;
 						};
 					};
 					id=438;
-					atlOffset=-0.060951233;
 				};
 				class Item4
 				{
@@ -28279,7 +28240,7 @@ class Mission
 				};
 			};
 			id=350;
-			atlOffset=-0.077095032;
+			atlOffset=-0.069480896;
 		};
 		class Item3
 		{
@@ -31582,197 +31543,6 @@ class Mission
 				};
 			};
 			id=864;
-		};
-		class Item145
-		{
-			dataType="Layer";
-			name="BASE_3";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Layer";
-					name="THINGS (DYNAMIC)";
-					class Entities
-					{
-						items=1;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={5158.7266,72.395256,4438.2871};
-								angles[]={6.2322311,3.1066008,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								ammo=0.25855634;
-								init="call{null = [this] execVM ""scripts\vehicle\init\Base_Arsenal.sqf"";}";
-								dynamicSimulation=1;
-							};
-							id=867;
-							type="B_supplyCrate_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ammoBox";
-									expression="[_this,_value] call bis_fnc_initAmmoBox;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_arsenal_attribute";
-									expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"ARRAY"
-															};
-														};
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=0;
-													};
-												};
-											};
-										};
-									};
-								};
-								nAttributes=3;
-							};
-						};
-					};
-					id=866;
-				};
-			};
-			id=865;
-		};
-		class Item146
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5160.0322,72.919365,4435.0962};
-				angles[]={6.2322388,1.4773164,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
-				name="infidel_rzr";
-				textures="olive";
-			};
-			id=868;
-			type="rhsusf_mrzr4_d";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_mk17_STD"",""rhs_weap_XM2010_sa"",""rhs_weap_m24sws_d"",""rhs_weap_m72a7""],[1,1,1,1]],[[""rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red"",""150Rnd_556x45_Drum_Sand_Mag_Tracer_F"",""rhsusf_5Rnd_300winmag_xm2010"",""rhsusf_5Rnd_762x51_m118_special_Mag"",""rhs_mag_20Rnd_SCAR_762x51_m62_tracer"",""9Rnd_45ACP_Mag"",""SmokeShell"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue"",""rhs_mag_m67"",""ClaymoreDirectionalMine_Remote_Mag""],[18,1,30,30,8,2,6,5,5,5,5,5,10,6]],[[""ACRE_VHF30108SPIKE"",""ACRE_VHF30108MAST"",""ACE_CableTie"",""ACE_bodyBag"",""MineDetector"",""ACE_UAVBattery"",""ACE_M26_Clacker"",""ACE_salineIV_500"",""ACE_salineIV_250"",""optic_AMS"",""H_Cap_tan_specops_US"",""ACE_Tripod"",""rhsusf_acc_premier_anpvs27"",""ACE_SpraypaintGreen"",""ACE_bloodIV_500"",""ACE_ATragMX""],[1,1,4,1,1,1,1,10,5,1,2,1,1,1,2,1]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="rhs_define_mainset";
-					expression="_this setVariable ['rhs_define_mainset', _value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ODA_MRZR_D";
-						};
-					};
-				};
-				nAttributes=2;
-			};
 		};
 	};
 };

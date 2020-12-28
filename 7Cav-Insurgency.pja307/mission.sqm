@@ -8,11 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-<<<<<<< Updated upstream
-		nextID=8505;
-=======
 		nextID=8514;
->>>>>>> Stashed changes
 	};
 	class MarkerIDProvider
 	{
@@ -20,16 +16,6 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< Updated upstream
-		nextID=10889;
-	};
-	class Camera
-	{
-		pos[]={5302.4639,284.41144,14656.951};
-		dir[]={-0.63518876,-0.43315855,-0.63966459};
-		up[]={-0.3052412,0.90129834,-0.30739379};
-		aside[]={-0.70967674,-1.6174745e-006,0.70470428};
-=======
 		nextID=10942;
 	};
 	class Camera
@@ -38,7 +24,6 @@ class EditorData
 		dir[]={0.2136419,-0.32846797,-0.92014217};
 		up[]={0.074301586,0.94449198,-0.32002053};
 		aside[]={-0.9741832,1.042572e-007,-0.22618482};
->>>>>>> Stashed changes
 	};
 };
 binarizationWanted=0;
@@ -88,7 +73,6 @@ addons[]=
 	"ace_tripod",
 	"ace_atragmx",
 	"ace_kestrel4500",
-	"cav_alpha_characters",
 	"A3_Characters_F",
 	"real_uniform_unlock",
 	"acre_main",
@@ -133,11 +117,7 @@ class AddonsMetaData
 {
 	class List
 	{
-<<<<<<< Updated upstream
-		items=72;
-=======
 		items=75;
->>>>>>> Stashed changes
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -418,217 +398,210 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="cav_alpha_characters";
-			name="7th Cavalry Addon - Alpha Characters";
-			author="7th Cavalry S3 Mod Team";
-			url="http://7cav.us";
-		};
-		class Item41
-		{
 			className="real_uniform_unlock";
 			name="Real Uniform Unlock";
 			author="amartyn";
 		};
-		class Item42
+		class Item41
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item43
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="cav_markers";
 			name="7th Cavalry Addon - Markers";
 			author="7th Cavalry S3 Mod Team";
 			url="http://7cav.us";
 		};
-		class Item48
+		class Item47
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item48
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item49
 		{
 			className="ace_repair";
 			name="ACE3 - Repair";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item50
 		{
 			className="ace_refuel";
 			name="ACE3 - Refuel";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item51
 		{
 			className="rhsusf_c_m113";
 			name="M113A3 APC";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item53
+		class Item52
 		{
 			className="rhsusf_c_HEMTT_A4";
 			name="HEMMTT A4 Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item54
+		class Item53
 		{
 			className="rhsusf_c_MATV";
 			name="MATV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item55
+		class Item54
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item55
 		{
 			className="rhsusf_c_Caiman";
 			name="Caiman MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item57
+		class Item56
 		{
 			className="rhsusf_c_RG33L";
 			name="RG33L MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item58
+		class Item57
 		{
 			className="FIR_A10C_F";
 			name="FIR_A10C_F";
 		};
-		class Item59
+		class Item58
 		{
 			className="rhsusf_c_himars";
 			name="M142 HIMARS";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item60
+		class Item59
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item61
+		class Item60
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item62
+		class Item61
 		{
 			className="A3_Supplies_F_Enoch";
 			name="Arma 3 Enoch - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item63
+		class Item62
 		{
 			className="rhsusf_c_mrzr";
 			name="MRZR";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item64
+		class Item63
 		{
 			className="rhsusf_c_M1239";
 			name="SOCOM AUV MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item65
+		class Item64
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item66
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item68
+		class Item67
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item69
+		class Item68
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item70
+		class Item69
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item71
+		class Item70
 		{
 			className="rhsusf_c_RG33";
 			name="SOCOM 4X4 MRAP";
@@ -19304,13 +19277,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={5307.375,273.77994,14651.13};
-										angles[]={0,3.035948,0};
-=======
 										position[]={5356.1992,273.77994,14545.11};
 										angles[]={0,4.6873612,0};
->>>>>>> Stashed changes
 									};
 									side="West";
 									flags=6;
@@ -19321,13 +19289,8 @@ class Mission
 										description="Recon Team Leader @VIKING-1";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=8503;
-									type="Cav_B_A_JFO_F";
-=======
 									id=7808;
 									type="rhsusf_army_ocp_riflemanl";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
@@ -19376,13 +19339,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-<<<<<<< Updated upstream
-										position[]={5309.873,273.77994,14651};
-										angles[]={0,3.0195768,0};
-=======
 										position[]={5358.2246,273.77994,14545.923};
 										angles[]={0,4.7494678,0};
->>>>>>> Stashed changes
 									};
 									side="West";
 									flags=4;
@@ -19391,13 +19349,8 @@ class Mission
 										description="Recon Rifleman";
 										isPlayable=1;
 									};
-<<<<<<< Updated upstream
-									id=8504;
-									type="Cav_B_A_JFO_F";
-=======
 									id=7809;
 									type="rhsusf_army_ocp_riflemanl";
->>>>>>> Stashed changes
 									class CustomAttributes
 									{
 										class Attribute0
@@ -26529,93 +26482,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-<<<<<<< Updated upstream
-				position[]={5256.9912,275.81769,14647.505};
-				angles[]={0,3.1474996,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{null = [this] execVM ""scripts\vehicle\init\Base_LogiTruck.sqf"";}";
-			};
-			id=7843;
-			type="rhsusf_M1084A1P2_B_D_fmtv_usarmy";
-			atlOffset=0.0053405762;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit""],[2,4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[10,2,2,2,4]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item45
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5251.5586,275.77039,14441.478};
-				angles[]={0,4.774271,6.2812324};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
-			};
-			id=7844;
-			type="rhsusf_M977A4_BKIT_usarmy_d";
-			atlOffset=-0.018493652;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit""],[2,4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[10,2,2,2,4]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item46
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5251.375,276.13052,14647.25};
-=======
 				position[]={5256.125,276.13052,14647.25};
->>>>>>> Stashed changes
 				angles[]={0,3.1430774,0};
 			};
 			side="Empty";
@@ -28660,8 +28527,6 @@ class Mission
 		};
 		class Item172
 		{
-<<<<<<< Updated upstream
-=======
 			dataType="Object";
 			class PositionInfo
 			{
@@ -28722,7 +28587,6 @@ class Mission
 		};
 		class Item173
 		{
->>>>>>> Stashed changes
 			dataType="Layer";
 			name="Vehicle Spawner";
 			class Entities
@@ -28985,11 +28849,7 @@ class Mission
 			id=8445;
 			atlOffset=0.43334961;
 		};
-<<<<<<< Updated upstream
-		class Item177
-=======
 		class Item174
->>>>>>> Stashed changes
 		{
 			dataType="Layer";
 			name="Static";
@@ -29027,11 +28887,7 @@ class Mission
 			};
 			id=8451;
 		};
-<<<<<<< Updated upstream
-		class Item178
-=======
 		class Item175
->>>>>>> Stashed changes
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29073,11 +28929,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-<<<<<<< Updated upstream
-		class Item179
-=======
 		class Item176
->>>>>>> Stashed changes
 		{
 			dataType="Layer";
 			name="ATLAS vics";
@@ -29294,13 +29146,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-<<<<<<< Updated upstream
-						position[]={5261.0293,276.88467,14647.329};
-						angles[]={0,3.1478989,0};
-=======
 						position[]={5261.0288,276.88467,14647.33};
 						angles[]={0,3.1478932,0};
->>>>>>> Stashed changes
 					};
 					side="Empty";
 					flags=4;
@@ -29784,8 +29631,6 @@ class Mission
 			};
 			id=8501;
 		};
-<<<<<<< Updated upstream
-=======
 		class Item177
 		{
 			dataType="Object";
@@ -29881,31 +29726,19 @@ class Mission
 			id=8504;
 			type="VR_Area_01_circle_4_yellow_F";
 		};
->>>>>>> Stashed changes
 		class Item180
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-<<<<<<< Updated upstream
-				position[]={5308.5,275.35687,14646.875};
-				angles[]={0,4.7171187,0};
-=======
 				position[]={5320,275.85379,14630};
 				angles[]={0,3.1590462,0};
->>>>>>> Stashed changes
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
-<<<<<<< Updated upstream
-				name="infidel_rzr";
-			};
-			id=8502;
-			type="rhsusf_mrzr4_d";
-=======
 				textures="Tan";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
@@ -29913,7 +29746,6 @@ class Mission
 			};
 			id=8505;
 			type="rhsusf_stryker_m1126_m2_d";
->>>>>>> Stashed changes
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29931,20 +29763,12 @@ class Mission
 									"STRING"
 								};
 							};
-<<<<<<< Updated upstream
-							value="[[[[""rhs_weap_mk17_STD"",""rhs_weap_XM2010_sa"",""rhs_weap_m24sws_d"",""rhs_weap_m72a7""],[1,1,1,1]],[[""rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red"",""150Rnd_556x45_Drum_Sand_Mag_Tracer_F"",""rhsusf_5Rnd_300winmag_xm2010"",""rhsusf_5Rnd_762x51_m118_special_Mag"",""rhs_mag_20Rnd_SCAR_762x51_m62_tracer"",""9Rnd_45ACP_Mag"",""SmokeShell"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue"",""rhs_mag_m67"",""ClaymoreDirectionalMine_Remote_Mag""],[18,1,30,30,8,2,6,5,5,5,5,5,10,6]],[[""ACRE_VHF30108SPIKE"",""ACRE_VHF30108MAST"",""ACE_CableTie"",""ACE_bodyBag"",""MineDetector"",""ACE_UAVBattery"",""ACE_M26_Clacker"",""ACE_salineIV_500"",""ACE_salineIV_250"",""optic_AMS"",""H_Cap_tan_specops_US"",""ACE_Tripod"",""rhsusf_acc_premier_anpvs27"",""ACE_SpraypaintGreen"",""ACE_bloodIV_500"",""ACE_ATragMX""],[1,1,4,1,1,1,1,10,5,1,2,1,1,1,2,1]],[[],[]]],false]";
-=======
 							value="[[[[""rhs_weap_m4"",""rhs_weap_fgm148"",""rhs_weap_M136"",""FirstAidKit"",""Medikit""],[2,2,2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51"",""rhs_fgm148_magazine_AT"",""rhs_m136_mag"",""rhs_mag_M433_HEDP"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[75,11,11,2,2,20,8,4,10,4,4,10]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[8]]],false]";
->>>>>>> Stashed changes
 						};
 					};
 				};
 				class Attribute1
 				{
-<<<<<<< Updated upstream
-					property="rhs_define_mainset";
-					expression="_this setVariable ['rhs_define_mainset', _value];";
-=======
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -30640,7 +30464,6 @@ class Mission
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
->>>>>>> Stashed changes
 					class Value
 					{
 						class data
@@ -30652,9 +30475,6 @@ class Mission
 									"STRING"
 								};
 							};
-<<<<<<< Updated upstream
-							value="ODA_MRZR_D";
-=======
 							value="[[[[""rhs_weap_m4"",""rhs_weap_fgm148"",""rhs_weap_M136"",""FirstAidKit"",""Medikit""],[2,2,2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51"",""rhs_fgm148_magazine_AT"",""rhs_m136_mag"",""rhs_mag_M433_HEDP"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[75,11,11,2,2,20,8,4,10,4,4,10]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[8]]],false]";
 						};
 					};
@@ -31324,15 +31144,12 @@ class Mission
 									};
 								};
 							};
->>>>>>> Stashed changes
 						};
 					};
 				};
 				nAttributes=2;
 			};
 		};
-<<<<<<< Updated upstream
-=======
 		class Item182
 		{
 			dataType="Object";
@@ -32779,6 +32596,5 @@ class Mission
 			};
 			id=8512;
 		};
->>>>>>> Stashed changes
 	};
 };
