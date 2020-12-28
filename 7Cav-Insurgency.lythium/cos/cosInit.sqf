@@ -172,7 +172,7 @@ actTrigger = {
 		_trigAct=format ["null= [%1] execVM ""cos\cosCore.sqf"";server setvariable [%2,true];",str _foo,str _var];
 		_trigDe=format ["server setvariable [%1,false];",str _var];
 		_trigger setTriggerStatements [_actCond,_trigAct,_trigDe];
-		_trigger setTriggerInterval 3;
+		_trigger setTriggerInterval 10;
 	};
 
 }foreach (nearestLocations [getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition"), ["NameCity","NameCityCapital","NameLocal","NameMarine","NameVillage","StrongpointArea"], 25000]) + whiteListMkrs;

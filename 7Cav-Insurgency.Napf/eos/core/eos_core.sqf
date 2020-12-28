@@ -53,7 +53,7 @@ if (!_cache) then {
 		_eosActivated setTriggerActivation ["ANY","PRESENT",true];
 		_eosActivated setTriggerTimeout [1, 1, 1, true];
 		_eosActivated setTriggerStatements [_actCond,"",""];
-		_eosActivated setTriggerInterval 3;
+		_eosActivated setTriggerInterval 5;
 		
 			server setvariable [_trig,_eosActivated];	
 					}else{
@@ -196,12 +196,12 @@ if (_debug) then {player sidechat format ["Chopper:%1",_counter];0= [_mkr,_count
 			_clear setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE]; 
 			_clear setTriggerActivation [_enemyFaction,"NOT PRESENT",true]; 
 			_clear setTriggerStatements ["this","",""]; 
-			_clear setTriggerInterval 3;
+			_clear setTriggerInterval 5;
 				_taken = createTrigger ["EmptyDetector",_mPos]; 
 				_taken setTriggerArea [_mkrX,_mkrY,_mkrAgl,FALSE];
 				_taken setTriggerActivation ["ANY","PRESENT",true]; 
 				_taken setTriggerStatements ["{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count allUnits > 0","",""]; 
-				_taken setTriggerInterval 3;
+				_taken setTriggerInterval 5;
 _eosAct=true;	
 while {_eosAct} do
 	{

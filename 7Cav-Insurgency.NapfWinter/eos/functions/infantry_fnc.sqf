@@ -18,7 +18,7 @@ _grpSize = _r + _grpMin;
 				
 	if (surfaceiswater _pos) then {_pool = [_faction,1] call eos_fnc_getunitpool;} else {_pool = [_faction,0] call eos_fnc_getunitpool;};
 	
-	_grp = createGroup _side;
+	_grp = createGroup [_side, true];
 			
 for "_x" from 1 to _grpSize do {	
 
@@ -32,9 +32,6 @@ for "_x" from 1 to _grpSize do {
 
 		//systemChat str count allUnits;
 	};
-
-	//give leaders radios
-	(leader _grp ) addBackpack "B_RadioBag_01_black_F";
 
 	private _headlessClients = entities "HeadlessClient_F";
 	{

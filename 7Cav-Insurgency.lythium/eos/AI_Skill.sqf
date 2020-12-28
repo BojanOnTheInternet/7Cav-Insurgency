@@ -5,7 +5,7 @@ _InfskillSet = [
 0.6,        // aimingSpeed
 0.6,         // spotDistance
 0.6,        // spotTime
-1,        // courage
+0.75,        // courage
 1,        // reloadSpeed
 1,        // commanding
 1        // general

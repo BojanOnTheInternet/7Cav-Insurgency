@@ -5,7 +5,7 @@ _type=(_this select 3);
 _special = if (count _this > 4) then {_this select 4} else {"CAN_COLLIDE"};
 
 _vehicleType=[_faction,_type] call eos_fnc_getunitpool;
-	_grp = createGroup _side;
+	_grp = createGroup [_side, true];
 
 	_vehPositions=[(_vehicleType select 0)] call BIS_fnc_vehicleRoles;
 	_vehicle = createVehicle [(_vehicleType select 0), _position, [], 0, _special];

@@ -109,6 +109,8 @@ TypeFilter_ArmoredVehicles =
 	["B_APC_Wheeled_01*", true],
 	["I_APC_tracked_03*", true],
 	["I_LT_01*", true],
+	["rhsusf_stryker*", true],
+	["TFC_Wheeled_LAV6*", true],
 	["All", false]
 ];
 
@@ -170,8 +172,6 @@ TypeFilter_InfantryVehicles =
 	["rhsusf_m113_usarmy_M2_90", true],
 	["rhsusf_m113_usarmy", true],
 	["rhsusf_m113_usarmy_supply", true],
-
-	["rhsusf_stryker*", true],
 
 	["Car", true],
 	["O_HMG_01_*", true],
