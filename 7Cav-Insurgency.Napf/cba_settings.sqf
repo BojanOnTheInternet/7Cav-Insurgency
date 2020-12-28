@@ -177,7 +177,7 @@ ace_maptools_drawStraightLines = true;
 ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force force ace_medical_ai_enabledFor = 2;
+force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 0.4;
 force force ace_medical_bleedingCoefficient = 0.8;
 force force ace_medical_blood_bloodLifetime = 900;
@@ -202,7 +202,7 @@ force force ace_medical_spontaneousWakeUpEpinephrineBoost = 1.4;
 force force ace_medical_statemachine_AIUnconsciousness = true;
 force force ace_medical_statemachine_cardiacArrestTime = 270;
 force force ace_medical_statemachine_cardiacArrestBleedoutEnabled = false;
-force force ace_medical_statemachine_fatalInjuriesAI = 2;
+force force ace_medical_statemachine_fatalInjuriesAI = 0;
 force force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force force ace_medical_treatment_advancedBandages = 2;
 force force ace_medical_treatment_advancedDiagnose = true;
@@ -254,13 +254,12 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.145573;
+force force ace_nightvision_aimDownSightsBlur = 0;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.413223;
-force force ace_nightvision_fogScaling = 0;
-force force ace_nightvision_noiseScaling = 0.398876;
-force force ace_nightvision_shutterEffects = true;
-
+force force ace_nightvision_effectScaling = 0.6;
+force force ace_nightvision_fogScaling = 1;
+force force ace_nightvision_noiseScaling = 0.5;
+force force ace_nightvision_shutterEffects = false;
 // ACE Overheating
 ace_overheating_displayTextOnJam = true;
 force force ace_overheating_enabled = true;

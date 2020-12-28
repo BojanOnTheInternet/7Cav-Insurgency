@@ -50,7 +50,7 @@ _fortificationStructures = [
     ["Land_Razorwire_F",2],
     ["Land_CamoNetVar_NATO_EP1",5],
     ["Land_ConcretePanels_02_single_v1_F", 10],
-    ["Land_Hlaska",30]
+    ["RHS_M119_D",250]
 ];
 
 [west, _budget, _fortificationStructures] call acex_fortify_fnc_registerObjects;

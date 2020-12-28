@@ -32,6 +32,10 @@
     }];
   };
 
+  if (typeof _object == "RHS_M119_D") then {
+    _object allowDamage false;
+  };
+
   if (typeof _object == "MASH") then {
     _object setVariable ["ace_medical_isMedicalFacility", true, true];
   };
