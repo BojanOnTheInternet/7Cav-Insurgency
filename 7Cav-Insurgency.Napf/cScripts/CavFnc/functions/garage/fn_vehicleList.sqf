@@ -63,39 +63,14 @@ GarageVehicles = [
     // M1230A1 (MEDEVAC)
     ["rhsusf_M1230a1_usarmy_d", 5, -1, "", "land", {}, {}],
 
-    // Merkava
-    ["B_MBT_01_cannon_F", 5, -1, "You must be in a Saber slot to drive/gun/command", "land", {}, {}],
-
     // M1A2 Tusk 2
     ["rhsusf_m1a2sep1tuskiid_usarmy", 5, -1, "You must be in a Saber slot to drive/gun/command", "land", {}, {}],
-
-    // Leopard 2
-    ["I_MBT_03_cannon_F", 5, -1, "You must be in a Saber slot to drive/gun/command.", "land", {}, {}],
-
-    // Weisel
-    ["I_LT_01_cannon_F", 5, -1, "", "land", {}, {}],
-
-    // Weisel
-    ["I_LT_01_AT_F", 5, -1, "", "land", {}, {}],
-
-    // Weisel
-    ["I_LT_01_scout_F", 5, -1, "", "land", {}, {}],
-
 
     // M113 (M2)
     ["rhsusf_m113d_usarmy", 5, -1, "", "land", {}, {}],
 
     // M113 (MEV)
     ["rhsusf_m113d_usarmy_medical", 5, -1, "Must be in Atlas 1/2 slot to drive", "land", {}, {(_this select 0) setvariable ["ace_medical_isMedicalFacility", true, true];}],
-
-    // Namerra
-    ["B_APC_Tracked_01_CRV_F", 5, -1, "Must be in Atlas 3/4 slot to drive", "land", {}, {
-        [_this select 0, 16] call ace_cargo_fnc_setSpace;
-        [_this select 0, -1] call ace_cargo_fnc_setSize;
-        [_this select 0, 6000] call ace_refuel_fnc_setFuel;
-        [_this select 0, 1200] call ace_rearm_fnc_setSupplyCount;
-        (_this select 0) setVariable ["ACE_isRepairVehicle", true, true];
-    }],
 
     // M2A3 Busk 3
     ["RHS_M2A3_BUSKIII_wd", 5, -1, "", "land", {}, {}],
@@ -142,9 +117,6 @@ GarageVehicles = [
     // AH1Z Viper
     ["RHS_AH1Z", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
 
-    // Commanche
-    ["B_Heli_Attack_01_dynamicLoadout_F", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
-
     // AH-6M
     ["RHS_MELB_AH6M", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
 
@@ -164,23 +136,11 @@ GarageVehicles = [
     // A-10C
     ["FIR_A10C_Blank", 5, -1, "Must be in Eagle/Hog to fly", "air", {}, {}],
 
-    ["TFC_Wheeled_LAV6_ISC", 5, -1, "Wheeled APC w/ 30mm cannon armament", "land", {}, {}],
-
     ["TFC_vs_luvw_F", 2, -1, "Unarmed truck", "land", {}, {}],
 
     ["TFC_vs_luvw_armed_F", 2, -1, "Military truck with 7.62 MMG turret", "land", {}, {}],
 
     ["RCOMM_wnato_mrap_hmg", 2, -1, "(WINTER SKIN BY DEFAULT)", "land", {}, {}],
-
-    ["RCOMM_wnato_mbt_tusk", 5, -1, "You must be in a Saber slot to drive/gun/command (WINTER SKIN BY DEFAULT)", "land", {}, {}],
-
-    ["B_APC_Tracked_01_CRV_F", 5, -1, "Must be in Atlas 3/4 slot to drive (WINTER SKIN BY DEFAULT)", "land", {}, {
-        [_this select 0, 16] call ace_cargo_fnc_setSpace;
-        [_this select 0, -1] call ace_cargo_fnc_setSize;
-        [_this select 0, 6000] call ace_refuel_fnc_setFuel;
-        [_this select 0, 1200] call ace_rearm_fnc_setSupplyCount;
-        (_this select 0) setVariable ["ACE_isRepairVehicle", true, true];
-    }],
 
     ["TFC_CH146444_dynamicLoadout_F", 5, -1, "CAS Griffon", "air", {}, {}],
 
