@@ -6,9 +6,6 @@ GarageVehicles = [
     // MRZR 4
     ["rhsusf_mrzr4_d", 2, -1, "", "land", {}, {}],
 
-    // Quadbike
-    ["B_Quadbike_01_F", 2, -1, "", "land", {}, {}],
-
     // POLARIS
     ["B_LSV_01_unarmed_F", 2, -1, "", "land", {}, {}],
 
@@ -42,12 +39,6 @@ GarageVehicles = [
     // M977A4 (Repair)
     ["rhsusf_M977A4_REPAIR_usarmy_d", 5, -1, "", "land", {}, {}],
 
-    // M109
-    ["rhsusf_m109d_usarmy", 5, -1, "", "land", {}, {}],
-
-    // HIMARS
-    ["rhsusf_M142_usarmy_D", 5, -1, "", "land", {}, {}],
-
     // M1240 (M2 CROWS)
     ["rhsusf_m1240a1_m2crows_usarmy_d", 5, -1, "", "land", {}, {}],
 
@@ -63,28 +54,11 @@ GarageVehicles = [
     // M1230A1 (MEDEVAC)
     ["rhsusf_M1230a1_usarmy_d", 5, -1, "", "land", {}, {}],
 
-    // M1A2 Tusk 2
-    ["rhsusf_m1a2sep1tuskiid_usarmy", 5, -1, "You must be in a Saber slot to drive/gun/command", "land", {}, {}],
-
     // M113 (M2)
     ["rhsusf_m113d_usarmy", 5, -1, "", "land", {}, {}],
 
     // M113 (MEV)
     ["rhsusf_m113d_usarmy_medical", 5, -1, "Must be in Atlas 1/2 slot to drive", "land", {}, {(_this select 0) setvariable ["ace_medical_isMedicalFacility", true, true];}],
-
-    // M2A3 Busk 3
-    ["RHS_M2A3_BUSKIII_wd", 5, -1, "", "land", {}, {}],
-
-    // M6A2
-    ["RHS_M6_wd", 5, -1, "", "land", {}, {}],
-
-
-    // Blackfish
-    ["B_T_VTOL_01_infantry_F", 5, -1, "Must be in Buffalo/Titan slot to fly", "air", {}, {}],
-
-    // Armed Blackfish
-    ["B_T_VTOL_01_armed_F", 5, -1, "Must be in Buffalo to fly, all can gun", "air", {}, {}],
-
     
     // UGV Stomper
     ["B_UGV_01_F", 5, -1, "", "land", {}, {createVehicleCrew (_this select 0);}],
@@ -95,55 +69,10 @@ GarageVehicles = [
     // Stealth UAV
     ["B_UAV_05_F", 5, -1, "", "air", {}, {createVehicleCrew (_this select 0);}],
 
-    
-    // UH60
-    ["RHS_UH60M", 5, -1, "Must be in Buffalo slot to drive", "air", {}, {(_this select 0) setvariable ["ace_medical_isMedicalFacility", true, true];}],
-
-    // UH60 (MEV)
-    ["RHS_UH60M_MEV", 5, -1, "Must be in Buffalo slot to drive", "air", {}, {(_this select 0) setvariable ["ace_medical_isMedicalFacility", true, true];}],
-
-    // Huey (Unarmed)
-    ["rhs_uh1h_hidf", 5, -1, "Must be in Buffalo slot to fly", "air", {}, {}],
-
-    // AH64-D
-    ["RHS_AH64D", 5, -1, "Must be in Raider/Sparrow to fly", "air", {}, {}],
-
-    // UH1Y (Armed)
-    ["RHS_UH1Y", 5, -1, "Must be in Buffalo slot to fly", "air", {}, {}],
-
-    // CH-47
-    ["B_Heli_Transport_03_F", 5, -1, "Must be in Buffalo slot to fly", "air", {}, {}],
-
-    // AH1Z Viper
-    ["RHS_AH1Z", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
-
-    // AH-6M
-    ["RHS_MELB_AH6M", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
-
-    // MH-6M
-    ["RHS_MELB_MH6M", 5, -1, "Must be in Raider/Sparrow slot to fly/gun", "air", {}, {}],
-
-    
-    // F/A-181
-    ["B_Plane_Fighter_01_F", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
-
-    // F-15E
-    ["FIR_F15E_Blank", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
-
-    // F-22A
-    ["rhsusf_f22", 5, -1, "Must be in Eagle to fly", "air", {}, {}],
-
-    // A-10C
-    ["FIR_A10C_Blank", 5, -1, "Must be in Eagle/Hog to fly", "air", {}, {}],
-
     ["TFC_vs_luvw_F", 2, -1, "Unarmed truck", "land", {}, {}],
 
     ["TFC_vs_luvw_armed_F", 2, -1, "Military truck with 7.62 MMG turret", "land", {}, {}],
 
-    ["RCOMM_wnato_mrap_hmg", 2, -1, "(WINTER SKIN BY DEFAULT)", "land", {}, {}],
-
-    ["TFC_CH146444_dynamicLoadout_F", 5, -1, "CAS Griffon", "air", {}, {}],
-
-    ["TFC_CH146402_unarmed_F", 5, -1, "Griffon w/ M134 armament", "air", {}, {}]
+    ["RCOMM_wnato_mrap_hmg", 2, -1, "(WINTER SKIN BY DEFAULT)", "land", {}, {}]
 
 ];
