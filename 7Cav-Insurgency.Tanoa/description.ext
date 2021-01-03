@@ -51,7 +51,8 @@ enableDebugConsole[] = {
     "76561198039932196",    // Jarvis.A
     "76561198020735648",    // Ratcliff.M
     "76561197963459537",    // Sweetwater.I
-	"76561198142446869"     // Dunn.W
+	"76561198142446869",    // Dunn.W
+	"76561197997124640"     // Liber.N
 };
 
 class Extended_PreInit_EventHandlers {
@@ -128,7 +129,7 @@ class Params {
 		title="Number of Caches To Hunt";
 		values[]={2,4,6,8,10,12};
 		texts[]={"2","4","6 (Default)","8","10","12"};
-		default=3;
+		default=4;
 	};
 	class intelItems {
 	//paramsArray[2]

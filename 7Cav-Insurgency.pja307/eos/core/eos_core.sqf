@@ -106,7 +106,7 @@ if (_debug) then {PLAYER SIDECHAT (format ["Spawned House Patrol: %1",_counter])
 							if (_bMin > 0) then {	
 									_pos = [_mkr,true] call SHK_pos;			
 									_bGroup=[_pos,_bSize,_faction,_side] call EOS_fnc_spawngroup;
-										0 = [_bGroup,_mkr] call EOS_fnc_taskpatrol;
+										null = [_bGroup, _bGroup, 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 										_bGrp set [count _bGrp,_bGroup];
 										
 										0=[_bGroup,"INFskill"] call eos_fnc_grouphandlers;
