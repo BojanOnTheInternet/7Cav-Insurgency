@@ -8,7 +8,7 @@ class EditorData
 	toggles=613;
 	class ItemIDProvider
 	{
-		nextID=8514;
+		nextID=8516;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11260;
+		nextID=11313;
 	};
 	class Camera
 	{
-		pos[]={5276.6924,309.79855,14564.897};
-		dir[]={0.79543304,-0.54016626,0.27480042};
-		up[]={0.5105918,0.84153461,0.17639558};
-		aside[]={0.32653686,-1.9848812e-008,-0.94518781};
+		pos[]={5303.3936,303.61118,14576.685};
+		dir[]={0.23546885,-0.68361455,-0.69083041};
+		up[]={0.22056174,0.72980875,-0.64709455};
+		aside[]={-0.94653577,2.8614886e-007,-0.32262611};
 	};
 };
 binarizationWanted=0;
@@ -39,6 +39,7 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
 	"A3_Structures_F_Civ_InfoBoards",
+	"cav_bravo_characters",
 	"rhsusf_c_troops",
 	"rhsusf_c_weapons",
 	"ace_vector",
@@ -49,7 +50,6 @@ addons[]=
 	"ace_hearing",
 	"ace_realisticnames",
 	"acre_sys_prc343",
-	"acre_sys_prc152",
 	"ace_attach",
 	"ace_chemlights",
 	"ace_huntir",
@@ -58,10 +58,10 @@ addons[]=
 	"ace_grenades",
 	"rhsusf_sounds",
 	"jsrs_soundmod_rhs_usf_weapons",
-	"cav_bravo_characters",
 	"rhs_c_weapons",
 	"ace_nightvision",
 	"ace_flashlights",
+	"acre_sys_prc152",
 	"A3_Weapons_F_Items",
 	"cav_troops_bravo_atlas",
 	"A3_Characters_F_Exp",
@@ -188,71 +188,71 @@ class AddonsMetaData
 		};
 		class Item10
 		{
+			className="cav_bravo_characters";
+			name="7th Cavalry Addon - Bravo Characters";
+			author="7th Cavalry S3 Mod Team";
+			url="http://7cav.us";
+		};
+		class Item11
+		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item11
+		class Item12
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item12
+		class Item13
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item14
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item15
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item16
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item17
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="acre_sys_prc343";
 			name="ACRE2 - AN/PRC-343";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item19
-		{
-			className="acre_sys_prc152";
-			name="ACRE2 - AN/PRC-152";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
@@ -307,31 +307,31 @@ class AddonsMetaData
 		};
 		class Item27
 		{
-			className="cav_bravo_characters";
-			name="7th Cavalry Addon - Bravo Characters";
-			author="7th Cavalry S3 Mod Team";
-			url="http://7cav.us";
-		};
-		class Item28
-		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item29
+		class Item28
 		{
 			className="ace_nightvision";
 			name="ACE3 - Night Vision";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item30
+		class Item29
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item30
+		{
+			className="acre_sys_prc152";
+			name="ACRE2 - AN/PRC-152";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
 		};
 		class Item31
 		{
@@ -2419,191 +2419,19 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5314.875,273.77994,14560.425};
-												angles[]={0,1.5723976,0};
+												angles[]={0,1.5724021,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												init="call{this setgroupID[""GUNSLINGER-6""];}";
-												name="GUNS_7";
+												name="GUNS_6";
 												description="Platoon Leader@PLATOON HQ";
 												isPlayable=1;
-												class Inventory
-												{
-													class primaryWeapon
-													{
-														name="rhs_weap_m4_carryhandle_mstock";
-														optics="rhsusf_acc_eotech_xps3";
-														muzzle="rhsusf_acc_SFMB556";
-														flashlight="rhsusf_acc_anpeq15side_bk";
-														underBarrel="rhsusf_acc_rvg_blk";
-														class primaryMuzzleMag
-														{
-															name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-															ammoLeft=30;
-														};
-													};
-													class binocular
-													{
-														name="ACE_Vector";
-													};
-													class uniform
-													{
-														typeName="rhs_uniform_acu_oefcp";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=7;
-															class Item0
-															{
-																name="ACE_microDAGR";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_quikclot";
-																count=20;
-															};
-															class Item2
-															{
-																name="ACE_tourniquet";
-																count=4;
-															};
-															class Item3
-															{
-																name="ACE_MapTools";
-																count=1;
-															};
-															class Item4
-															{
-																name="ACE_epinephrine";
-																count=2;
-															};
-															class Item5
-															{
-																name="ACE_EarPlugs";
-																count=2;
-															};
-															class Item6
-															{
-																name="ACE_morphine";
-																count=2;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="rhsusf_iotv_ocp_Teamleader";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=3;
-															class Item0
-															{
-																name="rhs_mag_m67";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="SmokeShell";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-																count=8;
-																ammoLeft=30;
-															};
-														};
-														class ItemCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="ACRE_PRC343";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													class backpack
-													{
-														typeName="B_AssaultPack_mcamo";
-														isBackpack=1;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-																count=6;
-																ammoLeft=30;
-															};
-															class Item1
-															{
-																name="Chemlight_red";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_blue";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="ACE_HuntIR_M203";
-																count=4;
-																ammoLeft=1;
-															};
-														};
-														class ItemCargo
-														{
-															items=5;
-															class Item0
-															{
-																name="ACE_EntrenchingTool";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_personalAidKit";
-																count=2;
-															};
-															class Item2
-															{
-																name="ACE_CableTie";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_HuntIR_monitor";
-																count=1;
-															};
-															class Item4
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													hmd="rhsusf_ANPVS_14";
-													headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
-												};
 											};
-											id=7745;
-											type="rhsusf_army_ocp_arb_riflemanl";
+											id=8514;
+											type="Cav_B_B_PlatoonLeader_F";
 											class CustomAttributes
 											{
 												class Attribute0
@@ -2672,191 +2500,19 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5314.875,273.77994,14562.675};
-												angles[]={0,1.5694542,0};
+												angles[]={0,1.5694524,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												init="call{this setgroupID[""GUNSLINGER-5""];}";
-												name="GUNS_8";
+												name="GUNS_5";
 												description="Platoon Sergeant@GUNSLINGER-5";
 												isPlayable=1;
-												class Inventory
-												{
-													class primaryWeapon
-													{
-														name="rhs_weap_m4_carryhandle_mstock";
-														optics="rhsusf_acc_eotech_xps3";
-														muzzle="rhsusf_acc_SFMB556";
-														flashlight="rhsusf_acc_anpeq15side_bk";
-														underBarrel="rhsusf_acc_rvg_blk";
-														class primaryMuzzleMag
-														{
-															name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-															ammoLeft=30;
-														};
-													};
-													class binocular
-													{
-														name="ACE_Vector";
-													};
-													class uniform
-													{
-														typeName="rhs_uniform_acu_oefcp";
-														isBackpack=0;
-														class ItemCargo
-														{
-															items=7;
-															class Item0
-															{
-																name="ACE_microDAGR";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_quikclot";
-																count=20;
-															};
-															class Item2
-															{
-																name="ACE_tourniquet";
-																count=4;
-															};
-															class Item3
-															{
-																name="ACE_MapTools";
-																count=1;
-															};
-															class Item4
-															{
-																name="ACE_epinephrine";
-																count=2;
-															};
-															class Item5
-															{
-																name="ACE_EarPlugs";
-																count=2;
-															};
-															class Item6
-															{
-																name="ACE_morphine";
-																count=2;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="rhsusf_iotv_ocp_Teamleader";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=3;
-															class Item0
-															{
-																name="rhs_mag_m67";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="SmokeShell";
-																count=3;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-																count=8;
-																ammoLeft=30;
-															};
-														};
-														class ItemCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="ACRE_PRC343";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													class backpack
-													{
-														typeName="B_AssaultPack_mcamo";
-														isBackpack=1;
-														class MagazineCargo
-														{
-															items=4;
-															class Item0
-															{
-																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-																count=6;
-																ammoLeft=30;
-															};
-															class Item1
-															{
-																name="Chemlight_red";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="Chemlight_blue";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="ACE_HuntIR_M203";
-																count=4;
-																ammoLeft=1;
-															};
-														};
-														class ItemCargo
-														{
-															items=5;
-															class Item0
-															{
-																name="ACE_EntrenchingTool";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_personalAidKit";
-																count=2;
-															};
-															class Item2
-															{
-																name="ACE_CableTie";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_HuntIR_monitor";
-																count=1;
-															};
-															class Item4
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													hmd="rhsusf_ANPVS_14";
-													headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
-												};
 											};
-											id=7746;
-											type="rhsusf_army_ocp_arb_riflemanl";
+											id=8515;
+											type="Cav_B_B_PlatoonSergeant_F";
 											class CustomAttributes
 											{
 												class Attribute0
