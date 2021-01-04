@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=875;
+		nextID=877;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1382;
+		nextID=1478;
 	};
 	class Camera
 	{
-		pos[]={5169.5425,83.973137,4469.4414};
-		dir[]={0.15669735,-0.61329806,0.77416629};
-		up[]={0.12168065,0.78980881,0.60116506};
-		aside[]={0.98013651,6.0128514e-008,-0.19838707};
+		pos[]={5235.7852,95.415062,4446.2383};
+		dir[]={-0.33593675,-0.65378296,0.67805344};
+		up[]={-0.29027805,0.75661689,0.58589554};
+		aside[]={0.89607221,1.792796e-007,0.44395351};
 	};
 };
 binarizationWanted=0;
@@ -11407,7 +11407,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5156.4863,71.590469,4464.0615};
-												angles[]={-0,6.1257443,0};
+												angles[]={0,6.1257443,0};
 											};
 											side="West";
 											flags=4;
@@ -13699,7 +13699,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5163.1934,71.590469,4470.9834};
-												angles[]={-0,5.735373,0};
+												angles[]={0,5.735373,0};
 											};
 											side="West";
 											flags=4;
@@ -24526,215 +24526,21 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5228.1475,71.340469,4464.6763};
-												angles[]={0,0.032862306,0};
+												position[]={5227.145,71.340477,4462.6826};
+												angles[]={0,0.032864548,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setGroupid [""BUFFALO-2""];" \n "this setUnitRank ""MAJOR"";}";
+												init="call{this setGroupid [""GRIZZLY-1""];" \n "this setUnitRank ""MAJOR"";}";
 												name="BUF_2";
-												description="Pilot (UH-60M/MH-6) @BUFFALO-2";
+												description="Pilot (CH-47) @GRIZZLY-1";
 												isPlayable=1;
-												class Inventory
-												{
-													class primaryWeapon
-													{
-														name="rhsusf_weap_MP7A2";
-														optics="rhsusf_acc_mrds";
-														flashlight="rhsusf_acc_anpeq15side_bk";
-														underBarrel="rhs_acc_grip_ffg2";
-														class primaryMuzzleMag
-														{
-															name="rhsusf_mag_40Rnd_46x30_AP";
-															ammoLeft=40;
-														};
-													};
-													class handgun
-													{
-														name="rhsusf_weap_m9";
-														class primaryMuzzleMag
-														{
-															name="rhsusf_mag_15Rnd_9x19_FMJ";
-															ammoLeft=15;
-														};
-													};
-													class uniform
-													{
-														typeName="rhs_uniform_acu_oefcp";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="SmokeShellGreen";
-																count=1;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="Chemlight_green";
-																count=1;
-																ammoLeft=1;
-															};
-														};
-														class ItemCargo
-														{
-															items=7;
-															class Item0
-															{
-																name="ACE_quikclot";
-																count=20;
-															};
-															class Item1
-															{
-																name="ACE_epinephrine";
-																count=2;
-															};
-															class Item2
-															{
-																name="ACE_morphine";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_tourniquet";
-																count=4;
-															};
-															class Item4
-															{
-																name="ACE_microDAGR";
-																count=1;
-															};
-															class Item5
-															{
-																name="ACE_MapTools";
-																count=1;
-															};
-															class Item6
-															{
-																name="ACE_Flashlight_XL50";
-																count=1;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="rhsusf_spcs_ocp_crewman";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=6;
-															class Item0
-															{
-																name="SmokeShellBlue";
-																count=4;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="SmokeShellOrange";
-																count=4;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="B_IR_Grenade";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="rhs_mag_m67";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item4
-															{
-																name="rhsusf_mag_40Rnd_46x30_AP";
-																count=2;
-																ammoLeft=40;
-															};
-															class Item5
-															{
-																name="rhsusf_mag_15Rnd_9x19_FMJ";
-																count=2;
-																ammoLeft=15;
-															};
-														};
-														class ItemCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="ACRE_PRC343";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													class backpack
-													{
-														typeName="B_AssaultPack_mcamo";
-														isBackpack=1;
-														class MagazineCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="rhsusf_mag_40Rnd_46x30_AP";
-																count=2;
-																ammoLeft=40;
-															};
-														};
-														class ItemCargo
-														{
-															items=5;
-															class Item0
-															{
-																name="ToolKit";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_EntrenchingTool";
-																count=1;
-															};
-															class Item2
-															{
-																name="ACE_CableTie";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_IR_Strobe_Item";
-																count=4;
-															};
-															class Item4
-															{
-																name="ACE_personalAidKit";
-																count=4;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													radio="ItemRadio";
-													hmd="NVGoggles";
-													headgear="rhsusf_hgu56p_visor_mask_black";
-												};
 											};
-											id=454;
-											type="B_Helipilot_F";
-											atlOffset=-7.6293945e-006;
+											id=875;
+											type="Cav_B_A_Helicopter_Tra_Pilot_F";
 											class CustomAttributes
 											{
 												class Attribute0
@@ -24821,8 +24627,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5229.4849,71.340469,4464.4844};
-												angles[]={0,0.0063337684,0};
+												position[]={5228.5801,71.340477,4462.5117};
+												angles[]={0,0.0063355453,0};
 											};
 											side="West";
 											flags=4;
@@ -24833,203 +24639,9 @@ class Mission
 												name="BUF_22";
 												description="Co-Pilot";
 												isPlayable=1;
-												class Inventory
-												{
-													class primaryWeapon
-													{
-														name="rhsusf_weap_MP7A2";
-														optics="rhsusf_acc_mrds";
-														flashlight="rhsusf_acc_anpeq15side_bk";
-														underBarrel="rhs_acc_grip_ffg2";
-														class primaryMuzzleMag
-														{
-															name="rhsusf_mag_40Rnd_46x30_AP";
-															ammoLeft=40;
-														};
-													};
-													class handgun
-													{
-														name="rhsusf_weap_m9";
-														class primaryMuzzleMag
-														{
-															name="rhsusf_mag_15Rnd_9x19_FMJ";
-															ammoLeft=15;
-														};
-													};
-													class uniform
-													{
-														typeName="rhs_uniform_acu_oefcp";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="SmokeShellGreen";
-																count=1;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="Chemlight_green";
-																count=1;
-																ammoLeft=1;
-															};
-														};
-														class ItemCargo
-														{
-															items=7;
-															class Item0
-															{
-																name="ACE_quikclot";
-																count=20;
-															};
-															class Item1
-															{
-																name="ACE_epinephrine";
-																count=2;
-															};
-															class Item2
-															{
-																name="ACE_morphine";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_tourniquet";
-																count=4;
-															};
-															class Item4
-															{
-																name="ACE_microDAGR";
-																count=1;
-															};
-															class Item5
-															{
-																name="ACE_MapTools";
-																count=1;
-															};
-															class Item6
-															{
-																name="ACE_Flashlight_XL50";
-																count=1;
-															};
-														};
-													};
-													class vest
-													{
-														typeName="rhsusf_spcs_ocp_crewman";
-														isBackpack=0;
-														class MagazineCargo
-														{
-															items=6;
-															class Item0
-															{
-																name="SmokeShellBlue";
-																count=4;
-																ammoLeft=1;
-															};
-															class Item1
-															{
-																name="SmokeShellOrange";
-																count=4;
-																ammoLeft=1;
-															};
-															class Item2
-															{
-																name="B_IR_Grenade";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item3
-															{
-																name="rhs_mag_m67";
-																count=2;
-																ammoLeft=1;
-															};
-															class Item4
-															{
-																name="rhsusf_mag_40Rnd_46x30_AP";
-																count=2;
-																ammoLeft=40;
-															};
-															class Item5
-															{
-																name="rhsusf_mag_15Rnd_9x19_FMJ";
-																count=2;
-																ammoLeft=15;
-															};
-														};
-														class ItemCargo
-														{
-															items=2;
-															class Item0
-															{
-																name="ACRE_PRC343";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACRE_PRC152";
-																count=2;
-															};
-														};
-													};
-													class backpack
-													{
-														typeName="B_AssaultPack_mcamo";
-														isBackpack=1;
-														class MagazineCargo
-														{
-															items=1;
-															class Item0
-															{
-																name="rhsusf_mag_40Rnd_46x30_AP";
-																count=2;
-																ammoLeft=40;
-															};
-														};
-														class ItemCargo
-														{
-															items=5;
-															class Item0
-															{
-																name="ToolKit";
-																count=1;
-															};
-															class Item1
-															{
-																name="ACE_EntrenchingTool";
-																count=1;
-															};
-															class Item2
-															{
-																name="ACE_CableTie";
-																count=2;
-															};
-															class Item3
-															{
-																name="ACE_IR_Strobe_Item";
-																count=4;
-															};
-															class Item4
-															{
-																name="ACE_personalAidKit";
-																count=4;
-															};
-														};
-													};
-													map="ItemMap";
-													compass="ItemCompass";
-													watch="ItemWatch";
-													radio="ItemRadio";
-													hmd="NVGoggles";
-													headgear="rhsusf_hgu56p_visor_mask_black";
-												};
 											};
-											id=455;
-											type="B_helicrew_F";
-											atlOffset=-7.6293945e-006;
+											id=876;
+											type="Cav_B_A_Helicopter_Tra_coPilot_F";
 											class CustomAttributes
 											{
 												class Attribute0
@@ -25116,11 +24728,9 @@ class Mission
 									{
 									};
 									id=453;
-									atlOffset=-7.6293945e-006;
 								};
 							};
 							id=452;
-							atlOffset=-7.6293945e-006;
 						};
 						class Item2
 						{
@@ -27444,7 +27054,7 @@ class Mission
 						};
 					};
 					id=445;
-					atlOffset=-0.043952942;
+					atlOffset=-0.043907166;
 				};
 				class Item5
 				{
