@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11366;
+		nextID=11419;
 	};
 	class Camera
 	{
-		pos[]={5339.7695,290.38724,14551.008};
-		dir[]={0.3035289,-0.38380149,0.87218255};
-		up[]={0.1262026,0.92335284,0.36263314};
-		aside[]={0.94449985,8.1607141e-008,-0.32869786};
+		pos[]={5299.082,295.38104,14568.049};
+		dir[]={0.53683633,-0.5345661,-0.65285379};
+		up[]={0.33962119,0.84503484,-0.41302007};
+		aside[]={-0.77246302,3.6798883e-007,-0.63518643};
 	};
 };
 binarizationWanted=0;
@@ -17960,14 +17960,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5350.3838,273.77994,14554.692};
-												angles[]={0,4.8675299,0};
+												angles[]={0,4.8675313,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setGroupid [""BUFFALO-1""];}";
+												init="call{this setGroupid [""BUFFALO-1""];" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_3";
 												description="Pilot (UH-60M)@BUFFALO-1";
 												isPlayable=1;
@@ -18261,7 +18261,7 @@ class Mission
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setUnitRank ""MAJOR"";}";
+												init="call{this setUnitRank ""MAJOR"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_15";
 												description="Crew Chief";
 												isPlayable=1;
@@ -18548,14 +18548,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5351.5278,273.77994,14556.214};
-												angles[]={0,4.4983487,0};
+												angles[]={0,4.4983416,0};
 											};
 											side="West";
 											flags=5;
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setUnitRank ""MAJOR"";}";
+												init="call{this setUnitRank ""MAJOR"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_16";
 												description="Door Gunner";
 												isPlayable=1;
@@ -18841,15 +18841,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5352.9043,273.77994,14553.948};
-												angles[]={0,4.8091364,0};
+												position[]={5352.9038,273.77994,14553.948};
+												angles[]={0,4.8091326,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setUnitRank ""MAJOR"";}";
+												init="call{this setUnitRank ""MAJOR"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_17";
 												description="Co-Pilot";
 												isPlayable=1;
@@ -19166,7 +19166,7 @@ class Mission
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setGroupid [""GRIZZLY-1""];" \n "this setUnitRank ""MAJOR"";}";
+												init="call{this setGroupid [""GRIZZLY-1""];" \n "this setUnitRank ""MAJOR"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_4";
 												description="Pilot (CH47)@GRIZZLY-1";
 												isPlayable=1;
@@ -19267,7 +19267,7 @@ class Mission
 											class Attributes
 											{
 												rank="MAJOR";
-												init="call{this setUnitRank ""MAJOR"";}";
+												init="call{this setUnitRank ""MAJOR"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="BUF_23";
 												description="Co-Pilot";
 												isPlayable=1;
@@ -19383,15 +19383,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5351.6001,273.77994,14565.462};
-												angles[]={0,4.7609649,0};
+												position[]={5354,273.77994,14566.05};
+												angles[]={0,4.7609611,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{this setGroupid [""SPARROW-1""];" \n "player setUnitRank ""LIEUTENANT""}";
+												init="call{this setGroupid [""SPARROW-1""];" \n "player setUnitRank ""LIEUTENANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="SPR_2";
 												description="Pilot (AH-6)@SPARROW";
 												isPlayable=1;
@@ -19677,15 +19677,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5351.457,273.77994,14563.823};
-												angles[]={0,4.7117472,0};
+												position[]={5357,273.77994,14566.05};
+												angles[]={0,4.7117434,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{player setUnitRank ""LIEUTENANT""}";
+												init="call{player setUnitRank ""LIEUTENANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="SPR_13";
 												description="Co-Pilot";
 												isPlayable=1;
@@ -19994,15 +19994,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5347.8223,273.77994,14563.168};
-												angles[]={0,4.8987041,0};
+												position[]={5348,273.77994,14565.05};
+												angles[]={0,4.8987026,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												rank="SERGEANT";
-												init="call{this setGroupid [""RAIDER-1""];" \n "player setUnitRank ""SERGEANT""}";
+												init="call{this setGroupid [""RAIDER-1""];" \n "player setUnitRank ""SERGEANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="RAID_2";
 												description="Pilot (AH-64)@RAIDER-1";
 												isPlayable=1;
@@ -20288,15 +20288,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5347.7388,273.77994,14561.772};
-												angles[]={0,4.9332891,0};
+												position[]={5348,273.77994,14563.05};
+												angles[]={0,4.9332957,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												rank="SERGEANT";
-												init="call{player setUnitRank ""SERGEANT""}";
+												init="call{player setUnitRank ""SERGEANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="RAID_13";
 												description="Gunner";
 												isPlayable=1;
@@ -20605,14 +20605,14 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5358.0078,273.77994,14536.217};
+												position[]={5355,273.77994,14525.05};
 												angles[]={0,4.6104794,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
-												init="call{this setGroupid [""TITAN-1""];}";
+												init="call{this setGroupid [""TITAN-1""];" \n "this setVariable [""PilotCanFly"", true];}";
 												name="TIT_2";
 												description="Pilot (Logistics)@TITAN-1";
 												isPlayable=1;
@@ -20845,14 +20845,14 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5348.875,273.77994,14559.05};
-												angles[]={0,4.7446899,0};
+												angles[]={0,4.7446952,0};
 											};
 											side="West";
 											flags=7;
 											class Attributes
 											{
 												rank="COLONEL";
-												init="call{[this,""EAGLE-2"",130] call cScripts_fnc_setPlayerInitSettings;}";
+												init="call{[this,""EAGLE-2"",130] call cScripts_fnc_setPlayerInitSettings;" \n "this setVariable [""PilotCanFly"", true];}";
 												name="EAG_2";
 												description="Eagle-1@EAGLE-1";
 												isPlayable=1;
@@ -21084,15 +21084,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5355.7529,273.77994,14559.814};
-												angles[]={0,4.8299427,0};
+												position[]={5356,273.77994,14561.05};
+												angles[]={0,4.8299365,0};
 											};
 											side="West";
 											flags=6;
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{this setGroupid [""RAVEN-1""];" \n "player setUnitRank ""LIEUTENANT""}";
+												init="call{this setGroupid [""RAVEN-1""];" \n "player setUnitRank ""LIEUTENANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="RVN_2";
 												description="Pilot (MH-6)@RAVEN";
 												isPlayable=1;
@@ -21378,15 +21378,15 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5353.6592,273.77994,14560.197};
-												angles[]={0,4.8432751,0};
+												position[]={5354,273.77994,14561.05};
+												angles[]={0,4.8432713,0};
 											};
 											side="West";
 											flags=4;
 											class Attributes
 											{
 												rank="LIEUTENANT";
-												init="call{player setUnitRank ""LIEUTENANT""}";
+												init="call{player setUnitRank ""LIEUTENANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="RVN_13";
 												description="Co-Pilot";
 												isPlayable=1;
