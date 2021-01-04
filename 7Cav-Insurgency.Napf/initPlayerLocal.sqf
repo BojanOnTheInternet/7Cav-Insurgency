@@ -10,7 +10,7 @@ if (not hasInterface) exitWith
 enableSaving [false, false];
 
 // Enable group selection ('U' group menu)
-["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
+//["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
  
 // [[code, whatever], [code, whatever], ...]
 CLIENT_PlayerDisconnectedHandlers = [];

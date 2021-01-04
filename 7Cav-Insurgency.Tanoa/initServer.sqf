@@ -38,7 +38,7 @@ _date set [4, _startMinute];
 
 setDate _date;
 
-["Initialize"] call BIS_fnc_dynamicGroups;
+//["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";

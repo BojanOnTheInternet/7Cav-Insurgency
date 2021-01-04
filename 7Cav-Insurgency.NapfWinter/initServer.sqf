@@ -46,7 +46,7 @@ skipTime -24;
 86400 setOvercast 1;
 skipTime 24;
 
-["Initialize"] call BIS_fnc_dynamicGroups;
+//["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
