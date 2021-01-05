@@ -5,7 +5,7 @@ clearmagazinecargoGlobal _crate;
 clearitemcargoGlobal _crate;
 clearbackpackcargoGlobal _crate;
 
-[_crate, "charlie"] call cScripts_fnc_doStarterCrate;
+[_crate, "none"] call cScripts_fnc_doStarterCrate;
 [_crate, true] call ace_arsenal_fnc_initBox;
 sleep 5;
 [_crate, [
@@ -138,5 +138,19 @@ sleep 5;
 	"launch_RPG32_F",
 	"launch_RPG32_green_F",
 	"launch_RPG32_ghex_F",
-	"ALIVE_Tablet"
+	"ALIVE_Tablet",
+	"arifle_AK12_F",
+	"arifle_AK12_arid_F",
+	"arifle_AK12_lush_F",
+	"arifle_AK12_GL_F",
+	"arifle_AK12_GL_arid_F",
+	"arifle_AK12_GL_lush_F",
+	"arifle_AK12U_F",
+	"arifle_AK12U_arid_F",
+	"arifle_AK12U_lush_F",
+	"arifle_AKM_F",
+	"arifle_AKS_F",
+	"srifle_DMR_04_F",
+	"srifle_DMR_04_Tan_F",
+	"srifle_DMR_01_F"
 ]] call ace_arsenal_fnc_removeVirtualItems;
