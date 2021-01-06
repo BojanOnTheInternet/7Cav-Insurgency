@@ -21,7 +21,7 @@ _helicopter addEventHandler ["GetIn", {
 	if( ( _seat in _pilotSeats ) ) then {
 
 		if( !( _unit getVariable [ "PilotCanFly", false ] ) ) then {
-			hintC "Only Pilots are allowed to operate this vehicle";
+			
 			_unit action ["GetOut", _vehicle];
 		};
 	};

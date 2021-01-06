@@ -7,7 +7,6 @@
 [_this select 0, 60] call vehicle_fnc_respawnVehicleWhenKilled;
 [_this select 0, 300] call vehicle_fnc_respawnVehicleWhenAbandoned;
 
-
 // Permissions for pilots only
 private _helicopter = _this select 0;
 
@@ -21,7 +20,7 @@ _helicopter addEventHandler ["GetIn", {
 	if( ( _seat in _pilotSeats ) ) then {
 
 		if( !( _unit getVariable [ "PilotCanFly", false ] ) ) then {
-			hintC "Only Pilots are allowed to operate this vehicle";
+			
 			_unit action ["GetOut", _vehicle];
 		};
 	};
