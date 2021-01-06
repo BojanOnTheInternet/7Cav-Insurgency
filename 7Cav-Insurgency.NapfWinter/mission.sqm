@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=877;
+		nextID=883;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1670;
+		nextID=1722;
 	};
 	class Camera
 	{
-		pos[]={5151.8452,98.198799,4497.3477};
-		dir[]={0.50314134,-0.55516303,-0.66236651};
-		up[]={0.33588612,0.83165997,-0.44218239};
-		aside[]={-0.79634112,4.216563e-007,-0.60491055};
+		pos[]={5189.0322,90.411606,4459.1304};
+		dir[]={-0.91378599,-0.2854791,0.28913584};
+		up[]={-0.27234384,0.95833373,0.086174302};
+		aside[]={0.30168703,1.0444201e-006,0.95345616};
 	};
 };
 binarizationWanted=0;
@@ -105,13 +105,14 @@ addons[]=
 	"A3_Structures_F_Heli_Items_Luggage",
 	"rhsusf_c_statics",
 	"rhsusf_c_M1239",
-	"rhsusf_c_RG33"
+	"rhsusf_c_RG33",
+	"A3_Structures_F_Civ_InfoBoards"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=73;
+		items=74;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -612,6 +613,13 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item73
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 class DynamicSimulation
@@ -894,7 +902,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=147;
+		items=149;
 		class Item0
 		{
 			dataType="Layer";
@@ -31003,6 +31011,221 @@ class Mission
 			};
 			id=870;
 			atlOffset=-7.6293945e-006;
+		};
+		class Item147
+		{
+			dataType="Layer";
+			name="BASE_3";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="THINGS (DYNAMIC)";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5191.269,73.3246,4480.8877};
+								angles[]={0,1.4140494,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								dynamicSimulation=1;
+							};
+							id=879;
+							type="Land_Billboard_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="media\images\serverRules.paa";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isMedicalFacility";
+									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="hideObject";
+									expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=4;
+							};
+						};
+					};
+					id=878;
+				};
+			};
+			id=877;
+		};
+		class Item148
+		{
+			dataType="Layer";
+			name="BASE_4";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="THINGS (DYNAMIC)_2";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5192.0356,73.248764,4460.4683};
+								angles[]={0,2.9982173,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								dynamicSimulation=1;
+							};
+							id=882;
+							type="Land_Billboard_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ObjectTextureCustom0";
+									expression="_this setObjectTextureGlobal [0,_value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="media\images\enlist.paa";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isMedicalFacility";
+									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+					};
+					id=881;
+				};
+			};
+			id=880;
 		};
 	};
 };
