@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2443;
+		nextID=2563;
 	};
 	class Camera
 	{
-		pos[]={5166.125,101.938,4468.353};
-		dir[]={0.62440991,-0.78107154,0.010675847};
-		up[]={0.78107464,0.62429392,0.013355745};
-		aside[]={0.017094893,2.3212851e-007,-0.99988896};
+		pos[]={5249.0923,85.348228,4464.7354};
+		dir[]={-0.74477291,-0.54922724,0.37914252};
+		up[]={-0.48961878,0.83555281,0.24924986};
+		aside[]={0.45368758,3.0326191e-007,0.8912065};
 	};
 };
 binarizationWanted=0;
@@ -25791,7 +25791,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5236.1099,71.322731,4468.6069};
+												position[]={5238.9819,71.364464,4469.9316};
 												angles[]={6.2581921,5.7310157,0.0030019663};
 											};
 											side="West";
@@ -25799,7 +25799,7 @@ class Mission
 											class Attributes
 											{
 												rank="SERGEANT";
-												init="call{this setGroupid [""RAIDER-1""];" \n "player setUnitRank ""SERGEANT"";}";
+												init="call{this setGroupid [""RAIDER-1""];" \n "player setUnitRank ""SERGEANT"";" \n "this setVariable [""PilotCanFly"", true];}";
 												name="RAID_1";
 												description="Pilot (AH-64)@RAIDER-1";
 												isPlayable=1;
@@ -26086,8 +26086,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={5238.2729,71.319183,4468.2056};
-												angles[]={6.2581921,5.7310157,0.0030019663};
+												position[]={5240.4771,71.370476,4470.2388};
+												angles[]={0,5.7310157,0};
 											};
 											side="West";
 											flags=4;
@@ -26294,7 +26294,6 @@ class Mission
 											};
 											id=463;
 											type="B_T_Helipilot_F";
-											atlOffset=-7.6293945e-006;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -27486,7 +27485,7 @@ class Mission
 						};
 					};
 					id=445;
-					atlOffset=-0.049827576;
+					atlOffset=-0.04776001;
 				};
 				class Item5
 				{
@@ -27947,7 +27946,7 @@ class Mission
 				};
 			};
 			id=350;
-			atlOffset=-0.069770813;
+			atlOffset=-0.069129944;
 		};
 		class Item3
 		{
