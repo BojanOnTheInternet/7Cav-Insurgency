@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13357;
+		nextID=13585;
 	};
 	class Camera
 	{
-		pos[]={11954.564,39.691475,2326.7825};
-		dir[]={0.34539407,-0.80111796,-0.48903278};
-		up[]={0.46220642,0.59841776,-0.65442455};
-		aside[]={-0.81689912,-1.9045547e-007,-0.57696736};
+		pos[]={11947.491,39.691475,2313.2649};
+		dir[]={0.51250082,-0.69973105,-0.49795595};
+		up[]={0.50193763,0.7143023,-0.4876934};
+		aside[]={-0.69692558,1.1398224e-006,-0.71729332};
 	};
 };
 binarizationWanted=0;
@@ -59,7 +59,6 @@ addons[]=
 	"ace_captives",
 	"ace_grenades",
 	"rhsusf_sounds",
-	"jsrs_soundmod_rhs_usf_weapons",
 	"rhs_c_weapons",
 	"ace_nightvision",
 	"ace_flashlights",

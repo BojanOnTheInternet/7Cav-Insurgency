@@ -2,7 +2,7 @@
 
 if (isServer) then {
     [] call EFUNC(gear,synchGroupIDs);
-    if (EGVAR(patches,usesACRE)) then { [] call EFUNC(gear,setupRadios) };
+    //if (EGVAR(patches,usesACRE)) then { [] call EFUNC(gear,setupRadios) };
 };
 
 if (!hasInterface) exitWith {};

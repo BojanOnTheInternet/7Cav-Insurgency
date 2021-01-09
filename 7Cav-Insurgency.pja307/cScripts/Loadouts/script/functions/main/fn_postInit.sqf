@@ -2,7 +2,7 @@
 
 if (isServer) then {
     [] call FUNC(synchGroupIDs);
-    if (GVAR(usesACRE)) then { [] call FUNC(setupRadios) };
+    //if (GVAR(usesACRE)) then { [] call FUNC(setupRadios) };
 };
 if (!hasInterface) exitWith {};
 

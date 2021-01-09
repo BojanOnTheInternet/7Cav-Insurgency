@@ -28,8 +28,8 @@ if (_loadConfig) then {
 [_unit, _uniqueRadio] call FUNC(setUniqueRadio);
 
 if (GVAR(usesACRE)) then {
-    [_unit] call FUNC(setupRadios);
-    [_unit, _loadout] call FUNC(applyRadioLoadout);
+    //[_unit] call FUNC(setupRadios);
+    //[_unit, _loadout] call FUNC(applyRadioLoadout);
 };
 
 // Items not fitting into inventory

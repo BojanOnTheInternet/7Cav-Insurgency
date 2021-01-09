@@ -1,7 +1,7 @@
 sleep 2;
 params ["_newZone","_type"];
 
-systemChat "Loaded Destroy tower script";
+//systemChat "Loaded Destroy tower script";
 
 private _towerPos = _newZone;
 
@@ -20,7 +20,7 @@ _objmkr = createMarker ["ObjectiveMkr", _newZone];
 "ObjectiveMkr" setMarkerShape "ICON";
 "ObjectiveMkr" setMarkerType "mil_dot";
 "ObjectiveMkr" setMarkerColor "ColorRed";
-"ObjectiveMkr" setMarkerText "Radio Tower";
+"ObjectiveMkr" setMarkerText "Radar";
 
 // Spawn Objective Object
 _tower = createVehicle [_type, _newZone, [], 0, "NONE"];
@@ -39,16 +39,19 @@ for "_x" from 1 to _grpSize do {
 null = [_grp, _grp, 50, 4, [], true] call lambs_wp_fnc_taskPatrol;
 null = [_grp, "INFskill"] call eos_fnc_grouphandlers;
 
+private _antiair = createVehicle ["LOP_SLA_ZSU234", _newZone, [], 20, "NONE"];
+createVehicleCrew _antiair;
+
 taskName = format["side%1",random 1000];
 
-[WEST, [taskName], ["Destroy communications tower", "Side mission: Destroy 5G Tower", "missionmarker"], _newZone ,1, 2, true] call BIS_fnc_taskCreate;
+[WEST, [taskName], ["Destroy Radar", "Side mission: Destroy Radar", "missionmarker"], _newZone ,1, 2, true] call BIS_fnc_taskCreate;
 
-systemChat str taskName;
+//systemChat str taskName;
 
 _tower addMPEventHandler["MPKilled", 
 {
 	[taskName,"SUCCEEDED"] call BIS_fnc_taskSetState;
-	systemChat str taskName;
+	//systemChat str taskName;
 	execVM "sidemissions\sidemissions.sqf";
 	deleteMarker "ObjectiveMkr";
 }

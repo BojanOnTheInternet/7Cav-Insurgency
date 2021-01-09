@@ -3,13 +3,13 @@ waitUntil {time > 60};
 
 if (count sidemarkers == 0) exitwith { "All side missions completed" remoteExec ["hint"]; };
 
-systemChat str sidemarkers;
+//systemChat str sidemarkers;
 objectives = ["destroy_tower"];
 private _newZone = [];
 
 // select mission tye
 private _objsel = selectRandom objectives;
-systemChat str _objsel;
+//systemChat str _objsel;
 
 private _mission_mkr = selectRandom sidemarkers;
 private _mkrPos = markerPos _mission_mkr;
@@ -28,7 +28,7 @@ _newZone = _newZone + [_xcoor,_ycoor];
 switch (_objsel) do
 {
 	case "destroy_tower": {
-		_type = [_newZone, "Land_TTowerBig_1_F"] execVM "sidemissions\destroy_tower.sqf";
+		_type = [_newZone, "rhs_prv13"] execVM "sidemissions\destroy_tower.sqf";
 	};
 };
 

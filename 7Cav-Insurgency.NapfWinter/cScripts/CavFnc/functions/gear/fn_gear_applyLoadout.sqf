@@ -78,7 +78,7 @@ if (_unit == player) then {
 
     // Radios
     if (EGVAR(patches,usesACRE)) then {
-        [_unit] call EFUNC(gear,setupRadios);
+        //[_unit] call EFUNC(gear,setupRadios);
     };
 
     // Earplugs

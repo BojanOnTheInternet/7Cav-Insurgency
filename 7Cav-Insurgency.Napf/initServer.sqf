@@ -51,7 +51,7 @@ sidemarkers = ["side1","side2","side3","side4","side5","side6","side7","side8","
 } foreach sidemarkers;
 
 
-//[] execVM "sidemissions\sidemissions.sqf";
+[] execVM "sidemissions\sidemissions.sqf";
 
 enableEnvironment [false, true];
 
