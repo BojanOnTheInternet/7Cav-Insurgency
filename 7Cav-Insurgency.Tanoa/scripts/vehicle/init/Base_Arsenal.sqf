@@ -152,5 +152,12 @@ sleep 5;
 	"arifle_AKS_F",
 	"srifle_DMR_04_F",
 	"srifle_DMR_04_Tan_F",
-	"srifle_DMR_01_F"
+	"srifle_DMR_01_F",
+	"LMG_Mk200_F",
+	"LMG_Mk200_black_F",
+	"arifle_RPK12_F",
+	"arifle_RPK12_arid_F",
+	"arifle_RPK12_lush_F",
+	"rhs_weap_mg42",
+	"rhs_weap_MP44"
 ]] call ace_arsenal_fnc_removeVirtualItems;
