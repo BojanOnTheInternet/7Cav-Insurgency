@@ -64,7 +64,7 @@ GarageVehicles = [
     ["B_UGV_01_F", 5, -1, "", "land", {}, {createVehicleCrew (_this select 0);}],
 
     // Predator Drone
-    ["B_UAV_02_F", 5, -1, "", "air", {}, {createVehicleCrew (_this select 0);}],
+    //["B_UAV_02_F", 5, -1, "", "air", {}, {createVehicleCrew (_this select 0);}],
 
     // Stealth UAV
     ["B_UAV_05_F", 5, -1, "", "air", {}, {createVehicleCrew (_this select 0);}],
