@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13965;
+		nextID=14041;
 	};
 	class Camera
 	{
-		pos[]={11939.035,55.966751,2389.1138};
-		dir[]={0.80881745,-0.58341384,-0.073807776};
-		up[]={0.5810008,0.81217444,-0.053018559};
-		aside[]={-0.090876609,-8.1388862e-008,-0.99586511};
+		pos[]={11949.037,34.85215,2307.7444};
+		dir[]={0.82240874,-0.5472461,-0.15551721};
+		up[]={0.5377233,0.83696735,-0.10168275};
+		aside[]={-0.18580768,-5.3725671e-008,-0.98259693};
 	};
 };
 binarizationWanted=0;
@@ -22112,20 +22112,21 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={11943.625,28.664299,2295.925};
-												angles[]={0,1.5236095,0};
+												position[]={11943.625,28.664173,2295.925};
+												angles[]={0,1.5236026,0};
 											};
 											side="West";
-											flags=7;
+											flags=3;
 											class Attributes
 											{
-												init="call{this setgroupid [""ZEUS""];}";
+												init="call{this setgroupid [""ZEUS""];" \n "this setVariable [""PilotCanFly"", true];}";
 												name="zeusman1_1";
 												description="Mission Controller@ADMIN CONTROL";
 												isPlayable=1;
 											};
 											id=7748;
 											type="rhsusf_army_ocp_officer";
+											atlOffset=2.5247154;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -22193,20 +22194,21 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={11943.625,28.659193,2298.05};
-												angles[]={0,1.5218973,0};
+												position[]={11943.625,28.659067,2298.05};
+												angles[]={0,1.5218922,0};
 											};
 											side="West";
 											flags=1;
 											class Attributes
 											{
+												init="call{this setVariable [""PilotCanFly"", true];}";
 												name="zeusman3_1";
 												description="Mission Controller";
 												isPlayable=1;
 											};
 											id=7749;
 											type="rhsusf_army_ocp_officer";
-											atlOffset=2.5197353;
+											atlOffset=2.5196095;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -22274,20 +22276,21 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={11941,28.538933,2296.8};
+												position[]={11941,28.538807,2296.8};
 												angles[]={0,1.5312996,0};
 											};
 											side="West";
 											flags=1;
 											class Attributes
 											{
+												init="call{this setVariable [""PilotCanFly"", true];}";
 												name="zeusman2_1";
 												description="Mission Controller";
 												isPlayable=1;
 											};
 											id=7750;
 											type="rhsusf_army_ocp_officer";
-											atlOffset=2.3994751;
+											atlOffset=2.3993492;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -22355,9 +22358,11 @@ class Mission
 									{
 									};
 									id=7747;
+									atlOffset=2.5247154;
 								};
 							};
 							id=6487;
+							atlOffset=2.5247154;
 						};
 						class Item1
 						{
@@ -22547,11 +22552,11 @@ class Mission
 						};
 					};
 					id=6486;
-					atlOffset=0.0049743652;
+					atlOffset=0.0049095154;
 				};
 			};
 			id=6361;
-			atlOffset=2.1230011;
+			atlOffset=2.1229687;
 		};
 		class Item3
 		{
