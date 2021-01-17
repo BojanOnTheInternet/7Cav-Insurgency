@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1261;
+		nextID=1442;
 	};
 	class LayerIndexProvider
 	{
-		nextID=3163;
+		nextID=3230;
 	};
 	class Camera
 	{
-		pos[]={5172.4009,93.120056,4445.2666};
-		dir[]={0.73781621,-0.50576615,0.44721985};
-		up[]={0.43268597,0.86255598,0.26227012};
-		aside[]={0.51839656,5.3434633e-007,-0.8552354};
+		pos[]={5163.1338,107.39886,4457.374};
+		dir[]={0.71772885,-0.57143176,-0.39797357};
+		up[]={0.49975446,0.82064384,-0.27710924};
+		aside[]={-0.48494127,2.3108441e-007,-0.87457353};
 	};
 };
 binarizationWanted=0;
@@ -1010,7 +1010,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=179;
+		items=166;
 		class Item0
 		{
 			dataType="Layer";
@@ -31084,19 +31084,6 @@ class Mission
 		};
 		class Item151
 		{
-			dataType="Marker";
-			position[]={9907.3418,462.10699,4121.396};
-			name="side1";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1072;
-			atlOffset=0.00033569336;
-		};
-		class Item152
-		{
 			dataType="Layer";
 			name="BASE_9";
 			class Entities
@@ -31228,7 +31215,7 @@ class Mission
 			id=1073;
 			atlOffset=-1.5258789e-005;
 		};
-		class Item153
+		class Item152
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31289,281 +31276,35 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item154
-		{
-			dataType="Marker";
-			position[]={17678.18,255.93604,2905.6387};
-			name="side2";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1079;
-			atlOffset=-0.89071655;
-		};
-		class Item155
-		{
-			dataType="Marker";
-			position[]={6230.478,15.857688,11791.529};
-			name="side3";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1080;
-		};
-		class Item156
+		class Item153
 		{
 			dataType="Layer";
 			name="Radio Tower #B";
 			id=1100;
 			atlOffset=90;
 		};
-		class Item157
+		class Item154
 		{
 			dataType="Layer";
 			name="Radio Tower #O";
 			id=1124;
 			atlOffset=90;
 		};
-		class Item158
+		class Item155
 		{
 			dataType="Layer";
 			name="Radio Tower #O";
 			id=1156;
 			atlOffset=90;
 		};
-		class Item159
+		class Item156
 		{
 			dataType="Layer";
 			name="Mobile HQ - M1130 (Tower)";
 			id=1189;
 			atlOffset=90;
 		};
-		class Item160
-		{
-			dataType="Marker";
-			position[]={18077.217,254.258,4093.0601};
-			name="side4";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1190;
-			atlOffset=0.00030517578;
-		};
-		class Item161
-		{
-			dataType="Marker";
-			position[]={8293.7393,354.98001,2933.583};
-			name="side5";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1191;
-			atlOffset=0.00039672852;
-		};
-		class Item162
-		{
-			dataType="Marker";
-			position[]={6664.04,32.237,15423.764};
-			name="side6";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1192;
-			atlOffset=0.00077819824;
-		};
-		class Item163
-		{
-			dataType="Marker";
-			position[]={12783.826,123.791,11221.825};
-			name="side7";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1193;
-			atlOffset=0.00088500977;
-		};
-		class Item164
-		{
-			dataType="Marker";
-			position[]={14299.302,400.69,7818.6782};
-			name="side8";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1194;
-			atlOffset=0.00045776367;
-		};
-		class Item165
-		{
-			dataType="Marker";
-			position[]={3608.238,86.578003,10356.308};
-			name="side9";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1195;
-			atlOffset=0.00025939941;
-		};
-		class Item166
-		{
-			dataType="Marker";
-			position[]={16405.984,61.291,14817.576};
-			name="side10";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1196;
-			atlOffset=0.00043869019;
-		};
-		class Item167
-		{
-			dataType="Marker";
-			position[]={17751.93,258.54099,9556.125};
-			name="side11";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1197;
-			atlOffset=0.00018310547;
-		};
-		class Item168
-		{
-			dataType="Marker";
-			position[]={14037.962,407.16901,4275.7129};
-			name="side12";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1198;
-			atlOffset=0.00042724609;
-		};
-		class Item169
-		{
-			dataType="Marker";
-			position[]={5002.5591,134.041,9387.9629};
-			name="side13";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1199;
-			atlOffset=0.00050354004;
-		};
-		class Item170
-		{
-			dataType="Marker";
-			position[]={10964.02,137.79401,9779.6846};
-			name="side14";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1200;
-			atlOffset=0.00036621094;
-		};
-		class Item171
-		{
-			dataType="Marker";
-			position[]={9664.7412,134.76401,13200.377};
-			name="side15";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1201;
-			atlOffset=0.00036621094;
-		};
-		class Item172
-		{
-			dataType="Marker";
-			position[]={9667.1133,20.992001,17000.014};
-			name="side16";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1202;
-			atlOffset=0.00047492981;
-		};
-		class Item173
-		{
-			dataType="Marker";
-			position[]={18087.99,129.812,12206.337};
-			name="side17";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1203;
-			atlOffset=7.6293945e-005;
-		};
-		class Item174
-		{
-			dataType="Marker";
-			position[]={7971.5278,96.658997,7197.0498};
-			name="side18";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1204;
-			atlOffset=0.00072479248;
-		};
-		class Item175
-		{
-			dataType="Marker";
-			position[]={5624.8301,20.461,16289.795};
-			name="side19";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1205;
-			atlOffset=0.00044059753;
-		};
-		class Item176
-		{
-			dataType="Marker";
-			position[]={11735.045,83.146004,13563.938};
-			name="side20";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorBlue";
-			a=50;
-			b=50;
-			id=1206;
-			atlOffset=0.00011444092;
-		};
-		class Item177
+		class Item157
 		{
 			dataType="Layer";
 			name="BASE_3";
@@ -31680,7 +31421,7 @@ class Mission
 			};
 			id=1213;
 		};
-		class Item178
+		class Item158
 		{
 			dataType="Layer";
 			name="BASE_4";
@@ -31777,6 +31518,55 @@ class Mission
 				};
 			};
 			id=1216;
+		};
+		class Item159
+		{
+			dataType="Layer";
+			name="Roadblock";
+			id=1272;
+			atlOffset=-0.0023727417;
+		};
+		class Item160
+		{
+			dataType="Layer";
+			name="Hasty Roadblock";
+			id=1280;
+			atlOffset=-0.066070557;
+		};
+		class Item161
+		{
+			dataType="Layer";
+			name="Headquarters #O";
+			id=1345;
+			atlOffset=-0.099685669;
+		};
+		class Item162
+		{
+			dataType="Layer";
+			name="Landing Zone #O";
+			id=1368;
+			atlOffset=-0.00048828125;
+		};
+		class Item163
+		{
+			dataType="Layer";
+			name="Mobile HQ - BTR";
+			id=1398;
+			atlOffset=0.047767639;
+		};
+		class Item164
+		{
+			dataType="Layer";
+			name="Camp #O";
+			id=1417;
+			atlOffset=0.04233551;
+		};
+		class Item165
+		{
+			dataType="Layer";
+			name="Living Quarters #B";
+			id=1441;
+			atlOffset=-0.014770508;
 		};
 	};
 };

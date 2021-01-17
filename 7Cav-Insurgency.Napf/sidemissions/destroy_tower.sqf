@@ -1,9 +1,10 @@
-sleep 2;
-params ["_newZone","_type"];
+sleep 30;
 
 //systemChat "Loaded Destroy tower script";
 
+private _newZone = [[], 0, -1, 0, 0, 0.1, 0, [], []] call BIS_fnc_findSafePos;
 private _towerPos = _newZone;
+private _type = 'rhs_prv13';
 
 while {isOnRoad _towerPos} do {
 	_towerPos = _newZone findEmptyPosition [2, 30, _type];
