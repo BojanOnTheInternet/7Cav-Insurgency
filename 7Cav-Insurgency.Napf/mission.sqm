@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1442;
+		nextID=1452;
 	};
 	class LayerIndexProvider
 	{
-		nextID=3230;
+		nextID=3297;
 	};
 	class Camera
 	{
-		pos[]={5163.1338,107.39886,4457.374};
-		dir[]={0.71772885,-0.57143176,-0.39797357};
-		up[]={0.49975446,0.82064384,-0.27710924};
-		aside[]={-0.48494127,2.3108441e-007,-0.87457353};
+		pos[]={4977.5176,141.7887,4619.7734};
+		dir[]={0.48885015,-0.34580049,-0.80100757};
+		up[]={0.1801769,0.93829715,-0.29523212};
+		aside[]={-0.85365802,8.4191561e-007,-0.52098298};
 	};
 };
 binarizationWanted=0;
@@ -31524,49 +31524,49 @@ class Mission
 			dataType="Layer";
 			name="Roadblock";
 			id=1272;
-			atlOffset=-0.0023727417;
+			atlOffset=90;
 		};
 		class Item160
 		{
 			dataType="Layer";
 			name="Hasty Roadblock";
 			id=1280;
-			atlOffset=-0.066070557;
+			atlOffset=90;
 		};
 		class Item161
 		{
 			dataType="Layer";
 			name="Headquarters #O";
 			id=1345;
-			atlOffset=-0.099685669;
+			atlOffset=90;
 		};
 		class Item162
 		{
 			dataType="Layer";
 			name="Landing Zone #O";
 			id=1368;
-			atlOffset=-0.00048828125;
+			atlOffset=90;
 		};
 		class Item163
 		{
 			dataType="Layer";
 			name="Mobile HQ - BTR";
 			id=1398;
-			atlOffset=0.047767639;
+			atlOffset=90;
 		};
 		class Item164
 		{
 			dataType="Layer";
 			name="Camp #O";
 			id=1417;
-			atlOffset=0.04233551;
+			atlOffset=90;
 		};
 		class Item165
 		{
 			dataType="Layer";
 			name="Living Quarters #B";
 			id=1441;
-			atlOffset=-0.014770508;
+			atlOffset=90;
 		};
 	};
 };

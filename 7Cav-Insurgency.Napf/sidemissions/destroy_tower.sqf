@@ -1,10 +1,10 @@
-sleep 30;
+sleep 60;
 
 //systemChat "Loaded Destroy tower script";
 
 private _newZone = [[], 0, -1, 0, 0, 0.1, 0, [], []] call BIS_fnc_findSafePos;
 private _towerPos = _newZone;
-private _type = 'rhs_prv13';
+private _type = 'rhs_p37_turret_vpvo';
 
 while {isOnRoad _towerPos} do {
 	_towerPos = _newZone findEmptyPosition [2, 30, _type];
@@ -40,8 +40,17 @@ for "_x" from 1 to _grpSize do {
 null = [_grp, _grp, 50, 4, [], true] call lambs_wp_fnc_taskPatrol;
 null = [_grp, "INFskill"] call eos_fnc_grouphandlers;
 
-private _antiair = createVehicle ["LOP_SLA_ZSU234", _newZone, [], 20, "NONE"];
+private _antiair = createVehicle ["O_SAM_System_04_F", _newZone, [], 50, "NONE"];
+private _antiair2 = createVehicle ["rhs_zsu234_aa", _newZone, [], 50, "NONE"];
 createVehicleCrew _antiair;
+createVehicleCrew _antiair2;
+createVehicleCrew _tower;
+_tower setVehicleRadar 1;
+_antiair setVehicleRadar 1;
+_antiair2 setVehicleRadar 1;
+_antiair addEventHandler ["Fired",{(_this select 0) setVehicleAmmo 1}];
+
+_tower synchronizeObjectsAdd [_antiair];
 
 taskName = format["side%1",random 1000];
 
