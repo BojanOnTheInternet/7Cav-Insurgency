@@ -746,3 +746,6 @@ force force usaf_serviceMenu_setting_refuelTime = "100";
 force force usaf_serviceMenu_setting_reloadTime = "2";
 force force usaf_serviceMenu_setting_repairTime = "100";
 force force usaf_serviceMenu_setting_replaceSources = false;
+
+// A3TI
+force force A3TI_ALLOW_VANILLA_TI = false;

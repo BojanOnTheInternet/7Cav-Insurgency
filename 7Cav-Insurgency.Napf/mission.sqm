@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3297;
+		nextID=3364;
 	};
 	class Camera
 	{
-		pos[]={4977.5176,141.7887,4619.7734};
-		dir[]={0.48885015,-0.34580049,-0.80100757};
-		up[]={0.1801769,0.93829715,-0.29523212};
-		aside[]={-0.85365802,8.4191561e-007,-0.52098298};
+		pos[]={5048.4023,141.7887,4524.1172};
+		dir[]={0.47029856,-0.56065255,-0.68166316};
+		up[]={0.31841427,0.82803458,-0.46152174};
+		aside[]={-0.82317626,1.1431985e-007,-0.56793147};
 	};
 };
 binarizationWanted=0;
@@ -566,8 +566,13 @@ randomSeed=1724769;
 class ScenarioData
 {
 	author="Liber";
+	showGPS=0;
 	respawnDialog=0;
 	respawn=3;
+	class Header
+	{
+		gameType="Coop";
+	};
 	wreckManagerMode=3;
 	wreckRemovalMinTime=45;
 	wreckRemovalMaxTime=600;
