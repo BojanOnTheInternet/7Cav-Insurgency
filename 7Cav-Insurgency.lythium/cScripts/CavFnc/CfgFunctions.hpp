@@ -1,7 +1,7 @@
 class cScripts {
     class init {
         file = "cScripts\cavFnc\functions\init";
-        class initACELoadouts {};
+        // class initACELoadouts {};
         class initAI {};
         
         class initVehicle {};
@@ -96,9 +96,9 @@ class cScripts {
         class addInsigniaSelection {};
         class addInsigniaSelectionList {};
 
-        class setupLoadoutSelection {};
-        class setupLoadoutCategories {};
-        class addLoadoutSelection {};
+        // class setupLoadoutSelection {};
+        // class setupLoadoutCategories {};
+        // class addLoadoutSelection {};
 
         class addStagingZone {};
         class checkStagingZone {};
@@ -170,33 +170,33 @@ class cScripts {
     };
 
     class helpers {
-        file = "cScripts\cavFnc\functions\helpers";
-        class exportContainerToArsenal {};
-        class exportLoadoutContentToArsenal {};
-        class exportLoadoutToArsenal {};
+        // file = "cScripts\cavFnc\functions\helpers";
+        // class exportContainerToArsenal {};
+        // class exportLoadoutContentToArsenal {};
+        // class exportLoadoutToArsenal {};
     };
 
     class gear {
-        file = "cScripts\cavFnc\functions\gear";
-        class gear_preInit { preInit = 1; };
-        class gear_postInitProxy { postInit = 1; };
-        class gear_postInit {};
+        // file = "cScripts\cavFnc\functions\gear";
+        // class gear_preInit { preInit = 1; };
+        // class gear_postInitProxy { postInit = 1; };
+        // class gear_postInit {};
 
-        class gear_applyLoadout {};
-        class gear_applyCosmetics {};
-        class gear_applyAbilities {};
+        // class gear_applyLoadout {};
+        // class gear_applyCosmetics {};
+        // class gear_applyAbilities {};
 
-        class gear_selectLoadout {};
-        class gear_synchGroupIDs {};   
-        class gear_getSideConfig {};
+        // class gear_selectLoadout {};
+        // class gear_synchGroupIDs {};   
+        // class gear_getSideConfig {};
         
-        class gear_setupRadios {};
+        // class gear_setupRadios {};
 
         // Save and Load
-        class gear_saveLoadout {};
-        class gear_loadLoadout {};
-        class gear_removeLoadout {};
-        class gear_hasSavedLoadout {};
+        // class gear_saveLoadout {};
+        // class gear_loadLoadout {};
+        // class gear_removeLoadout {};
+        // class gear_hasSavedLoadout {};
         
     };
 

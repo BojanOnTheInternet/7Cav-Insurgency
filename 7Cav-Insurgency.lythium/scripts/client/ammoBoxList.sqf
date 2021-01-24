@@ -58,15 +58,6 @@ CLIENT_spawn_vehicleAmmo_box = {
   [_crate, 1000] call ace_rearm_fnc_setSupplyCount;
 };
 
-CLIENT_spawn_fuel_box = {
-  params ["_position"];
-
-  _crate = [_position, "CargoNet_01_barrels_F"] call CLIENT_SpawnBox;
-
-  //Add fuel
-  [_crate, 600] call ace_refuel_fnc_makeSource
-};
-
 CLIENT_SpawnMedicalBox = {
   params ["_position"];
 

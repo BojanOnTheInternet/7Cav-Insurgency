@@ -36,7 +36,6 @@ private _ammoboxTypes = [
   [format ["<t color='#ff9933'>Big Empty Crate</t>"], CLIENT_spawn_big_box],
   [format ["<t color='#ff9933'>Air Drop Empty Crate</t>"], CLIENT_spawn_airDrop_box],
   [format ["<t color='#ff9933'>Vehicle Ammo Box</t>"], CLIENT_spawn_vehicleAmmo_box],
-  [format ["<t color='#ff9933'>Fuel Pallet</t>"], CLIENT_spawn_fuel_box],
   [format ["<t color='#25b34b'>Medical Crate</t>"], CLIENT_SpawnMedicalBox],
   [format ["<t color='#ff0000'>Mixed AT Crate</t>"], CLIENT_SpawnAtBox],
   [format ["<t color='#0000FF'>Ammo Crate</t>"], CLIENT_SpawnAmmoBox],

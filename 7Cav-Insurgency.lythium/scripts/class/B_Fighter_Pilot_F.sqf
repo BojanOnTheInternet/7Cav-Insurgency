@@ -13,6 +13,10 @@ if (_state == "init") then
 		player setVariable [_x, [[TypeFilter_BaseServiceVehicles, [], {}]] + (player getVariable _x)];
 	} forEach ["VP_Driver"];
 
+	[] call HUD_Pilot_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "pilot"];
+
 };
 
 if (_state == "respawn") then
