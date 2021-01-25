@@ -75,17 +75,17 @@ _tempArray=[];
 };
 // ADD CLASSNAMES 
 	if (_faction==5) then {
-	_InfPool=	["O_RWR_soldier_sl","O_RWR_soldier_at","O_RWR_soldier_lat","O_RWR_soldier_gl","O_RWR_soldier","O_RWR_medic","O_RWR_soldier_mg","O_RWR_soldier_dm"];	
-	_ArmPool=	["RWR_t90_tv_camo","RWR_t90a_tv_camo","RWR_t90am_tv_camo","RWR_t90sm_tv_camo","RWR_btr80a_camo","RWR_BMP3_3mera_camo","RWR_BMP3_late_camo"];
-	_MotPool=	["RWR_tigr_sts_camo","RWR_ural_Zu23_camo"];
+	_InfPool=	["rhs_vdv_sergeant","rhs_vdv_aa","rhs_vdv_at","rhs_vdv_RShG2","rhs_vdv_grenadier","rhs_vdv_grenadier_alt","rhs_vdv_medic","rhs_vdv_machinegunner"];	
+	_ArmPool=	["rhs_btr80a_vdv","rhs_bmd4ma_vdv","rhs_brm1k_vdv","rhs_bmp2k_vdv","rhs_t90sm_tv","rhs_t90a_tv"];
+	_MotPool=	["rhsgref_BRDM2_HQ_vdv","rhs_tigr_m_3camo_vdv"];
 	_ACHPool=	["RHS_Ka52_vvsc"];
 	_CHPool=	[];
 	_uavPool=	[];
 	_stPool=	["rhs_SPG9M_MSV","rhs_2b14_82mm_vdv"];
 	_shipPool=	[];
-	_diverPool=	["O_RWR_crew"];
-	_crewPool=	["O_RWR_crew"];
-	_heliCrew=	["O_RWR_crew"];
+	_diverPool=	["rhs_vdv_armoredcrew"];
+	_crewPool=	["rhs_vdv_armoredcrew"];
+	_heliCrew=	["rhs_vdv_armoredcrew"];
 	};
 	
 // ADD CLASSNAMES 	

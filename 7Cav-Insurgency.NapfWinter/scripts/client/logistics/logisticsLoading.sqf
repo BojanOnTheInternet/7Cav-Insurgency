@@ -1,7 +1,7 @@
 CLIENT_LoadingVehicles = [
 	["Truck_01_flatbed_base_F", [0,-1.9,0.5]],
 	["rhsusf_M1083A1P2_B_fmtv_usarmy", [0,-1.6,0.5]]
-];
+];	
 
 CLIENT_LoadCrate = 
 {

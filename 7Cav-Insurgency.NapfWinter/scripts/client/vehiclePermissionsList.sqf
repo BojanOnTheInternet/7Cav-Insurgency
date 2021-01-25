@@ -127,7 +127,9 @@ TypeFilter_LogisticsVehicles =
 	["C_IDAP_Van_02_medevac_F", true],
 	["rhsusf_M108*", true], // CP SOV + more logi trucks
 	["rhsusf_M107*", true], // Rearm SOV + more logi trucks
-	["rhsusf_M1230A1*", true], // Medical MRAP
+	["rhsusf_M1239_M2_Deploy_socom_d", true], // Atlas-4 FOB truck
+	["truckB_Truck_01_flatbed_F", true], // Atlas-4 FOB Flatbed Truck
+	["rhsusf_M1230a1_usarmy_d", true], // Medical MRAP
 	["rhsusf_M109*", true], // SPG
 	["rhsusf_M142*", true], // MLRS
 	["rhsusf_m113_usarmy_medical", true], //Medical M113
@@ -135,7 +137,13 @@ TypeFilter_LogisticsVehicles =
 	["RHS_CH_47F*", true],	//Chinook is a logistics helicopter
 	["B_Heli_Transport_03_F", true], //ditto
 	["B_T_VTOL_01_vehicle_F", true], //Specifically the vehicle transport blackfish
+	["rhsusf_m109_usarmy", true], // Atlas-4 Artillery (woodland)
+	["rhsusf_m109d_usarmy", true], // Atlas-4 Artillery
+	["rhsusf_M142_usarmy_WD", true], // Atlas-4 Rocket Artillery (woodland)
+	["rhsusf_M142_usarmy_D", true], // Atlas-4 Rocket Artillery
+	["RHS_M119_D", true], // Atlas-4 Artillery Gun
 	["All", false]
+
 ];
 
 TypeFilter_InfantryVehicles =
@@ -144,11 +152,19 @@ TypeFilter_InfantryVehicles =
 	["rhsusf_M108*", false],
 	["rhsusf_M107*", false],
 	["rhsusf_M97*", false],
-	["rhsusf_M1230A1*", false], // Medical MRAP
+	["rhsusf_M1230a1_usarmy_d", false], // Medical MRAP (woodland)
 	["B_Truck_01_medical_F", false], // Medical HEMTTs
 	["C_IDAP_Van_02_medevac_F", false], // Ambulance
 	["rhsusf_m113_usarmy_medical", false], // Medical M113
 	["B_APC_Tracked_01_CRV_F", false], // Bobcat
+	["rhsusf_M1239_M2_Deploy_socom_d", false], // Atlas-4 FOB truck
+	["truckB_Truck_01_flatbed_F", false], // Atlas-4 FOB Flatbed Truck
+	["rhsusf_m109_usarmy", false], // Atlas-4 Artillery (woodland)
+	["rhsusf_m109d_usarmy", false], // Atlas-4 Artillery
+	["rhsusf_M142_usarmy_WD", false], // Atlas-4 Rocket Artillery (woodland)
+	["rhsusf_M142_usarmy_D", false], // Atlas-4 Rocket Artillery
+	["RHS_M119_D", false], // Atlas-4 Artillery Gun
+	
 	
 	//Static weapoons
 	["StaticWeapon", true],

@@ -38,19 +38,20 @@ _date set [4, _startMinute];
 
 setDate _date;
 
-86400 setOvercast 1;
-skipTime 24;
-
-//to remain on the same date:
-skipTime -24;
-86400 setOvercast 1;
-skipTime 24;
-
 //["Initialize"] call BIS_fnc_dynamicGroups;
 [] execVM "ASL_AdvancedSlingLoading\functions\fn_advancedSlingLoadInit.sqf";
 [] execVM "AT_AdvancedTowing\functions\fn_advancedTowingInit.sqf";
 [] execVM "AUR_AdvancedUrbanRappelling\functions\fn_advancedUrbanRappellingInit.sqf";
 [] execVM "cScripts\CavFnc\functions\init\fn_initFortify.sqf";
+
+sidemarkers = ["side1","side2","side3","side4","side5","side6","side7","side8","side9","side10","side11","side12","side13","side14","side15","side16","side17","side18","side19","side20"];
+
+{
+	_x setMarkerAlpha 0;
+} foreach sidemarkers;
+
+
+[] execVM "sidemissions\sidemissions.sqf";
 
 enableEnvironment [false, true];
 

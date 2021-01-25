@@ -17,7 +17,7 @@ CLIENT_InvalidPermissionMessage =
 		case "VP_Driver": { _messages pushBackUnique format ["You may not drive this %1", _vehicleName] };
 		case "VP_Gunner": { _messages pushBackUnique format ["You may not operate weapons on this %1", _vehicleName] };
 		case "VP_Commander": { _messages pushBackUnique format ["You may not command this %1", _vehicleName] };
-		case "VP_Pilot": { _messages pushBackUnique format ["You may not fly this %1", _vehicleName] };
+		case "VP_Pilot": { _messages pushBackUnique format ["You may not fly this, %1", _vehicleName] };
 		case "VP_Turret": { _messages pushBackUnique format ["You may not operate weapons on this %1", _vehicleName] };
 		case "VP_Cargo": { _messages pushBackUnique format ["You may not ride in this %1", _vehicleName] };
 	};
@@ -42,18 +42,15 @@ CLIENT_SetInfantryVehiclePermissions =
 
 	_permissions = [];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
-	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
 	_permissions pushBack [TypeFilter_All, [], {}];
 	_player setVariable ["VP_Gunner", _permissions];
 
 	_permissions = [];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
-	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
 	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], {}];
 	_player setVariable ["VP_Commander", _permissions];
 
 	_permissions = [];
-	_permissions pushBack [TypeFilter_LogisticsVehicles, [], {}];
 	_permissions pushBack [TypeFilter_InfantryVehicles, [], {}];
 	_permissions pushBack [TypeFilter_TransportRotory, [], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot false } }];
 	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot false } }];
