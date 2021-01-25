@@ -1,9 +1,11 @@
 private _state = param [0, "", [""]];
 
 if (_state == "init") then {
+
 	player setvariable ["ACE_IsEngineer", 2];
 
 	[player] call CLIENT_SetInfantryVehiclePermissions;
+	
 	{
 		player setVariable [_x, [[TypeFilter_All, [], {}]] + (player getVariable _x)];
 	} forEach ["VP_Driver", "VP_Pilot", "VP_Gunner", "VP_Turret"];
@@ -18,8 +20,13 @@ if (_state == "init") then {
 	// 			DOC_MissionControllerCommands + "<br/>" +
 	// 			DOC_MilitaryPoliceCommands
 	// 		]];
+
 };
 
+[] call HUD_Infantry_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "infantry"];
+	
 if (_state == "respawn") then
 {
 
