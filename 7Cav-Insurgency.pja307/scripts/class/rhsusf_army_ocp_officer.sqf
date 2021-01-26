@@ -18,11 +18,6 @@ if (_state == "init") then {
 	// 			DOC_MissionControllerCommands + "<br/>" +
 	// 			DOC_MilitaryPoliceCommands
 	// 		]];
-	
-	[] call HUD_Infantry_Initialize;
-
-	player setVariable ["SPM_BranchOfService", "infantry"];
-
 };
 
 if (_state == "respawn") then

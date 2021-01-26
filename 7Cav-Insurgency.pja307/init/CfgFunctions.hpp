@@ -10,6 +10,5 @@ class init
 		class serverPostInit { postInit = 1; };
 		class clientPostInit { postInit = 1; };
 		class bothPostInit { postInit = 1; };
-		class hudPreINIT { preINIT = 1; };
 	};
 };

@@ -15,11 +15,6 @@ if (_state == "init") then
 	{
 		player setVariable [_x, [[TypeFilter_ArmoredVehicles, [], {}]] + (player getVariable _x)];
 	} forEach ["VP_Driver"];
-	
-	[] call HUD_Infantry_Initialize;
-
-	player setVariable ["SPM_BranchOfService", "infantry"];
-
 };
 
 if (_state == "respawn") then

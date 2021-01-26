@@ -45,10 +45,3 @@ _null = [] execVM "camosystem.sqf";
 
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";
-
-[arsenal_1] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_2] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_3] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_4] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_5] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_6] execVM "scripts\arsenal_loadouts.sqf";
