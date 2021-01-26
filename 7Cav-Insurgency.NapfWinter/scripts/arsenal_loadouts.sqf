@@ -3,7 +3,7 @@ _playerRole = roleDescription player;
 private "_role";
 
 if ((_playerRole == "Platoon Leader@GUNSLINGER-6") OR (_playerRole == "Platoon sergeant@GUNSLINGER-5") OR (_playerRole == "Squad Leader@GUNSLINGER-1") OR (_playerRole == "Squad Leader@GUNSLINGER-2") OR (_playerRole == "Squad Leader@GUNSLINGER-3") OR (_playerRole == "Squad Leader@GUNSLINGER-4") OR (_playerRole == "Alpha Fire Team Leader") OR (_playerRole == "Alpha Automatic Rifleman") OR (_playerRole == "Alpha Grenadier") OR (_playerRole == "Alpha Rifleman") OR (_playerRole == "Bravo  Fire Team Leader") OR (_playerRole == "Bravo  Automatic Rifleman") OR (_playerRole == "Bravo  Grenadier") OR (_playerRole == "Bravo Combat Lifesaver") OR (_playerRole == "Bravo Rifleman") OR (_playerRole == "Driver") OR (_playerRole == "Gunner") OR (_playerRole == "FAC Team Leader@INFIDEL-1") OR (_playerRole == "FAC Observer")) then {_role = "Infantry"};
-if ((_playerRole == "Spotter@LONGSHOT-1") OR (_playerRole == "Sniper")) then {_role = "Sniper"};
+if ((_playerRole == "Spotter") OR (_playerRole == "Sniper@LONGSHOT-1")) then {_role = "Sniper"};
 if ((_playerRole == "Medical Team Leader@ATLAS-1") OR (_playerRole == "Medical Team Leader@ATLAS-2") OR (_playerRole == "Combat Medic")) then {_role = "Medic"};
 if ((_playerRole == "Logistic Team Leader@ATLAS-4") OR (_playerRole == "Logistics Team Member")) then {_role = "Logistics"};
 if ((_playerRole == "Tank Commander (M1A2)@SABRE-1") OR (_playerRole == "Tank Commander (M1A2)@SABRE-2") OR (_playerRole =="Tank Gunner") OR (_playerRole =="Tank Loader") OR (_playerRole =="Tank Driver")) then {_role = "Tanker"};
@@ -533,6 +533,10 @@ _genericGear = [
     "rhs_uniform_g3_mc",
     "rhs_uniform_g3_rgr",
     "rhs_uniform_g3_tan",
+    "rhsusf_5Rnd_00Buck",
+    "rhsusf_5Rnd_Slug",
+    "rhsusf_8Rnd_00Buck",
+    "rhsusf_8Rnd_Slug",
     "rhs_weap_ak103_1_npz",
     "rhs_weap_ak103_2_npz",
     "rhs_weap_ak103_npz",
@@ -594,6 +598,8 @@ _genericGear = [
     "rhs_weap_m4a1_wd_mstock",
     "rhs_weap_m4a1_wd",
     "rhs_weap_m4a1",
+    "rhs_weap_M590_8RD",
+    "rhs_weap_M590_5RD",
     "rhs_weap_m72a7",
     "rhs_weap_mk18_bk",
     "rhs_weap_mk18_d",
@@ -1100,6 +1106,7 @@ _genericGear = [
     "tfc_w_P226",
     "TFC_WA_ATT",
     "TFC_WA_C79_Elcan",
+    "tfc_wa_c79_elcan_3d",
     "TFC_WA_HP",
     "TFC_WA_opsinc_556",
     "TFC_WA_Siglite",
@@ -1763,6 +1770,7 @@ case "Sniper": {
         "rhs_mag_20Rnd_SCAR_762x51_m118_special",
         "rhs_mag_20Rnd_SCAR_762x51_m61_ap",
         "rhs_mag_20Rnd_SCAR_762x51_m62_tracer",
+        "rhs_weap_dsr1",
         "rhs_weap_M107_d",
         "rhs_weap_M107_w",
         "rhs_weap_M107",
