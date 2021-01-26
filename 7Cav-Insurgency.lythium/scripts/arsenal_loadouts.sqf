@@ -1100,6 +1100,7 @@ _genericGear = [
     "tfc_w_P226",
     "TFC_WA_ATT",
     "TFC_WA_C79_Elcan",
+    "tfc_wa_c79_elcan_3d",
     "TFC_WA_HP",
     "TFC_WA_opsinc_556",
     "TFC_WA_Siglite",

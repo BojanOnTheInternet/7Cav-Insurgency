@@ -19,6 +19,15 @@ if (_state == "init") then
     _permissions pushBack [TypeFilter_TransportRotory, [], { if (player in [(_this select 0) turretUnit [0]]) then { (_this select 0) enableCopilot true } }];
 	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], {}];
 	player setVariable ["VP_Turret", _permissions];
+	
+	[] call HUD_Pilot_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "pilot"];
+
+	[] call HUD_Infantry_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "infantry"];
+
 };
 
 if (_state == "respawn") then
