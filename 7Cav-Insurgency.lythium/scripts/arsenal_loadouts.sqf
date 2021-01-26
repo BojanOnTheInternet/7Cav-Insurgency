@@ -1764,6 +1764,7 @@ case "Sniper": {
         "rhs_mag_20Rnd_SCAR_762x51_m118_special",
         "rhs_mag_20Rnd_SCAR_762x51_m61_ap",
         "rhs_mag_20Rnd_SCAR_762x51_m62_tracer",
+        "rhs_weap_dsr1",
         "rhs_weap_M107_d",
         "rhs_weap_M107_w",
         "rhs_weap_M107",
