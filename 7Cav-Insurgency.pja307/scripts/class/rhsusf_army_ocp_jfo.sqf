@@ -17,6 +17,10 @@ if (_state == "init") then
 	} forEach ["VP_Driver"];
 };
 
+[] call HUD_Infantry_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "infantry"];
+	
 if (_state == "respawn") then
 {
 	player setvariable ["ACE_IsEngineer", 2];
