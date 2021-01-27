@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11236;
+		nextID=11534;
 	};
 	class Camera
 	{
-		pos[]={6953.2515,6.8014073,7395.6821};
-		dir[]={-0.86365688,-0.40303788,-0.30305812};
-		up[]={-0.3804397,0.91512108,-0.13349499};
-		aside[]={-0.33113673,-1.8044375e-008,0.9436869};
+		pos[]={6852.8252,28.818617,7366.2773};
+		dir[]={-0.13798119,-0.43519545,0.88977891};
+		up[]={-0.066694863,0.90032429,0.43008316};
+		aside[]={0.98826414,9.3103154e-008,0.1532509};
 	};
 };
 binarizationWanted=0;
@@ -4011,8 +4011,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6796.3467,4.2383623,7419.0356};
-								angles[]={0,1.3811474,0};
+								position[]={6796.3472,4.2383623,7419.0361};
+								angles[]={0,1.3811489,0};
 							};
 							side="Empty";
 							flags=4;
@@ -4025,7 +4025,6 @@ class Mission
 							};
 							id=6253;
 							type="rhsusf_mrzr4_d";
-							atlOffset=2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4267,7 +4266,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6801.0137,4.2383623,7396.8237};
+								position[]={6801.0142,4.2383623,7396.8242};
 								angles[]={0,1.3874844,0};
 							};
 							side="Empty";
@@ -4280,7 +4279,6 @@ class Mission
 							};
 							id=6257;
 							type="rhsusf_mrzr4_d";
-							atlOffset=2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4643,6 +4641,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 								dynamicSimulation=1;
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
@@ -4994,7 +4993,6 @@ class Mission
 							};
 							id=6634;
 							type="rhsusf_m1240a1_m2_usarmy_wd";
-							atlOffset=2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -5388,7 +5386,6 @@ class Mission
 							};
 							id=6629;
 							type="rhsusf_m1240a1_m240_usarmy_wd";
-							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -5782,7 +5779,6 @@ class Mission
 							};
 							id=6631;
 							type="rhsusf_m1240a1_m240_usarmy_wd";
-							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6176,7 +6172,6 @@ class Mission
 							};
 							id=6632;
 							type="rhsusf_m1240a1_m240_usarmy_wd";
-							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6643,6 +6638,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 								dynamicSimulation=1;
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
@@ -6705,6 +6701,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 								dynamicSimulation=1;
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
@@ -6767,6 +6764,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 								dynamicSimulation=1;
 								reportRemoteTargets=1;
 								receiveRemoteTargets=1;
@@ -7318,7 +7316,7 @@ class Mission
 						};
 					};
 					id=6244;
-					atlOffset=0.018275261;
+					atlOffset=0.018275499;
 				};
 			};
 			id=6243;
@@ -7851,7 +7849,7 @@ class Mission
 			a=50;
 			b=50;
 			id=7205;
-			atlOffset=0.17334008;
+			atlOffset=0.059500456;
 		};
 		class Item26
 		{
@@ -9232,18 +9230,41 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6958.3447,8.5255814,7170.5039};
-				angles[]={0,6.2455301,0};
+				position[]={6958.3452,8.5255814,7170.5039};
+				angles[]={0,6.2455211,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_FixedWing.sqf"";}";
 				reportOwnPosition=1;
 			};
 			id=7378;
 			type="RHS_C130J";
-			atlOffset=2.3841858e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,20,4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[30,8,16,4,2,4,2,2,4]],[[""ToolKit""],[1]],[[""B_Parachute""],[14]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item142
 		{
@@ -9275,10 +9296,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
+				createAsSimpleObject=1;
 			};
 			id=7419;
 			type="rhsusf_M1237_M2_usarmy_wd";
-			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9353,10 +9375,10 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 			};
 			id=7420;
 			type="rhsusf_M1237_M2_usarmy_wd";
-			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9431,10 +9453,10 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
 			};
 			id=7421;
 			type="rhsusf_M1237_M2_usarmy_wd";
-			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9509,10 +9531,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{null = [this] execVM ""scripts\vehicle\init\Base_WheeledArmed.sqf"";}";
+				dynamicSimulation=1;
 			};
 			id=7422;
 			type="rhsusf_M1237_M2_usarmy_wd";
-			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
