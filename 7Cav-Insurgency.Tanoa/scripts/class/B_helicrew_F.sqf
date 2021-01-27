@@ -3,6 +3,7 @@ private _state = param [0, "", [""]];
 
 if (_state == "init") then
 {
+
 	player setvariable ["ACE_IsEngineer", 2];
 	[player] call CLIENT_SetInfantryVehiclePermissions;
 	
@@ -20,6 +21,10 @@ if (_state == "init") then
 	_permissions pushBack [TypeFilter_All, [VPC_UnlessTurretArmed], {}];
 	player setVariable ["VP_Turret", _permissions];
 };
+
+[] call HUD_Pilot_Initialize;
+
+	player setVariable ["SPM_BranchOfService", "pilot"];
 
 if (_state == "respawn") then
 {
