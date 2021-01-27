@@ -33976,7 +33976,7 @@ class Mission
 									{
 										init="call{this setGroupid [""SPARROW-1""];" \n "player setUnitRank ""LIEUTENANT"";" \n "this setVariable [""PilotCanFly"", true];" \n "}";
 										name="SPR_2";
-										description="Pilot (AH-6M)@SPARROW-1 ";
+										description="Pilot (AH-6M)@SPARROW-1";
 										isPlayable=1;
 										class Inventory
 										{
@@ -42276,7 +42276,7 @@ class Mission
 				class Item0
 				{
 					dataType="Layer";
-					name="Arlington ";
+					name="Arlington";
 					class Entities
 					{
 						items=87;
