@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16148;
+		nextID=16310;
 	};
 	class Camera
 	{
-		pos[]={5361.0479,284.73483,14549.164};
-		dir[]={-0.71712375,-0.69012797,-0.098510861};
-		up[]={-0.68377936,0.72359616,-0.093933553};
-		aside[]={-0.13610092,1.0337681e-007,0.99079603};
+		pos[]={5372.2852,279.29813,14558.69};
+		dir[]={-0.92939842,-0.36577648,-0.051692277};
+		up[]={-0.36537844,0.93062037,-0.020324899};
+		aside[]={-0.055534955,-1.1235607e-006,0.99855536};
 	};
 };
 binarizationWanted=0;
@@ -20935,7 +20935,7 @@ class Mission
 			name="HUD_Staging_Pilot_Aircraft Loading Area_200_400_10";
 			type="Empty";
 			colorName="ColorWhite";
-			angle=170.95595;
+			angle=170.95592;
 			id=11061;
 			atlOffset=19.820496;
 		};
@@ -20946,7 +20946,7 @@ class Mission
 			name="HUD_Staging_Pilot_move3_150_300_8";
 			type="Empty";
 			colorName="ColorWhite";
-			angle=278.4469;
+			angle=278.44684;
 			id=11063;
 			atlOffset=0.00048828125;
 		};
@@ -20957,7 +20957,7 @@ class Mission
 			name="HUD_Staging_Pilot_move2_150_300_8";
 			type="Empty";
 			colorName="ColorWhite";
-			angle=278.4469;
+			angle=278.44684;
 			id=11064;
 			atlOffset=0.00048828125;
 		};
@@ -20968,7 +20968,7 @@ class Mission
 			name="HUD_Staging_Pilot_move1_150_300_8";
 			type="Empty";
 			colorName="ColorWhite";
-			angle=278.4469;
+			angle=278.44684;
 			id=11065;
 			atlOffset=0.00048828125;
 		};
@@ -22741,7 +22741,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5293.958,273.69153,14046.055};
-					angle=2.9661348;
+					angle=2.9661343;
 					class Attributes
 					{
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
