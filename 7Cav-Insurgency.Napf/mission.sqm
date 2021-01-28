@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8442;
+		nextID=8511;
 	};
 	class Camera
 	{
-		pos[]={5239.2446,88.297852,4478.1929};
-		dir[]={0.087196529,-0.59240186,-0.80107081};
-		up[]={0.064124405,0.80546451,-0.58912736};
-		aside[]={-0.99425364,-2.2504828e-006,-0.10823271};
+		pos[]={5011.8955,120.86752,4768.4102};
+		dir[]={-0.28355274,-0.35199606,0.89216143};
+		up[]={-0.10670321,0.93587083,0.33573416};
+		aside[]={0.95314026,3.0966476e-008,0.30294245};
 	};
 };
 binarizationWanted=0;
@@ -30019,7 +30019,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5129.4502,71.728027,4857.3042};
-					angle=6.1204495;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -30040,7 +30040,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5152.5688,71.771027,4861.0068};
-					angle=6.1204495;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -30061,7 +30061,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5138.1958,71.589027,4877.9438};
-					angle=6.1204495;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -32442,7 +32442,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5295.5581,71.362144,4494.8672};
-					angle=2.9436023;
+					angle=2.9436021;
 					class Attributes
 					{
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
@@ -37446,7 +37446,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4915.1631,67.838341,4758.145};
-					angle=2.9661345;
+					angle=2.9661343;
 					class Attributes
 					{
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
@@ -41057,7 +41057,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
@@ -41155,7 +41155,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
@@ -41256,7 +41256,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
@@ -41481,7 +41481,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
