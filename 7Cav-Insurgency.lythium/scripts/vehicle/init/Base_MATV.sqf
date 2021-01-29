@@ -4,9 +4,12 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
-    _vehicle removeMagazinesTurret ["rhs_mag_762x51_M240_200",[0]]; //Removes default magzines
     _vehicle removeMagazines "RHS_48Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
-    for "_i" from 1 to 4 do {_vehicle addMagazineTurret ["rhs_mag_762x51_M240_1200",[0]]}; //Adds n magazines
+    _vehicle removeMagazines "rhs_mag_100rnd_127x99_mag_Tracer_Red"; //Removes default magzines
+    for "_i" from 1 to 8 do {_vehicle addMagazine "rhs_mag_200rnd_127x99_mag_Tracer_Red"}; //Adds n magazines
+    _vehicle loadMagazine [[0], "RHS_M2", "rhs_mag_200rnd_127x99_mag_Tracer_Red"]; //Loads turret magazine
+    _vehicle removeMagazines "rhs_mag_762x51_M240_200"; //Removes default magzines
+    for "_i" from 1 to 4 do {_vehicle addMagazine "rhs_mag_762x51_M240_1200"}; //Adds n magazines
     _vehicle loadMagazine [[0], "rhs_weap_m240_m113", "rhs_mag_762x51_M240_1200"]; //Loads turret magazine
     [_vehicle, 4] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size

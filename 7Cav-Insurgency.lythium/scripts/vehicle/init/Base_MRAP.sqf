@@ -4,7 +4,10 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
-    _vehicle removeMagazines "RHS_96Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
+    _vehicle removeMagazines "RHS_48Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
+    _vehicle removeMagazines "rhs_mag_100rnd_127x99_mag_Tracer_Red"; //Removes default magzines
+    for "_i" from 1 to 8 do {_vehicle addMagazine "rhs_mag_200rnd_127x99_mag_Tracer_Red"}; //Adds n magazines
+    _vehicle loadMagazine [[0], "RHS_M2", "rhs_mag_200rnd_127x99_mag_Tracer_Red"]; //Loads turret magazine
     [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 80] call ace_cargo_fnc_setSize; //Sets cargo size
     [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
@@ -13,7 +16,7 @@ if !(isServer) exitWith {};
 	[
 	_vehicle,
 	[], 
-	["hide_rhino",1,"hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"DUKE_Hide",0]
+	["hide_rhino",1,"hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"DUKE_Hide",1]
 	] call BIS_fnc_initVehicle; //Handles vehicle appearnence
 
     clearWeaponCargoGlobal _vehicle;

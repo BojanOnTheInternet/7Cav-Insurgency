@@ -10,7 +10,7 @@
  * ["vic"] call cScripts_fnc_setVehicleInventory;
  */
 
-params [["_vehicle", objNull, [objNull]]];
+// params [["_vehicle", objNull, [objNull]]];
 
 if (didJIP) exitWith {};
 if (!isServer) exitWith {};
