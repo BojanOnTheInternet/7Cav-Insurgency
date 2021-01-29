@@ -3,7 +3,7 @@ _playerRole = roleDescription player;
 private "_role";
 
 if ((_playerRole == "Platoon Leader@GUNSLINGER-6") OR (_playerRole == "Platoon sergeant@GUNSLINGER-5") OR (_playerRole == "Squad Leader@GUNSLINGER-1") OR (_playerRole == "Squad Leader@GUNSLINGER-2") OR (_playerRole == "Squad Leader@GUNSLINGER-3") OR (_playerRole == "Squad Leader@GUNSLINGER-4") OR (_playerRole == "Alpha Fire Team Leader") OR (_playerRole == "Alpha Automatic Rifleman") OR (_playerRole == "Alpha Grenadier") OR (_playerRole == "Alpha Rifleman") OR (_playerRole == "Bravo  Fire Team Leader") OR (_playerRole == "Bravo  Automatic Rifleman") OR (_playerRole == "Bravo  Grenadier") OR (_playerRole == "Bravo Combat Lifesaver") OR (_playerRole == "Bravo Rifleman") OR (_playerRole == "Driver") OR (_playerRole == "Gunner") OR (_playerRole == "FAC Team Leader@INFIDEL-1") OR (_playerRole == "FAC Observer")) then {_role = "Infantry"};
-if ((_playerRole == "Spotter@LONGSHOT-1") OR (_playerRole == "Sniper")) then {_role = "Sniper"};
+if ((_playerRole == "Spotter") OR (_playerRole == "Sniper@LONGSHOT-1")) then {_role = "Sniper"};
 if ((_playerRole == "Medical Team Leader@ATLAS-1") OR (_playerRole == "Medical Team Leader@ATLAS-2") OR (_playerRole == "Combat Medic")) then {_role = "Medic"};
 if ((_playerRole == "Logistic Team Leader@ATLAS-4") OR (_playerRole == "Logistics Team Member")) then {_role = "Logistics"};
 if ((_playerRole == "Tank Commander (M1A2)@SABRE-1") OR (_playerRole == "Tank Commander (M1A2)@SABRE-2") OR (_playerRole =="Tank Gunner") OR (_playerRole =="Tank Loader") OR (_playerRole =="Tank Driver")) then {_role = "Tanker"};
