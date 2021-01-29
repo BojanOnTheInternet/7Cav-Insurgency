@@ -46,9 +46,9 @@
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 /* Add inventory to all map vehicles */
-//if (EGVAR(Settings,useCustomVehicleInventory)) then {
-//    #ifdef DEBUG_MODE
-//        ["Applying inventory to vehicles...", "InitVehicle"] call FUNC(logInfo);
-//    #endif
-//    {[_x] call FUNC(setVehicleInventory);} forEach vehicles;
-//};
+if (EGVAR(Settings,useCustomVehicleInventory)) then {
+    #ifdef DEBUG_MODE
+        ["Applying inventory to vehicles...", "InitVehicle"] call FUNC(logInfo);
+    #endif
+    {[_x] call FUNC(setVehicleInventory);} forEach vehicles;
+};

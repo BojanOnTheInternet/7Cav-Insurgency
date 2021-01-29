@@ -8,8 +8,6 @@ if !(isServer) exitWith {};
     [_vehicle, 100] call cScripts_fnc_addFortifyArea;
     [_vehicle, 26] call ace_cargo_fnc_setSpace;
     [_vehicle, 80] call ace_cargo_fnc_setSize;
-    [_vehicle, 5000] call ace_refuel_fnc_setFuel;
-    [_vehicle, 600] call ace_rearm_fnc_setSupplyCount;
     
 	[
 	_vehicle,
@@ -28,8 +26,8 @@ if !(isServer) exitWith {};
         ["ACE_tourniquet", 8],
         ["ACE_splint", 8],
         ["ACE_EarPlugs", 4],
-        ["ToolKit", 1],
         ["ACE_Fortify", 8],
+        ["ToolKit", 1],
         ["ACE_Clacker", 1],
         ["SatchelCharge_Remote_Mag", 1],
         ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 32],
