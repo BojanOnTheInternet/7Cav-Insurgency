@@ -4,20 +4,19 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
-    _vehicle removeMagazinesTurret ["rhs_mag_200rnd_127x99_mag_Tracer_Red",[0]]; //Removes default magzines
-    _vehicle removeMagazines "RHS_96Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
-    for "_i" from 1 to 10 do {_vehicle addMagazineTurret ["rhs_mag_200rnd_127x99_SLAP_mag_Tracer_Red",[0]]}; //Adds n magazines
-    _vehicle addMagazineTurret ["rhsusf_mag_L8A3_16",[0]]; //Adds countermeasure
-    _vehicle loadMagazine [[0], "RHS_M2_CROWS_M151", "rhs_mag_200rnd_127x99_SLAP_mag_Tracer_Red"]; //Loads turret magazine
-    [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
-    [_vehicle, 80] call ace_cargo_fnc_setSize; //Sets cargo size
+    _vehicle removeMagazinesTurret ["rhs_mag_762x51_M240_200",[0]]; //Removes default magzines
+    _vehicle removeMagazines "RHS_48Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
+    for "_i" from 1 to 4 do {_vehicle addMagazineTurret ["rhs_mag_762x51_M240_1200",[0]]}; //Adds n magazines
+    _vehicle loadMagazine [[0], "rhs_weap_m240_m113", "rhs_mag_762x51_M240_1200"]; //Loads turret magazine
+    [_vehicle, 4] call ace_cargo_fnc_setSpace; //Sets cargo space
+    [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size
     [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
 
 	[
 	_vehicle,
 	[], 
-	["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",1,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",1,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",1]
+	["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_rhino",1,"DoorLF",0,"DoorRF",0,"DoorLB",0,"DoorRB",0,"DUKE_Hide",1,"hide_spare",0]
 	] call BIS_fnc_initVehicle; //Handles vehicle appearnence
 
     clearWeaponCargoGlobal _vehicle;
@@ -26,8 +25,7 @@ if !(isServer) exitWith {};
     clearBackpackCargoGlobal _vehicle;
 
     private _inventory = [ //Defines vehicle inventory
-        ["rhs_weap_fgm148", 2],
-        ["rhs_weap_M136_hp", 2],
+        ["rhs_weap_M136_hp", 4],
         ["ACE_quikclot", 32],
         ["ACE_tourniquet", 8],
         ["ACE_splint", 8],

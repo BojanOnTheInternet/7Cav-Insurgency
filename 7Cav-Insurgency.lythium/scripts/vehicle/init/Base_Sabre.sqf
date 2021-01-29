@@ -4,16 +4,17 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
-    _vehicle removeMagazines "RHS_96Rnd_40mm_MK19_M1001"; //Removes canister ammo from Mk19 variants
-    [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
-    [_vehicle, 80] call ace_cargo_fnc_setSize; //Sets cargo size
-    [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
+    _vehicle addMagazineTurret ["rhs_mag_M1147",[0]]; //Adds HE_Frag
+    _vehicle addMagazineTurret ["rhs_mag_200rnd_127x99_SLAP_mag_Tracer_Red",[0]]; //Adds HE_Frag
+    [_vehicle, 2] call ace_cargo_fnc_setSpace; //Sets cargo space
+    [_vehicle, -1] call ace_cargo_fnc_setSize; //Sets cargo size
+    [_vehicle, 1, "ACE_Track", true] call ace_repair_fnc_addSpareParts; //Adds spare track
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
 
 	[
 	_vehicle,
-	[], 
-	["hide_rhino",1,"hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"DUKE_Hide",0]
+	[],
+	["DUKE_Hide",0,"IFF_Panels_Hide",0,"Miles_Hide",1]
 	] call BIS_fnc_initVehicle; //Handles vehicle appearnence
 
     clearWeaponCargoGlobal _vehicle;
@@ -27,16 +28,9 @@ if !(isServer) exitWith {};
         ["ACE_tourniquet", 8],
         ["ACE_splint", 8],
         ["ACE_EarPlugs", 4],
-        ["ToolKit", 1],
-        ["ACE_Clacker", 1],
-        ["SatchelCharge_Remote_Mag", 1],
-        ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 32],
-        ["rhsusf_200Rnd_556x45_mixed_soft_pouch", 8],
-        ["rhsusf_100Rnd_762x51_m62_tracer", 8],
-        ["rhs_mag_M433_HEDP", 12],
-        ["rhs_mag_m713_Red", 4],
-        ["ACE_HuntIR_M203", 2],
-        ["ACE_40mm_Flare_ir", 4]
+        ["ToolKit", 2],
+        ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 32]
+
     ];
 
     {
