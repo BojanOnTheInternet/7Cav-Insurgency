@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8373;
+		nextID=8511;
 	};
 	class Camera
 	{
-		pos[]={5072.835,97.043976,4796.6011};
-		dir[]={0.70716876,-0.311598,0.63487685};
-		up[]={0.23208819,0.95009363,0.20835927};
-		aside[]={0.66813433,-5.1688403e-008,-0.74420279};
+		pos[]={5011.8955,120.86752,4768.4102};
+		dir[]={-0.28355274,-0.35199606,0.89216143};
+		up[]={-0.10670321,0.93587083,0.33573416};
+		aside[]={0.95314026,3.0966476e-008,0.30294245};
 	};
 };
 binarizationWanted=0;
@@ -30019,7 +30019,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5129.4502,71.728027,4857.3042};
-					angle=6.12045;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -30040,7 +30040,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5152.5688,71.771027,4861.0068};
-					angle=6.12045;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -30061,7 +30061,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5138.1958,71.589027,4877.9438};
-					angle=6.12045;
+					angle=6.1204491;
 					class Attributes
 					{
 						condition="call{this}";
@@ -30104,7 +30104,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5251.1162,72.312347,4500.4409};
-					angle=6.1136613;
+					angle=6.1136608;
 					class Attributes
 					{
 						condition="call{this}";
@@ -32442,7 +32442,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5295.5581,71.362144,4494.8672};
-					angle=2.9436026;
+					angle=2.9436021;
 					class Attributes
 					{
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
@@ -37446,7 +37446,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4915.1631,67.838341,4758.145};
-					angle=2.9661348;
+					angle=2.9661343;
 					class Attributes
 					{
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
@@ -39949,7 +39949,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=6;
+											value=4;
 										};
 									};
 								};
@@ -40220,7 +40220,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=6;
+											value=4;
 										};
 									};
 								};
@@ -40490,7 +40490,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=6;
+											value=4;
 										};
 									};
 								};
@@ -40760,7 +40760,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=6;
+											value=4;
 										};
 									};
 								};
@@ -41025,6 +41025,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedicalVehicle";
+									expression="_this setVariable [""ace_medical_isMedicalVehicle"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
 									class Value
@@ -41038,11 +41057,11 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_fastroping_equipFRIES";
 									expression="[_this] call ace_fastroping_fnc_equipFRIES";
@@ -41061,7 +41080,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute3
 								{
 									property="ace_cargo_space";
 									expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -41076,11 +41095,11 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
-								nAttributes=3;
+								nAttributes=4;
 							};
 						};
 						class Item1
@@ -41104,6 +41123,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedicalVehicle";
+									expression="_this setVariable [""ace_medical_isMedicalVehicle"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
 									class Value
@@ -41117,11 +41155,11 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_fastroping_equipFRIES";
 									expression="[_this] call ace_fastroping_fnc_equipFRIES";
@@ -41140,7 +41178,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute2
+								class Attribute3
 								{
 									property="ace_cargo_space";
 									expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -41155,11 +41193,11 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
-								nAttributes=3;
+								nAttributes=4;
 							};
 						};
 						class Item2
@@ -41218,11 +41256,30 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
 								class Attribute2
+								{
+									property="ace_isMedicalVehicle";
+									expression="_this setVariable [""ace_medical_isMedicalVehicle"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute3
 								{
 									property="ace_cargo_space";
 									expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -41241,7 +41298,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=3;
+								nAttributes=4;
 							};
 						};
 						class Item3
@@ -41392,6 +41449,25 @@ class Mission
 							{
 								class Attribute0
 								{
+									property="ace_isMedicalVehicle";
+									expression="_this setVariable [""ace_medical_isMedicalVehicle"",_value,true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute1
+								{
 									property="ammoBox";
 									expression="[_this,_value] call bis_fnc_initAmmoBox;";
 									class Value
@@ -41405,11 +41481,11 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+											value="[[[[],[]],[[],[]],[[""ToolKit"",""ACE_rope18"",""ACE_rope36""],[1,1,1]],[[],[]]],false]";
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_cargo_space";
 									expression="[_this,_value] call ace_cargo_fnc_setSpace;";
@@ -41424,11 +41500,11 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 					};
@@ -41868,7 +41944,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -42339,7 +42415,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -42810,7 +42886,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -43281,7 +43357,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -45268,7 +45344,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -45485,7 +45561,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
@@ -45702,7 +45778,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=8;
+											value=4;
 										};
 									};
 								};
