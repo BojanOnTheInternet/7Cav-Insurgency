@@ -6,7 +6,7 @@ if !(isServer) exitWith {};
 [_vehicle,
     {
 	_vehicle setvariable ["ace_medical_isMedicalFacility", true, true];
-    [_vehicle, 8] call ace_cargo_fnc_setSpace; //Sets cargo space
+    [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size
     [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
@@ -47,6 +47,27 @@ if !(isServer) exitWith {};
         _x params ["_ammo", "_amount"];
         _vehicle addItemCargoGlobal [_ammo, _amount];
     } forEach _inventory; //Adds vehicle inventory
+
+    for "_i" from 1 to 2 do {
+        _crate = "ACE_medicalSupplyCrate_advanced" createVehicle getMarkerPos "apolloLogistics";
+    
+        clearWeaponCargoGlobal _crate;
+        clearMagazineCargoGlobal _crate;
+        clearItemCargoGlobal _crate;
+        clearBackpackCargoGlobal _crate;
+
+        _crate addItemCargoGlobal ["ACE_quikclot", 100]; 
+        _crate addItemCargoGlobal ["ACE_epinephrine", 20]; 
+        _crate addItemCargoGlobal ["ACE_morphine", 20]; 
+        _crate addItemCargoGlobal ["ACE_EarPlugs", 5]; 
+        _crate addItemCargoGlobal ["ACE_surgicalKit", 2]; 
+        _crate addItemCargoGlobal ["ACE_elasticBandage", 200]; 
+        _crate addItemCargoGlobal ["ACE_personalAidKit", 8]; 
+        _crate addItemCargoGlobal ["ACE_splint", 30]; 
+        _crate addItemCargoGlobal ["ACE_salineIV", 20]; 
+
+        [_crate, _vehicle, true] call ace_cargo_fnc_loadItem
+    }
 
     }
 ] call vehicle_fnc_respawnVehicleInitialize;
