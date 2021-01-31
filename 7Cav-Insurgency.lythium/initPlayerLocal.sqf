@@ -54,4 +54,3 @@ diag_log "initPlayerLocal end";
 [arsenal_6] execVM "scripts\arsenal_loadouts.sqf";
 [arsenal_7] execVM "scripts\arsenal_loadouts.sqf";
 [arsenal_8] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_9] execVM "scripts\arsenal_loadouts.sqf";
