@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6791;
+		nextID=6859;
 	};
 	class Camera
 	{
-		pos[]={5118.6479,182.77104,4550.8496};
-		dir[]={0.44607106,-0.75444722,-0.48168579};
-		up[]={0.51261979,0.65635204,-0.55354577};
-		aside[]={-0.73377353,-2.9627699e-006,-0.67952532};
+		pos[]={5264.3711,93.776733,4483.7075};
+		dir[]={0.76263016,-0.4920913,0.42003942};
+		up[]={0.43108222,0.87050796,0.23743206};
+		aside[]={0.48248866,-1.5452388e-006,-0.87600487};
 	};
 };
 binarizationWanted=0;
@@ -27489,11 +27489,12 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5295.5581,71.662148,4494.8672};
-					angle=2.9436018;
+					angle=2.9436026;
 					class Attributes
 					{
+						name="healZone_1";
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone_1; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 						sizeA=5;
 						sizeB=2.5;
 						sizeC=5;
@@ -36474,7 +36475,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5267.3828,74.117409,4444.8198};
-								angles[]={-0,6.1256518,0};
+								angles[]={0,6.1256518,0};
 							};
 							side="Empty";
 							flags=4;
@@ -36716,7 +36717,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5271.269,74.117409,4445.3018};
-								angles[]={-0,6.1225977,0};
+								angles[]={0,6.1225977,0};
 							};
 							side="Empty";
 							flags=4;
@@ -37132,7 +37133,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5226.5962,72.855026,4461.5659};
-								angles[]={-0,1.4141008,0};
+								angles[]={0,1.4141008,0};
 							};
 							side="Empty";
 							flags=4;
@@ -37306,7 +37307,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5225.875,72.855026,4465.6201};
-								angles[]={-0,1.4030876,0};
+								angles[]={0,1.4030876,0};
 							};
 							side="Empty";
 							flags=4;
@@ -37654,7 +37655,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5279.375,74.060089,4446.6572};
-								angles[]={-0,6.1154594,0};
+								angles[]={0,6.1154594,0};
 							};
 							side="Empty";
 							flags=4;
@@ -37896,7 +37897,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5275.208,74.060089,4445.9341};
-								angles[]={-0,6.1358972,0};
+								angles[]={0,6.1358972,0};
 							};
 							side="Empty";
 							flags=4;
@@ -38149,7 +38150,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5290.6914,73.254326,4448.3745};
-								angles[]={-0,6.1341515,0};
+								angles[]={0,6.1341515,0};
 							};
 							side="Empty";
 							flags=4;
@@ -38446,7 +38447,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5286.7056,73.254326,4447.5508};
-								angles[]={-0,6.0972204,0};
+								angles[]={0,6.0972204,0};
 							};
 							side="Empty";
 							flags=4;
@@ -38743,7 +38744,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5282.8428,73.254326,4446.8027};
-								angles[]={-0,6.0995593,0};
+								angles[]={0,6.0995593,0};
 							};
 							side="Empty";
 							flags=4;
@@ -39040,7 +39041,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5294.7749,73.254326,4449.1982};
-								angles[]={-0,6.1155462,0};
+								angles[]={0,6.1155462,0};
 							};
 							side="Empty";
 							flags=4;
@@ -39516,7 +39517,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5218.8472,72.936043,4478.4082};
-								angles[]={-0,1.4035239,6.2671909};
+								angles[]={0,1.4035239,6.2671909};
 							};
 							side="Empty";
 							flags=4;
@@ -40349,7 +40350,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5261.9839,74.264153,4443.2539};
-								angles[]={-0,6.1106944,0};
+								angles[]={0,6.1106944,0};
 							};
 							side="Empty";
 							flags=4;
@@ -40499,7 +40500,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={5257.4956,74.208694,4442.4707};
-								angles[]={-0,6.1106944,0.02199479};
+								angles[]={0,6.1106944,0.02199479};
 							};
 							side="Empty";
 							flags=4;
@@ -40831,9 +40832,10 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5198.1499,71.305099,4454.4199};
-			angle=2.9847221;
+			angle=2.9847224;
 			class Attributes
 			{
+				name="healZone";
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
 				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 				sizeA=4.5;

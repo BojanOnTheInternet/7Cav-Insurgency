@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16197;
+		nextID=16219;
 	};
 	class Camera
 	{
-		pos[]={12201.571,201.76834,2286.2341};
-		dir[]={-0.76654714,-0.6416766,-0.029858107};
-		up[]={-0.6412068,0.76692533,-0.024975438};
-		aside[]={-0.038920518,2.1432934e-006,0.9993493};
+		pos[]={12052.367,86.546898,2348.3616};
+		dir[]={-0.68756497,-0.63471001,-0.35303459};
+		up[]={-0.56464958,0.77269816,-0.28992251};
+		aside[]={-0.45680922,1.9670697e-006,0.88968617};
 	};
 };
 binarizationWanted=0;
@@ -112487,8 +112487,9 @@ class Mission
 			angle=0.0059341197;
 			class Attributes
 			{
+				name="healZone_1";
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone_1; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 				sizeA=5;
 				sizeB=2.5;
 				sizeC=5;

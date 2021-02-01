@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8780;
+		nextID=8830;
 	};
 	class Camera
 	{
-		pos[]={5273.5327,80.634583,4477.9194};
-		dir[]={-0.77247673,-0.3924852,0.49938539};
-		up[]={-0.3296504,0.91972923,0.21311009};
-		aside[]={0.54294646,4.8708171e-007,0.83985078};
+		pos[]={5278.1074,87.246384,4483.9434};
+		dir[]={0.57430142,-0.6386413,0.51231819};
+		up[]={0.47658637,0.7694816,0.42514926};
+		aside[]={0.66573423,1.8098508e-006,-0.7462855};
 	};
 };
 binarizationWanted=0;
@@ -18569,9 +18569,10 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5198.1499,71.305099,4454.4199};
-			angle=2.9847221;
+			angle=2.9847224;
 			class Attributes
 			{
+				name="healZone";
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
 				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 				sizeA=4.5;
@@ -18661,12 +18662,13 @@ class Mission
 		class Item252
 		{
 			dataType="Trigger";
-			position[]={5295.2617,71.374779,4494.7007};
-			angle=2.9436018;
+			position[]={5295.2622,71.375282,4494.7012};
+			angle=2.9436026;
 			class Attributes
 			{
+				name="healZone_1";
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+				onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone_1; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 				sizeA=5;
 				sizeB=2.5;
 				sizeC=5;
@@ -18676,7 +18678,6 @@ class Mission
 			};
 			id=5429;
 			type="EmptyDetectorAreaR50";
-			atlOffset=-0.00047302246;
 		};
 		class Item253
 		{

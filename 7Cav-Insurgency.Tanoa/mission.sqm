@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13797;
+		nextID=13927;
 	};
 	class Camera
 	{
-		pos[]={7215.9224,140.43974,7473.2798};
-		dir[]={-0.68236995,-0.49335554,-0.53965056};
-		up[]={-0.38706389,0.86970317,-0.3061071};
-		aside[]={-0.62036562,-9.3318522e-007,0.78442788};
+		pos[]={6950.9229,36.109787,7423.1851};
+		dir[]={-0.62098002,-0.54678869,0.56183469};
+		up[]={-0.40554062,0.83714199,0.36691612};
+		aside[]={0.67096823,-1.0201475e-006,0.74160558};
 	};
 };
 binarizationWanted=0;
@@ -1337,7 +1337,7 @@ class Mission
 				};
 			};
 			id=1028;
-			atlOffset=68.188911;
+			atlOffset=67.313202;
 		};
 		class Item1
 		{
@@ -7268,6 +7268,7 @@ class Mission
 			};
 			id=7378;
 			type="RHS_C130J";
+			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8787,6 +8788,7 @@ class Mission
 							};
 							id=7490;
 							type="RHS_UH60M";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30583,12 +30585,13 @@ class Mission
 				class Item3
 				{
 					dataType="Trigger";
-					position[]={6888.958,2.6620002,7372.1509};
-					angle=4.5305252;
+					position[]={6888.9878,2.6620002,7371.9902};
+					angle=4.5305247;
 					class Attributes
 					{
+						name="healZone_1";
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone_1; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 						sizeA=5;
 						sizeB=2.5;
 						sizeC=5;
@@ -33443,6 +33446,7 @@ class Mission
 							};
 							id=7973;
 							type="C_Quadbike_01_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33477,6 +33481,7 @@ class Mission
 							};
 							id=7974;
 							type="C_Quadbike_01_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33511,6 +33516,7 @@ class Mission
 							};
 							id=7975;
 							type="C_Quadbike_01_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33545,7 +33551,7 @@ class Mission
 							};
 							id=7976;
 							type="C_Quadbike_01_F";
-							atlOffset=-0.025000095;
+							atlOffset=-0.024999857;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33580,6 +33586,7 @@ class Mission
 							};
 							id=7977;
 							type="C_Quadbike_01_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33614,6 +33621,7 @@ class Mission
 							};
 							id=7978;
 							type="C_Quadbike_01_F";
+							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33634,11 +33642,11 @@ class Mission
 						};
 					};
 					id=7972;
-					atlOffset=-0.0031249523;
+					atlOffset=-0.0031251907;
 				};
 			};
 			id=7971;
-			atlOffset=-0.0031249523;
+			atlOffset=-0.0031251907;
 		};
 		class Item215
 		{
@@ -33909,7 +33917,7 @@ class Mission
 						};
 					};
 					id=7983;
-					atlOffset=0.39831638;
+					atlOffset=0.37688732;
 				};
 				class Item1
 				{
@@ -33920,7 +33928,7 @@ class Mission
 				};
 			};
 			id=7982;
-			atlOffset=15.05565;
+			atlOffset=15.044834;
 		};
 		class Item217
 		{
@@ -33933,9 +33941,10 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6900.1172,5.2210002,7497.7471};
-					angle=6.2136512;
+					angle=6.2136507;
 					class Attributes
 					{
+						name="healZone";
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
 						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
 						sizeA=5;
@@ -38493,7 +38502,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6847.2559,2.6600001,7473.5718};
-					angle=4.4360509;
+					angle=4.4360499;
 					class Attributes
 					{
 						name="gateTrigger_1";
@@ -38511,7 +38520,6 @@ class Mission
 				};
 			};
 			id=8370;
-			atlOffset=0.0095617771;
 		};
 		class Item278
 		{
