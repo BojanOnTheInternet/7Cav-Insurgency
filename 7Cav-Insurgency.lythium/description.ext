@@ -37,6 +37,7 @@ class Header {
 enableTargetDebug = 1;
 enableDebugConsole[] = {
     // Dev Team
+    "76561198048006094",    // Bojan
 	"76561198073062030", 	// Ocean
 	"76561198149329790",	// Mazinski
 	"76561197991479113",	// Zlobin
