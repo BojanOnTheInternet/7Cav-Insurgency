@@ -16,5 +16,5 @@ Special Thanks:
 execNow "core\modules\cacheScript\cache.sqf";
 #endif
 #ifdef intelSpawn
-if(isServer || isDedicated)then{[]execVM "core\modules\cacheScript\spawnIntel.sqf";};
+if(isServer || isDedicated)then{[]execVM "core\modules\cacheScript\createIntel.sqf";};
 #endif
