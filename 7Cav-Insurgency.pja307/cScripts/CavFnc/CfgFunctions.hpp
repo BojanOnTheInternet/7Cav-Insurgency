@@ -4,7 +4,7 @@ class cScripts {
         class initACELoadouts {};
         class initAI {};
         
-        class initVehicle {};
+        //class initVehicle {};
 
         class initStaging {};
 
