@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5368.1738,177.46062,4517.0703};
-		dir[]={-0.77206892,-0.62158453,-0.13293746};
-		up[]={-0.61260134,0.78331846,-0.10547968};
-		aside[]={-0.1696979,-4.6419154e-007,0.98556358};
+		pos[]={5359.875,208.37192,4539.8516};
+		dir[]={-0.93396306,-0.34578833,-0.090667546};
+		up[]={-0.34419486,0.93830413,-0.033413127};
+		aside[]={-0.096624747,-3.3841934e-007,0.99536234};
 	};
 };
 binarizationWanted=0;
@@ -14515,7 +14515,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this setGroupid [""SABER-2""];}";
+										init="call{this setgroupID[""ATLAS-1""];}";
 										name="SAB_35";
 										description="Combat Medic";
 										isPlayable=1;
@@ -14755,6 +14755,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
+										init="call{this setgroupID[""ATLAS-1""];}";
 										description="Combat Medic";
 										isPlayable=1;
 										class Inventory
@@ -14980,7 +14981,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this setGroupid [""SABER-2""];}";
+										init="call{this setgroupID[""ATLAS-1""];}";
 										name="SAB_36";
 										description="Combat Medic";
 										isPlayable=1;
@@ -16736,7 +16737,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={5174.1436,71.590469,4462.9766};
+										position[]={5174.144,71.590469,4462.9766};
 										angles[]={0,6.0791216,0};
 									};
 									side="West";
@@ -26294,7 +26295,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5129.4502,71.728027,4857.3042};
-					angle=6.1204495;
+					angle=6.1204476;
 					class Attributes
 					{
 						name="hangarTrigger_4";
@@ -26315,7 +26316,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5152.5688,71.771027,4861.0068};
-					angle=6.1204495;
+					angle=6.1204476;
 					class Attributes
 					{
 						name="hangarTrigger_3";
@@ -26336,7 +26337,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5138.1958,71.589027,4877.9438};
-					angle=6.1204495;
+					angle=6.1204476;
 					class Attributes
 					{
 						name="hangarTrigger";
@@ -31850,7 +31851,7 @@ class Mission
 		class Item211
 		{
 			dataType="Marker";
-			position[]={5017.5972,32.855469,4829.4648};
+			position[]={5028.6982,32.855469,4836.4531};
 			name="logistics_pad_2";
 			type="Empty";
 			angle=3.0000103;
