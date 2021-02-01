@@ -108646,7 +108646,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{null = [this] execVM ""scripts\vehicle\init\Base_Stryker.sqf"";" \n "[this,[['Number', cDecals4CarsNumberPlaces, this getVariable ['rhs_decalNumber_type','LicensePlate'], ""2588""]]] call rhs_fnc_decalsInit}";
+						init="call{null = [this] execVM ""scripts\vehicle\init\Base_Stryker.sqf"";" \n "}";
 						textures="Tan";
 						reportRemoteTargets=1;
 						receiveRemoteTargets=1;
