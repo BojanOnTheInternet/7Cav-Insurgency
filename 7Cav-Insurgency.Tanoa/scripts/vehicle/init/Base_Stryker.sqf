@@ -11,7 +11,8 @@ if !(isServer) exitWith {};
     _vehicle addMagazine "rhsusf_mag_L8A3_16"; //Adds countermeasure
     [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 80] call ace_cargo_fnc_setSize; //Sets cargo size
-    [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
+    ["ACE_Wheel", _vehicle, 4] call ace_cargo_fnc_removeCargoItem;
+    [_vehicle, 2, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
 
 	[
@@ -48,6 +49,28 @@ if !(isServer) exitWith {};
         _x params ["_ammo", "_amount"];
         _vehicle addItemCargoGlobal [_ammo, _amount];
     } forEach _inventory; //Adds vehicle inventory
+
+    for "_i" from 1 to 1 do {
+        _crate = "Box_NATO_Ammo_F" createVehicle getMarkerPos "apolloLogistics";
+    
+        clearWeaponCargoGlobal _crate;
+        clearMagazineCargoGlobal _crate;
+        clearItemCargoGlobal _crate;
+        clearBackpackCargoGlobal _crate;
+
+        _crate addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", 24]; 
+        _crate addMagazineCargoGlobal ["rhsusf_200rnd_556x45_mixed_soft_pouch_coyote", 10]; 
+        _crate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 10]; 
+        _crate addMagazineCargoGlobal ["rhs_mag_m67", 10]; 
+        _crate addMagazineCargoGlobal ["SmokeShell", 10]; 
+        _crate addMagazineCargoGlobal ["SmokeShellRed", 10]; 
+        _crate addMagazineCargoGlobal ["SmokeShellBlue", 10];
+        _crate addMagazineCargoGlobal ["rhs_mag_M441_HE", 20]; 
+        _crate addMagazineCargoGlobal ["rhs_mag_m714_White", 10];
+        _crate addMagazineCargoGlobal ["rhs_mag_m713_Red", 10];
+        
+        [_crate, _vehicle, true] call ace_cargo_fnc_loadItem
+    }
 
     }
 ] call vehicle_fnc_respawnVehicleInitialize;

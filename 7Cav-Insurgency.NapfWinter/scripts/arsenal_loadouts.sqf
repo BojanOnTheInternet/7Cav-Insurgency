@@ -1195,14 +1195,15 @@ _genericGear = [
     "V_TacVest_camo",
     "V_TacVest_khk",
     "V_TacVest_oli",
-    "V_TacVestIR_blk"
+    "V_TacVestIR_blk",
+    "rhsusf_acc_anpas13gv1"
 ];
 
 switch (_role) do {
 
 case "Infantry": {
 		[_box, _genericGear + [
-		"100Rnd_580x42_Mag_F",
+				"100Rnd_580x42_Mag_F",
         "100Rnd_580x42_Mag_Tracer_F",
         "100Rnd_65x39_caseless_black_mag_tracer",
         "100Rnd_65x39_caseless_khaki_mag_tracer",
@@ -1472,7 +1473,46 @@ case "Infantry": {
         "tfc_w_c9a2",
         "tfc_w_mk48",
         "Vorona_HE",
-        "Vorona_HEAT"
+        "Vorona_HEAT",
+		"TFC_W_c20", //Start Marskmen Rifles
+		"tfc_wa_c20_suppressor",
+		"rhsusf_20Rnd_762x51_SR25_m118_special_Mag",
+		"rhsusf_20Rnd_762x51_SR25_m62_Mag",
+		"rhsusf_20Rnd_762x51_SR25_m993_Mag",
+		"rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",
+		"rhs_weap_sr25",
+		"rhs_weap_sr25_d",
+		"rhs_weap_sr25_ec",
+		"rhs_weap_sr25_ec_d",
+		"rhs_weap_sr25_ec_wd",
+		"rhs_weap_sr25_wd",
+		"srifle_DMR_03_F",
+		"srifle_DMR_03_multicam_F",
+		"srifle_DMR_03_khaki_F",
+		"srifle_DMR_03_tan_F",
+		"srifle_DMR_03_woodland_F",
+		"rhsusf_20Rnd_762x51_m118_special_Mag",
+		"rhsusf_20Rnd_762x51_m62_Mag",
+		"rhsusf_20Rnd_762x51_m80_Mag",
+		"rhsusf_20Rnd_762x51_m993_Mag",
+		"rhs_weap_m14_socom",
+		"rhs_weap_m14_socom_rail",
+		"rhsusf_acc_m14_bipod",
+		"rhsusf_acc_aac_762sd_silencer",
+		"rhsusf_acc_aac_762sdn6_silencer",
+		"rhsgref_sdn6_suppressor",
+		"ACE_20Rnd_762x51_M118LR_Mag",
+		"ACE_20Rnd_762x51_M993_AP_Mag",
+		"ACE_20Rnd_762x51_Mag_SD",
+		"ACE_20Rnd_762x51_Mag_Tracer_Dim",
+		"ACE_20Rnd_762x51_Mag_Tracer",
+		"srifle_DMR_07_blk_F",
+		"20Rnd_650x39_Cased_Mag_F",
+		"ACE_20Rnd_65_Creedmor_mag",
+		"ACE_20Rnd_65x47_Scenar_mag",
+		"rhsusf_acc_sr25s",
+		"rhsusf_acc_sr25s_d",
+		"rhsusf_acc_sr25s_wd"
 			],false] call ace_arsenal_fnc_initBox;
 
     // Default Loadouts
@@ -1899,7 +1939,10 @@ case "Sniper": {
         "U_B_GhillieSuit",
         "U_B_T_FullGhillie_tna_F",
         "U_B_T_Sniper_F",
-        "rhsusf_acc_premier_anpvs27"
+        "rhsusf_acc_premier_anpvs27",
+        "optic_tws",
+        "optic_tws_mg",
+        "optic_nightstalker"
 		],false] call ace_arsenal_fnc_initBox;
         
         ["[000] --- Sniper Team ---", 
@@ -2242,7 +2285,8 @@ case "Logistics": {
         "tfc_w_c9a2",
         "tfc_w_mk48",
         "Vorona_HE",
-        "Vorona_HEAT"
+        "Vorona_HEAT",
+        "rhsusf_acc_anpas13gv1"
 		],false] call ace_arsenal_fnc_initBox;
 
 	};

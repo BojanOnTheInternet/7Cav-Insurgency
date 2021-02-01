@@ -30,7 +30,7 @@ minPlayerDistance = 250;
 class Header {
 	gameType = COOP;
 	minPlayers = 1;
-	maxPlayers = 91;
+	maxPlayers = 98;
 };
 
 // Debug Console
