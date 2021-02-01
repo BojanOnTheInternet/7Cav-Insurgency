@@ -37,22 +37,16 @@ class Header {
 enableTargetDebug = 1;
 enableDebugConsole[] = {
     // Dev Team
-    "76561198064095277",    // Citarelli.D
-    "76561198114637526",    // JB
     "76561198048006094",    // Bojan
-	"76561198043140265", 	// Centeno
 	"76561198073062030", 	// Ocean
-	"76561198089309425",	// Currier
-	"76561198042501866",	// Spiers
 	"76561198149329790",	// Mazinski
 	"76561197991479113",	// Zlobin
+	"76561198099828056",    // Whitsel
     // S6
-    "76561198168754324",    // Dakota.N
     "76561198039932196",    // Jarvis.A
-    "76561198020735648",    // Ratcliff.M
     "76561197963459537",    // Sweetwater.I
-	"76561198142446869",    // Dunn.W
-	"76561197997124640"     // Liber.N
+	"76561197997124640",    // Liber.N
+	"76561198089309425",	// Currier
 };
 
 class Extended_PreInit_EventHandlers {

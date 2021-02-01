@@ -1196,6 +1196,9 @@ _genericGear = [
     "V_TacVest_khk",
     "V_TacVest_oli",
     "V_TacVestIR_blk",
+    "tfc_wa_cadex_grip",
+    "tfc_wa_grip_afg",
+    "tfc_wa_virtgrip",
     "rhsusf_acc_anpas13gv1"
 ];
 
