@@ -46,11 +46,13 @@ _null = [] execVM "camosystem.sqf";
 CLIENT_InitPlayerLocalComplete = true;
 diag_log "initPlayerLocal end";
 
-[arsenal_1] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_2] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_3] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_4] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_5] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_6] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_7] execVM "scripts\arsenal_loadouts.sqf";
-[arsenal_8] execVM "scripts\arsenal_loadouts.sqf";
+{[_x] execVM "scripts\arsenal_loadouts.sqf";} forEach [
+	arsenal_1,
+	arsenal_2,
+	arsenal_3,
+	arsenal_4,
+	arsenal_5,
+	arsenal_6,
+	arsenal_7,
+	arsenal_8
+]
