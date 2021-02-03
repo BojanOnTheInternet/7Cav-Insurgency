@@ -68,6 +68,7 @@ class CfgFunctions {
 	#include "scripts\vehicle\CfgFunctions.hpp"
 	#include "init\CfgFunctions.hpp"
 	#include "CHVD\CfgFunctions.hpp"
+    #include "scripts\CfgFunctions.hpp"
 };
 
 // #include "cScripts\CfgLoadouts.hpp"
