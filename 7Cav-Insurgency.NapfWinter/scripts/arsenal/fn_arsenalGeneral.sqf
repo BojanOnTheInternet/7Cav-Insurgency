@@ -1358,7 +1358,9 @@ private _miscItems = [
     };
 
 } forEach [
-    arsenal_1,
-    arsenal_2,
-    arsenal_3
+	arsenal_1,
+	arsenal_2,
+	arsenal_3,
+	arsenal_4,
+	arsenal_5
 ];
