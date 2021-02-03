@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6899.6147,5.6644125,7453.1987};
-		dir[]={0.4966152,-0.48790842,0.71801966};
-		up[]={0.27758342,0.87284201,0.40133271};
-		aside[]={0.82254118,-1.8317951e-007,-0.56890023};
+		pos[]={6925.8853,23.396286,7365.3091};
+		dir[]={-0.83113182,-0.55422306,0.04790926};
+		up[]={-0.55335838,0.83231384,0.031901456};
+		aside[]={0.057549022,-1.7731509e-007,0.99845541};
 	};
 };
 binarizationWanted=0;
@@ -35642,12 +35642,12 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6888.9878,2.6620002,7371.9902};
-					angle=4.5305233;
+					angle=4.5305252;
 					class Attributes
 					{
 						name="healZone_1";
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone_1; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+						onActivation="call{{ " \n "    _x setDamage 0;  " \n "    _x setFuel 1; " \n "    _x call ace_medical_treatment_fnc_fullHealLocal;  " \n "} foreach thislist }";
 						sizeA=5;
 						sizeB=2.5;
 						sizeC=5;
@@ -39657,12 +39657,12 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={6900.1172,5.2210002,7497.7471};
-					angle=6.2136497;
+					angle=6.2136512;
 					class Attributes
 					{
 						name="healZone";
 						condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
-						onActivation="call{ " \n "_handle= [] spawn {  " \n " " \n "    _sleep = 5; " \n "    _trigger = healZone; " \n "  " \n "    waitUntil { " \n "        player setDamage 0; " \n "        player setFuel 1; " \n "        [player, player] call ace_medical_treatment_fnc_fullHeal; " \n "        sleep _sleep; " \n "        not ((getPos player) inArea _trigger); " \n "        };  " \n "  " \n "}; " \n "}";
+						onActivation="call{{ " \n "    _x setDamage 0;  " \n "    _x setFuel 1; " \n "    _x call ace_medical_treatment_fnc_fullHealLocal;  " \n "} foreach thislist }";
 						sizeA=5;
 						sizeB=5.5;
 						sizeC=2;
