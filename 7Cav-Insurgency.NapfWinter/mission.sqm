@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7063;
+		nextID=7131;
 	};
 	class Camera
 	{
-		pos[]={5203.625,94.873657,4450.9595};
-		dir[]={-0.49734375,-0.64507216,0.58024204};
-		up[]={-0.41982153,0.76409137,0.48979697};
-		aside[]={0.7593109,-6.549526e-007,0.65083569};
+		pos[]={5130.0898,94.873657,4445.0791};
+		dir[]={0.69202721,-0.35529694,0.62838918};
+		up[]={0.26306745,0.9347387,0.23887661};
+		aside[]={0.67225111,1.6950071e-007,-0.74032974};
 	};
 };
 binarizationWanted=0;
@@ -55,6 +55,7 @@ addons[]=
 	"ace_medical_treatment",
 	"ace_trenches",
 	"rhsusf_sounds",
+	"jsrs_soundmod_rhs_usf_weapons",
 	"cav_troops_bravo_atlas",
 	"acex_fortify",
 	"A3_Weapons_F_Items",
@@ -31330,7 +31331,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={5295.5581,71.662148,4494.8672};
-					angle=2.9436026;
+					angle=2.9436018;
 					class Attributes
 					{
 						name="healZone_1";
@@ -48513,7 +48514,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5198.1499,71.305099,4454.4199};
-			angle=2.9847224;
+			angle=2.9847221;
 			class Attributes
 			{
 				name="healZone";

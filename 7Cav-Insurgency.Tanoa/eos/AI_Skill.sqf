@@ -1,11 +1,11 @@
 // INFANTRY SKILL
 _InfskillSet = [
-0.2,        // aimingAccuracy
-0.2,        // aimingShake
+0.1,        // aimingAccuracy
+0.1,        // aimingShake
 0.6,        // aimingSpeed
 0.6,         // spotDistance
 0.6,        // spotTime
-1,        // courage
+0.75,        // courage
 1,        // reloadSpeed
 1,        // commanding
 1        // general
@@ -14,8 +14,8 @@ _InfskillSet = [
 
 // ARMOUR SKILL
 _ArmSkillSet = [
-0.2,        // aimingAccuracy
-0.2,        // aimingShake
+0.1,        // aimingAccuracy
+0.1,        // aimingShake
 0.6,        // aimingSpeed
 0.5,         // spotDistance
 0.5,        // spotTime
@@ -28,8 +28,8 @@ _ArmSkillSet = [
 
 // LIGHT VEHICLE skill
 _LigSkillSet = [
-0.2,        // aimingAccuracy
-0.2,        // aimingShake
+0.1,        // aimingAccuracy
+0.1,        // aimingShake
 0.6,        // aimingSpeed
 0.5,         // spotDistance
 0.5,        // spotTime
@@ -56,8 +56,8 @@ _AIRskillSet = [
 
 // STATIC SKILL
 _STAskillSet = [
-0.2,        // aimingAccuracy
-0.2,        // aimingShake
+0.1,        // aimingAccuracy
+0.1,        // aimingShake
 0.6,        // aimingSpeed
 0.5,         // spotDistance
 0.5,        // spotTime
