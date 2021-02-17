@@ -2,41 +2,63 @@ if (!hasInterface) exitWith {};
 
 waitUntil {!isNull player};
 
+player createDiaryRecord ["diary", ["Code of Conduct",
+"
+<br/>1. No fratricide or destruction of friendly equipment.
+<br/>2. No offensive or disruptive behavior
+<br/>3. All support assets must be on call and TeamSpeak 3
+<br/>4. You must play your role and cooperate with your team
+<br/>
+<br/>If you see a player in violation of any of the above, contact a moderator or administrator (TeamSpeak).
+"
+]];
+
+if (not (player diarySubjectExists "teamspeak")) then { player createDiarySubject ["teamspeak", "Teamspeak"] };
+
+player createDiaryRecord ["teamspeak", ["Teamspeak server",
+"
+<br/>Address: ts3.7cav.us
+<br/>Password: 7thCavalry
+<br/>
+<br/>The password is case-sensitive. The first time you connect to the Teamspeak server you must wait for your security level to reach 30 before
+you will be able to enter any Teamspeak channels.
+<br/>
+<br/>Visitors and guests are welcome.
+"
+]];
+
 player createDiaryRecord ["diary", ["Unit callsigns",
 "
 <br/><font face=PuristaSemiBold' size='12'>Personnel</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
-<br/>JTAC                           Infidel
-<br/>Logistics/FOB Ops              ATLAS-4
-<br/>Field Medical                  ATLAS-1/2
-<br/>Air traffic control            Telos Tower
+<br/>Sniper                         Longshot
+<br/>Forward Air Controller         Infidel
+<br/>Logistics/FOB Ops              Atlas 4
+<br/>Combat Medics                  Atlas 1/2
 <br/></font>
 <br/><font face=PuristaSemiBold' size='12'>Transport Aircraft</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
-<br/>UH-60 Blackhawk                Buffalo 1/2
-<br/>MH-6 Little Bird               Raven
-<br/>CH-47 Chinook                  Grizzly
-<br/>V-44X Blackfish (transport)    Titan
+<br/>CH-47F Chinook                 Grizzly
+<br/>UH-60M Black Hawk              Buffalo
+<br/>MH-6M Little Bird              Raven
+<br/>C-130J Super Hercules          Titan
 </font>
 <br/>
 <br/><font face=PuristaSemiBold' size='12'>Attack Aircraft</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
-<br/>A-10 Thunderbolt               Hog
-<br/>F-16 Fighting Falcon           Eagle
-<br/>V-44X Blackfish (armed)        Spectre
-<br/>AH-6 Attack Little Bird        Sparrow
-<br/>AH-64 Apache                   Raider
+<br/>AH-64D Apache Longbow          Raider
+<br/>AH-6M Attack Little Bird       Sparrow
+<br/>A-10C Thunderbolt              Hog
 </font>
 <br/>
 <br/>
 <br/><font face=PuristaSemiBold' size='12'>Armor</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
-<br/>M1 Abramms                     Sabre 1/2
-<br/>Armored personnel carriers     Banshee 1/2/3/4
+<br/>M1 Abramms                     Sabre
 </font>
 <br/>
 "
@@ -82,35 +104,6 @@ player createDiaryRecord ["diary", ["Radio Channels",
 <br/>
 "
 ]];
-
-if (not (player diarySubjectExists "teamspeak")) then { player createDiarySubject ["teamspeak", "Teamspeak"] };
-
-player createDiaryRecord ["teamspeak", ["Teamspeak server",
-"
-<br/>Address: ts3.7cav.us
-<br/>Password: 7thCavalry
-<br/>
-<br/>The password is case-sensitive. The first time you connect to the Teamspeak server you must wait for your security level to reach 30 before
-you will be able to enter any Teamspeak channels.
-<br/>
-<br/>Visitors and guests are welcome.
-"
-]];
-
-player createDiaryRecord ["diary", ["Rules of conduct",
-"
-<br/>1. No fratricide.
-<br/>2. No destruction of friendly equipment.
-<br/>3. Players using character slots labelled TEAMSPEAK must be on Teamspeak
-<br/>4. Combat Air Patrol and Combat Support must abide by specific rules of engagement
-<br/>5. Weapons safe on base
-<br/>6. No offensive language, sexual references, drug references, or racism of any kind will be tolerated
-<br/>7. No vehicles allowed on runways or landing pads unless it is a support vehicle being used for that purpose
-<br/>
-<br/>If you see a player in violation of any of the above, contact a moderator or administrator (TeamSpeak).  For more information on these rules, see the billboards at base.
-"
-]];
-
 
 player createDiaryRecord ["diary", ["FOB Building",
 "
