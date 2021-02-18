@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15384;
+		nextID=15520;
 	};
 	class Camera
 	{
-		pos[]={6891.3457,7.0153222,7455.2778};
-		dir[]={0.73860371,-0.38293821,0.55485016};
-		up[]={0.30618173,0.92376781,0.23000839};
-		aside[]={0.60063142,5.2852556e-008,-0.79954565};
+		pos[]={6887.5342,6.1040392,7441.8086};
+		dir[]={0.26507103,-0.55582446,-0.78800571};
+		up[]={0.17721929,0.83127052,-0.5268361};
+		aside[]={-0.9478786,-1.0288786e-006,-0.31885329};
 	};
 };
 binarizationWanted=0;
@@ -6208,7 +6208,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6864.1265,5.8861032,7372.6812};
+								position[]={6864.126,5.8861036,7372.6812};
 								angles[]={0,5.0244541,0};
 							};
 							side="Empty";
@@ -6221,7 +6221,6 @@ class Mission
 							};
 							id=7423;
 							type="rhsusf_M1239_M2_Deploy_socom_d";
-							atlOffset=-2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6701,7 +6700,6 @@ class Mission
 							};
 							id=7937;
 							type="FIR_Baseplate";
-							atlOffset=2.3841858e-007;
 						};
 						class Item17
 						{
@@ -26405,7 +26403,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -26606,7 +26604,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -26864,7 +26862,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -27122,7 +27120,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -27380,7 +27378,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=0;
 												};
 											};
 										};
@@ -29282,7 +29280,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={6898.9829,3.164439,7438.187};
-										angles[]={-0,6.0143175,0};
+										angles[]={0,6.0143175,0};
 									};
 									side="West";
 									flags=4;
@@ -39356,7 +39354,6 @@ class Mission
 					};
 					id=8040;
 					type="Land_InfoStand_V2_F";
-					atlOffset=0.021399498;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39402,7 +39399,7 @@ class Mission
 				};
 			};
 			id=7967;
-			atlOffset=0.57908201;
+			atlOffset=0.57914543;
 		};
 		class Item211
 		{
@@ -44271,7 +44268,7 @@ class Mission
 			};
 			id=8241;
 			type="Land_Missle_Trolley_02_F";
-			atlOffset=0.00036287308;
+			atlOffset=0.0003631115;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44312,7 +44309,7 @@ class Mission
 			};
 			id=8242;
 			type="Land_DeckTractor_01_F";
-			atlOffset=0.023999929;
+			atlOffset=0.023999691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44353,7 +44350,7 @@ class Mission
 			};
 			id=8245;
 			type="Land_Bomb_Trolley_01_F";
-			atlOffset=0.012000084;
+			atlOffset=0.011999846;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44429,7 +44426,7 @@ class Mission
 			};
 			id=8258;
 			type="Land_JetEngineStarter_01_F";
-			atlOffset=0.00014090538;
+			atlOffset=0.0001411438;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44845,7 +44842,7 @@ class Mission
 			};
 			id=8350;
 			type="FIR_A10C_Blank";
-			atlOffset=0.044148684;
+			atlOffset=0.044148922;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45953,8 +45950,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={6863.6304,5.8861032,7377.7817};
-										angles[]={0,5.0456176,0};
+										position[]={6863.6299,5.8861036,7377.7822};
+										angles[]={0,5.0456243,0};
 									};
 									side="Empty";
 									flags=4;
@@ -45966,7 +45963,6 @@ class Mission
 									};
 									id=8433;
 									type="rhsusf_M1239_M2_socom_d";
-									atlOffset=-2.3841858e-007;
 									class CustomAttributes
 									{
 										class Attribute0
