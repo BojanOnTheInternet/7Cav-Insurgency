@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7267;
+		nextID=7335;
 	};
 	class Camera
 	{
-		pos[]={5279.1099,121.46817,4425.8354};
-		dir[]={-0.84166825,-0.53327984,0.085346006};
-		up[]={-0.53056312,0.84593135,0.053799275};
-		aside[]={0.10088423,-3.5145786e-007,0.99493575};
+		pos[]={5295.3765,90.345787,4454.2505};
+		dir[]={-0.75655574,-0.23167746,0.61158854};
+		up[]={-0.18018939,0.97278219,0.14566235};
+		aside[]={0.62868828,5.4202974e-007,0.77771276};
 	};
 };
 binarizationWanted=0;
@@ -36132,10 +36132,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5296.9971,72.859619,4464.7827};
+						position[]={5296.9971,72.074745,4464.7827};
 						angles[]={6.2681909,1.4218917,0};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						init="call{this addAction [ " \n " ""<t color=""""#ff3300"""">"" + (""7Cav Vehicle Selector"") + ""</t>"", " \n " { " \n "  [] call cScripts_fnc_openGarage; " \n " }, " \n " """", " \n " 0.03, " \n " false, " \n " false " \n "];}";
@@ -36143,7 +36144,6 @@ class Mission
 					};
 					id=3225;
 					type="Land_MultiScreenComputer_01_sand_F";
-					atlOffset=0.78487396;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36348,7 +36348,7 @@ class Mission
 				};
 			};
 			id=3220;
-			atlOffset=-0.13389587;
+			atlOffset=-0.18295288;
 		};
 		class Item195
 		{
