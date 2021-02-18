@@ -58,7 +58,7 @@ player createDiaryRecord ["diary", ["Unit callsigns",
 <br/><font face=PuristaSemiBold' size='12'>Armor</font>
 <br/>
 <font face='EtelkaMonospacePro' size='10'>
-<br/>M1 Abramms                     Sabre
+<br/>M1 Abrams                     Sabre
 </font>
 <br/>
 "
