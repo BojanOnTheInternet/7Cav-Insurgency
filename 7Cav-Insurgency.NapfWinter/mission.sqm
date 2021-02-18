@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7335;
+		nextID=7403;
 	};
 	class Camera
 	{
-		pos[]={5295.3765,90.345787,4454.2505};
-		dir[]={-0.75655574,-0.23167746,0.61158854};
-		up[]={-0.18018939,0.97278219,0.14566235};
-		aside[]={0.62868828,5.4202974e-007,0.77771276};
+		pos[]={5252.8032,90.345787,4469.6963};
+		dir[]={-0.27435914,-0.52775925,-0.80392259};
+		up[]={-0.17045985,0.84938556,-0.49947831};
+		aside[]={-0.9464469,-3.320165e-007,0.32299659};
 	};
 };
 binarizationWanted=0;
@@ -47166,15 +47166,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={5243.5254,73.96035,4440.3594};
-								angles[]={6.2571931,6.1193857,0.0069996584};
+								position[]={5243.5254,73.960335,4440.3589};
+								angles[]={6.2571969,6.1193857,0.0069987699};
 							};
 							side="Empty";
 							flags=4;
 							class Attributes
 							{
 								init="call{null = [this] execVM ""scripts\vehicle\init\Base_SOV.sqf"";}";
-								presence=0.46187738;
 								textures="rhs_woodland";
 							};
 							id=3574;
@@ -47823,7 +47822,7 @@ class Mission
 						};
 					};
 					id=3572;
-					atlOffset=0.010704041;
+					atlOffset=0.010688782;
 				};
 				class Item4
 				{
@@ -48487,7 +48486,7 @@ class Mission
 				};
 			};
 			id=3554;
-			atlOffset=0.054336548;
+			atlOffset=0.054328918;
 		};
 		class Item244
 		{

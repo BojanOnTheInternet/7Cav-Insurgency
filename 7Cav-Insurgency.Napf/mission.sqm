@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9144;
+		nextID=9199;
 	};
 	class Camera
 	{
-		pos[]={5196.7109,95.101456,4453.5659};
-		dir[]={-0.023348903,-0.56963187,0.82162547};
-		up[]={-0.016181953,0.82189059,0.56941205};
-		aside[]={0.99964142,-1.3169411e-006,0.028412271};
+		pos[]={5253.7529,96.093079,4473.2754};
+		dir[]={-0.23352666,-0.58097661,-0.77970022};
+		up[]={-0.16669154,0.81391919,-0.55655009};
+		aside[]={-0.9579559,8.8941306e-008,0.28691572};
 	};
 };
 binarizationWanted=0;
@@ -18791,7 +18791,6 @@ class Mission
 							class Attributes
 							{
 								init="call{null = [this] execVM ""scripts\vehicle\init\Base_SOV.sqf"";}";
-								presence=0.46187738;
 								textures="rhs_woodland";
 							};
 							id=1527;
