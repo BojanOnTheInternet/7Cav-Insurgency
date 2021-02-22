@@ -9,7 +9,7 @@ if !(isServer) exitWith {};
 	_vehicle setvariable ["ace_medical_isMedicalFacility", true, true];
     [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size
-        for "_i" from 1 to 1 do {
+    for "_i" from 1 to 1 do {
         ["ACE_Wheel", _vehicle, true] call ace_cargo_fnc_loadItem;
     }; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number

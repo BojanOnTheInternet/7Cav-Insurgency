@@ -15,7 +15,7 @@ if !(isServer) exitWith {};
     [_vehicle, 4] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size
     ["ACE_Wheel", _vehicle, 4] call ace_cargo_fnc_removeCargoItem;
-        for "_i" from 1 to 2 do {
+    for "_i" from 1 to 2 do {
         ["ACE_Wheel", _vehicle, true] call ace_cargo_fnc_loadItem;
     }; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number

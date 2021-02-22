@@ -9,7 +9,7 @@ if !(isServer) exitWith {};
     for "_i" from 1 to 1 do {_vehicle addMagazine "rhs_mag_200rnd_127x99_SLAP_mag_Tracer_Red"}; //Adds n magazines
     [_vehicle, 4] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, -1] call ace_cargo_fnc_setSize; //Sets cargo size
-        for "_i" from 1 to 1 do {
+    for "_i" from 1 to 1 do {
         ["ACE_Track", _vehicle, true] call ace_cargo_fnc_loadItem;
     }; //Adds spare track
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
