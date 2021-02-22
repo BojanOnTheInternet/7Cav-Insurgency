@@ -4,6 +4,7 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
+    params ["_vehicle"];     
 	_vehicle addWeaponTurret ["FIR_SUU25", [0]];
 	_vehicle addWeaponTurret ["FIR_SUU25", [-1]];
     for "_i" from 1 to 4 do {_vehicle addMagazineTurret ["FIR_SUU25_P_8rnd_M",[0]]}; //Adds n magazines

@@ -5,10 +5,13 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
+    params ["_vehicle"];     
 	_vehicle setvariable ["ace_medical_isMedicalFacility", true, true];
     [_vehicle, 6] call ace_cargo_fnc_setSpace; //Sets cargo space
     [_vehicle, 40] call ace_cargo_fnc_setSize; //Sets cargo size
-    [_vehicle, 1, "ACE_Wheel", true] call ace_repair_fnc_addSpareParts; //Adds spare wheel
+        for "_i" from 1 to 1 do {
+        ["ACE_Wheel", _vehicle, true] call ace_cargo_fnc_loadItem;
+    }; //Adds spare wheel
     _vehicle setPlateNumber "1/7 Cav"; //Set plate number
 
 	[

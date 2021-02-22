@@ -5,6 +5,7 @@ if !(isServer) exitWith {};
 
 [_vehicle,
     {
+    params ["_vehicle"];     
     [_vehicle, 100] call cScripts_fnc_addFortifyArea;
     [_vehicle, 26] call ace_cargo_fnc_setSpace;
     [_vehicle, 80] call ace_cargo_fnc_setSize;
